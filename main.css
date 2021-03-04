@@ -20,4 +20,10 @@
     .main {
         background-color: green;
     }
+    .hero-image-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
