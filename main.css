@@ -26,4 +26,7 @@
       align-items: center;
       text-align: center;
     }
+    .hero-image-png img{
+      width: 100%;
+    }
   }
