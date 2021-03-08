@@ -3,17 +3,20 @@
 /* Desktop Only Rules */
 
 @media screen and (min-width: 600px) {
+  /* Hero Image Section */
     .mobile {
       display: none !important;
     } 
     .main {
         background-color: red;
     }
-  
+  /*End  Hero Image Section */
   }
+  
 
 /* Moble Only Rules */
   @media screen and (max-width: 600px) {
+    /* Hero Image Section */
     .desktop {
     display: none !important;
     }
@@ -29,4 +32,5 @@
     .hero-image-png img{
       width: 100%;
     }
+    /* End Hero Image Section */
   }
