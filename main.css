@@ -1,36 +1,76 @@
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
+/* Fonts */
+h2 {
+  font-family: IvyJournal;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+/* Buttons */
+button {
+  padding: 18px 40px;
+  border-radius: 30px;
+  background-color: #b8c1c1;
+  border: solid #b8c1c1;
+  color: white;
+}
+button.black {
+  background-color: black;
+  border: solid black;
+}
+/* Conquer Cores Section */
+.conquer-cores {
+  background-image: url(images/ConquerCores.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.conquer-cores .text-container {
+  display: flex;
+  color: white;
+}
+
+/* End of Conquer Cores Section */
 
 /* Desktop Only Rules */
 
 @media screen and (min-width: 600px) {
   /* Hero Image Section */
-    .mobile {
-      display: none !important;
-    } 
-    .main {
-        background-color: red;
-    }
-  /*End  Hero Image Section */
+  .mobile {
+    display: none !important;
   }
-  
+  .main {
+    background-color: red;
+  }
+  /*End  Hero Image Section */
+}
 
 /* Moble Only Rules */
-  @media screen and (max-width: 600px) {
-    /* Hero Image Section */
-    .desktop {
+@media screen and (max-width: 600px) {
+  /* Hero Image Section */
+  .desktop {
     display: none !important;
-    }
-    .main {
-        background-color: green;
-    }
-    .hero-image-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .hero-image-png img{
-      width: 100%;
-    }
-    /* End Hero Image Section */
   }
+  .main {
+    background-color: green;
+  }
+  .hero-image .text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  /* End Hero Image Section */
+
+  /* HollowWood Section */
+  .HollowWood-image .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* End of HollowWood Section */
+
+  /* Conquer Cores Section */
+
+  /* End of Conquer Cores Section */
+}

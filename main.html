@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Redesign</title>
-</head>
-<body>
-  <div class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Redesign</title>
+  </head>
+  <body>
+    <div class="main">
       <div class="header">
-          <h4>Hey snugglebunny! Welcome to the page. I've set responsive settings at 600px for mobile vs desktop. Feel free to get started on the mobile designs.</h4>
-          <h4>As for the header, let me worry about this one it's funky.</h4>
-          <h4>No need to write JS into anything yet lets just do the HTML/CSS for starters.</h4>
-          <h4>Please write all things with the body and main div, there is an example in the code!</h4>
-          <h4></h4>
+        <h4>
+          Hey snugglebunny! Welcome to the page. I've set responsive settings at
+          600px for mobile vs desktop. Feel free to get started on the mobile
+          designs.
+        </h4>
+        <h4>As for the header, let me worry about this one it's funky.</h4>
+        <h4>
+          No need to write JS into anything yet lets just do the HTML/CSS for
+          starters.
+        </h4>
+        <h4>
+          Please write all things with the body and main div, there is an
+          example in the code!
+        </h4>
+        <h4></h4>
       </div>
-      <div class="hero-image">
-          <!-- Start Here-->
-          <div class="hero-image-text">
-            <div class="hero-image-text-content">
-              <h2>Natural<br>Solutions</h2>
-              <p>Find out which <b>natural plants</b><br>will be most beneficial to you!</p>
-              <button>Take the Quiz</button>
-              <p>Browse all products</p>
-            </div>
+      <div class="stackable-content hero-image">
+        <!-- Start Here-->
+        <div class="text-container">
+          <div class="text-content">
+            <h2>Natural<br />Solutions</h2>
+            <p>
+              Find out which <b>natural plants</b><br />will be most beneficial
+              to you!
+            </p>
+            <button>Take the Quiz</button>
+            <p><u>Browse all products</u></p>
           </div>
-          <div class="hero-image-png">
-            <img src="images/Fum:Packets.png" alt="fum-packets-main-image">
-          </div>
+        </div>
+        <div class="image-container">
+          <img src="images/Fum:Packets.png" alt="fum-packets-main-image" />
+        </div>
       </div>
-  </div>
-  
-</body>
-<script src="main.js"></script>
+      <div class="stackable-content HollowWood-image">
+        <!-- Start Here-->
+        <div class="text-container desktop">
+          <div class="text-content">
+            <h2>What is<br />Füm</h2>
+            <p>
+              A natural inhaler that allows your body to recieve the amazing
+              benefits from sone of the world's best <b>super plants.</b><br />
+            </p>
+            <button>How Füm™ Works</button>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="images/Hollow-view.png" alt="fum-packets-main-image" />
+        </div>
+        <div class="button-container">
+          <button class="mobile">How Füm™ Works</button>
+        </div>
+      </div>
+      <div class="stackable-content conquer-cores">
+        <!-- Start Here-->
+        <div class="text-container">
+          <div class="text-content">
+            <h4>INTRODUCING</h4>
+            <h2>Conquer Cores</h2>
+            <p>
+              Smooth, rich, and earthy flavours, Conquer Cores are made with
+              plants known to help reduce cravings.
+            </p>
+            <button class="black">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
