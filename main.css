@@ -6,6 +6,9 @@ h2 {
 p {
   font-family: "Montserrat", sans-serif;
 }
+a {
+  font-size: 0.75rem;
+}
 /* Buttons */
 button {
   padding: 18px 40px;
@@ -51,7 +54,7 @@ button.black {
     display: none !important;
   }
   .main {
-    background-color: green;
+    background-color: white;
   }
   .hero-image .text-container {
     display: flex;
