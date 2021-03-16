@@ -1,3 +1,6 @@
+a {
+  display: block;
+}
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
 /* Fonts */
 h2 {
