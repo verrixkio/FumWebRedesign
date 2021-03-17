@@ -35,8 +35,32 @@ button.black {
   display: flex;
   color: white;
 }
-
 /* End of Conquer Cores Section */
+
+/* Habit Options Section */
+.habit-options .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.habit-options .image-container {
+  color: white;
+  border-radius: 30px;
+  margin: 55px 25px 10px 25px;
+}
+.habit-options .image-container.addiction {
+  background-color: #b0bdc6;
+}
+.habit-options .image-container img {
+  width: 15%;
+  padding: 100px 0px 0px 44px;
+}
+.habit-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* End of Habit Options Section */
 
 /* Desktop Only Rules */
 
@@ -100,4 +124,15 @@ button.black {
     padding: 375px 35px 50px 30px;
   }
   /* End of Conquer Cores Section */
+
+  /* Habit Options Section */
+  .habit-options .text-content {
+    padding: 35px 75px;
+  }
+  .scroll-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  /* End of Habit Options Section */
 }
