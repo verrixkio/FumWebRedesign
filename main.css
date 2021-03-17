@@ -62,6 +62,30 @@ button.black {
 }
 /* End of Habit Options Section */
 
+/* Best Sellers Section */
+.best-sellers .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.best-sellers .button-container {
+  display: flex;
+  justify-content: center;
+}
+/* End of Best Sellers Section */
+
+/* Reviews Section */
+.reviews .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.reviews .button-container {
+  display: flex;
+  justify-content: center;
+}
+/* End of Reviews Section */
+
 /* Desktop Only Rules */
 
 @media screen and (min-width: 600px) {
@@ -135,4 +159,15 @@ button.black {
     justify-content: space-evenly;
   }
   /* End of Habit Options Section */
+
+  /* Best Sellers Section */
+
+  /* End of Best Sellers Section */
+
+  /* Reviews Section */
+  .image-container.reviews img {
+    padding: 13%;
+    width: 75%;
+  }
+  /* End of Reviews Section */
 }
