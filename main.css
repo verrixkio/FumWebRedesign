@@ -11,6 +11,7 @@ p {
 }
 a {
   font-size: 0.75rem;
+  padding: 10px;
 }
 /* Buttons */
 button {
@@ -67,16 +68,36 @@ button.black {
   .image-container img {
     width: 100%;
   }
+  .image-container.offset-big img {
+    position: relative;
+    left: -45px;
+    width: 136%;
+  }
+
   /* End Hero Image Section */
 
   /* HollowWood Section */
   .HollowWood-image .button-container {
     display: flex;
     justify-content: center;
+    padding: 30px;
   }
+  .HollowWood-image .button-container button {
+    padding: 16px 46px;
+  }
+  .image-container.HollowWood-image {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container.HollowWood-image img {
+    width: 75%;
+  }
+
   /* End of HollowWood Section */
 
   /* Conquer Cores Section */
-
+  .conquer-cores .text-container {
+    padding: 375px 35px 50px 30px;
+  }
   /* End of Conquer Cores Section */
 }
