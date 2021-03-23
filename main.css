@@ -118,6 +118,27 @@ button.black {
 }
 /* End of Email PDF Section */
 
+/* Start of Purpose Section */
+.purpose-section .text-container {
+  text-align: center;
+}
+.purpose-section .paragraph-section{
+  text-align: initial;
+  margin: 30px 70px 60px 70px;
+}
+.purpose-section .image-container {
+  background-color: lightgray;
+  text-align: center;
+}
+.purpose-section .image-container img {
+  width: 50%;
+}
+.purpose-section .tab-selection {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End of Purpose Section */
+
 /* Desktop Only Rules */
 
 @media screen and (min-width: 600px) {
@@ -202,4 +223,13 @@ button.black {
     width: 75%;
   }
   /* End of Reviews Section */
+
+  /* Start of Purpose Section */
+.purpose-section .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+}
+/* End of Purpose Section */
 }
