@@ -4,6 +4,7 @@ a {
 textarea {
   display: block;
 }
+div {display: block;}
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
 /* Fonts */
 h2 {
@@ -145,14 +146,17 @@ button.black {
 .purpose-section .tab-selection .second-tab{
   background-color: pink;
   padding: 25px;
+  padding-left: 42px;
+  padding-right: 42px;
   
   border-radius: 0px 0px 0px 10px;
 }
 .purpose-section .tab-selection .third-tab{
   background-color: green;
-  padding: 40px 0px 0px;
-  
   padding: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  
   
   border-radius: 0px 10px 0px 0px;
 }
@@ -179,7 +183,32 @@ button.black {
   .main {
     background-color: red;
   }
+  .stackable-content.hero-image {
+    display: flex;
+  } 
+  .hero-image .text-container {
+    margin: 8% 0% 0% 10%;
+  }
+  .hero-image .text-content p {
+    font-size: small
+  }
+  .button-link {
+    display: flex;
+    align-items: center;
+  }
+  .image-container.offset-big img {
+    width: 100%;
+  }
   /*End  Hero Image Section */
+
+  /* Conquer Cores Section */
+  .stackable-content.conquer-cores {
+    background-position: 0% 50%;
+  }
+  .conquer-cores .text-container {
+    padding: 375px 35px 50px 30px;
+  }
+  /* End of Conquer Cores Section */
 }
 
 /* Moble Only Rules */
@@ -201,7 +230,7 @@ button.black {
   }
   .image-container.offset-big img {
     position: relative;
-    left: -45px;
+    left: -60px;
     width: 136%;
   }
 
