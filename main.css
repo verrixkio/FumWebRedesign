@@ -10,16 +10,21 @@ div {display: block;}
 h2 {
   font-family: IvyJournal;
   font-size: 9.5vw;
+  margin: 5rem 0 1.5rem;
+  
 }
 p {
   font-family: "Montserrat", sans-serif;
 }
 a {
+  font-family: 'Montserrat';
   font-size: 0.75rem;
   padding: 10px;
+  color: #585858;
 }
 /* Buttons */
 button {
+  font-family: 'Montserrat';
   padding: 18px 40px;
   border-radius: 30px;
   background-color: #b8c1c1;
@@ -30,6 +35,15 @@ button.black {
   background-color: black;
   border: solid black;
 }
+
+/* Hero-Image Section */
+
+.button-link {
+  margin-top: 1.5rem;
+}
+/* End Hero-Image Section */
+
+
 /* Conquer Cores Section */
 .conquer-cores {
   background-image: url(images/ConquerCores.png);
