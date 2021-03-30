@@ -255,17 +255,18 @@ button.black {
   .HollowWood-image .button-container {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    
   }
   .HollowWood-image .button-container button {
-    padding: 16px 46px;
+    
   }
   .image-container.HollowWood-image {
     display: flex;
     justify-content: center;
+    margin: 6em 3em 3em;
   }
   .image-container.HollowWood-image img {
-    width: 75%;
+    width: 25rem
   }
 
   /* End of HollowWood Section */
