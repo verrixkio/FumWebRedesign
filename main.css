@@ -9,6 +9,7 @@ div {display: block;}
 /* Fonts */
 h2 {
   font-family: IvyJournal;
+  font-size: 9.5vw;
 }
 p {
   font-family: "Montserrat", sans-serif;
