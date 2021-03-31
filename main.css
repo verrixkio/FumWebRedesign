@@ -35,6 +35,16 @@ button.black {
   background-color: black;
   border: solid black;
 }
+/* Scroll arrows */
+.scroll-arrows h4 {
+  font-family: 'Montserrat';
+  color: lightgrey;
+  font-size: small;
+}
+.scroll-arrows .left-arrow {
+  transform: rotate(180deg);
+}
+/* End of Scroll arrows */
 
 /* Hero-Image Section */
 
@@ -100,6 +110,11 @@ button.black {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: 'Montserrat';
+}
+.image-container .habit-text-container .habit-arrow img {
+  padding: 0px;
+  width: 9%;
 }
 /* End of Habit Options Section */
 
