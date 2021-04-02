@@ -12,9 +12,10 @@ div {
 h2 {
   font-family: IvyJournal;
   font-size: 9.5vw;
-  margin: 5rem 0 1.5rem;
+  margin: 8rem 0 0rem;
 }
 p {
+  margin: 0px;
   font-family: "Montserrat", sans-serif;
 }
 a {
@@ -36,6 +37,9 @@ button.black {
   background-color: black;
   border: solid black;
 }
+.best-sellers button {
+  padding: 18px 6rem;
+}
 /* Scroll arrows */
 .scroll-arrows {
   margin: 35px 0px 70px 0px;
@@ -49,6 +53,9 @@ button.black {
 }
 .scroll-arrows .left-arrow {
   transform: rotate(180deg);
+}
+.best-sellers .scroll-arrows {
+  margin-top: 5px;
 }
 /* End of Scroll arrows */
 
@@ -76,7 +83,8 @@ button.black {
   font-size: medium;
 }
 .conquer-cores p {
-  font-size: smaller;
+  font-size: 0.75rem;
+  padding-right: 25%;
   margin-bottom: 25px;
 }
 .conquer-cores .style-block {
