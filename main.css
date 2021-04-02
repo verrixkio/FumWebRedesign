@@ -4,27 +4,28 @@ a {
 input {
   display: block;
 }
-div {display: block;}
+div {
+  display: block;
+}
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
 /* Fonts */
 h2 {
   font-family: IvyJournal;
   font-size: 9.5vw;
   margin: 5rem 0 1.5rem;
-  
 }
 p {
   font-family: "Montserrat", sans-serif;
 }
 a {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 0.75rem;
   padding: 10px;
   color: #585858;
 }
 /* Buttons */
 button {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding: 18px 40px;
   border-radius: 30px;
   background-color: #b8c1c1;
@@ -41,10 +42,10 @@ button.black {
 }
 
 .scroll-arrows h4 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: lightgrey;
   font-size: small;
-  margin: 1.33em
+  margin: 1.33em;
 }
 .scroll-arrows .left-arrow {
   transform: rotate(180deg);
@@ -58,21 +59,20 @@ button.black {
 }
 /* End Hero-Image Section */
 
-
 /* Conquer Cores Section */
 .conquer-cores {
   background-image: url(images/ConquerCores.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.conquer-cores h2 { 
+.conquer-cores h2 {
   font-size: 7.5vw;
   margin: -1rem 0 1rem;
   position: relative;
   left: 10px;
 }
 .conquer-cores h4 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: medium;
 }
 .conquer-cores p {
@@ -80,12 +80,14 @@ button.black {
   margin-bottom: 25px;
 }
 .conquer-cores .style-block {
-  background-color: #B0BDC6;
-    padding: 5px 0px 5px 28px;
-    margin-right: 60%;
-    border-radius: 3px;
-    font-size: 12px;
-    font-family: 'Montserrat';
+  background-color: #b0bdc6;
+  padding: 5px 0px 5px 28px;
+  margin-right: 10.6em;
+  max-width: 87px;
+  min-width: 87px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: "Montserrat";
 }
 .conquer-cores .text-container {
   display: flex;
@@ -102,8 +104,20 @@ button.black {
 .habit-options .image-container {
   color: white;
   border-radius: 30px;
-  margin: 30px 2rem 2rem;
+  margin: 90px 2rem 2rem;
   max-width: 270px;
+}
+.habit-options .popular-token {
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+  font-family: "Montserrat";
+  font-size: small;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 3px;
+  position: relative;
+  top: -7px;
 }
 .habit-options .image-container.addiction {
   background-color: #b0bdc6;
@@ -111,16 +125,16 @@ button.black {
 .habit-options .image-container .habit-text-container .habit-arrow {
   margin: 0px;
   width: 9%;
-} 
+}
 .habit-options .image-container img {
   width: 3rem;
-  margin: 30% 0px 0px 11%;
+  margin: 25% 0px 0px 11%;
 }
 .habit-text-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin: 0% 11%;
 }
 .habit-options .habit-text-container h4 {
@@ -192,7 +206,7 @@ button.black {
 .purpose-section .text-container {
   text-align: center;
 }
-.purpose-section .paragraph-section{
+.purpose-section .paragraph-section {
   text-align: initial;
   margin: 30px 70px 60px 70px;
 }
@@ -209,24 +223,23 @@ button.black {
 .purpose-section .tab-selection .first-tab {
   background-color: lightgray;
   padding: 25px;
-  
+
   border-radius: 10px 0px 0px 0px;
 }
-.purpose-section .tab-selection .second-tab{
+.purpose-section .tab-selection .second-tab {
   background-color: pink;
   padding: 25px;
   padding-left: 42px;
   padding-right: 42px;
-  
+
   border-radius: 0px 0px 0px 10px;
 }
-.purpose-section .tab-selection .third-tab{
+.purpose-section .tab-selection .third-tab {
   background-color: green;
   padding: 25px;
   padding-left: 35px;
   padding-right: 35px;
-  
-  
+
   border-radius: 0px 10px 0px 0px;
 }
 
@@ -237,8 +250,6 @@ button.black {
   margin-top: 60px;
   margin-left: 30px;
   border-radius: 10px 10px 0px 0px;
-  
-  
 }
 /* End of Purpose Section */
 
@@ -254,12 +265,12 @@ button.black {
   }
   .stackable-content.hero-image {
     display: flex;
-  } 
+  }
   .hero-image .text-container {
     margin: 8% 0% 0% 10%;
   }
   .hero-image .text-content p {
-    font-size: small
+    font-size: small;
   }
   .button-link {
     display: flex;
@@ -309,7 +320,6 @@ button.black {
   .HollowWood-image .button-container {
     display: flex;
     justify-content: center;
-    
   }
   .image-container.HollowWood-image {
     display: flex;
@@ -317,7 +327,7 @@ button.black {
     margin: 6em 3em 3em;
   }
   .image-container.HollowWood-image img {
-    width: 25rem
+    width: 25rem;
   }
 
   /* End of HollowWood Section */
@@ -330,7 +340,6 @@ button.black {
 
   /* Habit Options Section */
   .habit-options .text-content {
-    
   }
   .scroll-arrows {
     display: flex;
@@ -351,11 +360,9 @@ button.black {
   /* End of Reviews Section */
 
   /* Start of Purpose Section */
-.purpose-section .button-container {
-  display: flex;
-  justify-content: center;
-}
-
-}
-/* End of Purpose Section */
+  .purpose-section .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* End of Purpose Section */
 }
