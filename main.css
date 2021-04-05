@@ -38,8 +38,12 @@ button.black {
   border: solid black;
 }
 .best-sellers button {
-  padding: 18px 6rem;
+  padding: 1rem 6rem;
 }
+.email-pdf button {
+  padding: 1rem 4rem;
+}
+
 /* Scroll arrows */
 .scroll-arrows {
   margin: 35px 0px 70px 0px;
@@ -193,14 +197,24 @@ button.black {
   justify-content: center;
   text-align: center;
 }
-.email-pdf .email-submission {
+.email-pdf .email-submission input {
+  font-family: "Montserrat";
+  padding: 20px;
+  border-radius: 10px;
+  border: solid white;
+  margin-bottom: 2rem;
+  margin-top: 10%;
+  min-width: 100px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .email-pdf .text-container h2 {
-  font-size: 2.2rem;
-  margin: 0rem 0rem 2rem;
+  font-size: 7vw;
+  margin: 0rem 0rem 10%;
 }
 .email-pdf p {
-  margin-bottom: 2em;
+  font-size: 4vw;
+  padding: 0% 10%;
 }
 .email-pdf h4 {
   display: flex;
@@ -208,6 +222,7 @@ button.black {
   text-align: center;
   font-family: "Montserrat";
   color: grey;
+  font-size: 3vw;
 }
 .email-pdf .image-container {
   display: flex;
