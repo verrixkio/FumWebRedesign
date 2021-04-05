@@ -192,6 +192,18 @@ button.black {
 }
 /* End of Reviews Section */
 
+/* Help Section */
+.help-section .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.help-section .button-container {
+  display: flex;
+  justify-content: center;
+}
+/* End Help Section */
+
 /* Email PDF Section */
 .stackable-content.email-pdf {
   background-color: #b8c1c1;
