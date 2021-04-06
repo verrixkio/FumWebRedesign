@@ -15,6 +15,7 @@ h2 {
   margin: 8rem 0 0rem;
 }
 p {
+  font-size: min(4vw, 17px);
   margin: 0px;
   font-family: "Montserrat", sans-serif;
 }
@@ -202,6 +203,28 @@ button.black {
   display: flex;
   justify-content: center;
 }
+.help-section .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 90px 5% 2rem;
+  font-family: "Montserrat";
+  font-size: 4vw;
+}
+.help-section .circle-selection {
+  width: 33%;
+  text-align: center;
+}
+.help-section .image-container .circle-selection img {
+  padding: 10%;
+  border: 1.7px solid black;
+  border-radius: 50%;
+  height: 37%;
+  width: 50%;
+}
+.circle-selection .addiction {
+}
+
 /* End Help Section */
 
 /* Email PDF Section */
@@ -264,14 +287,13 @@ button.black {
   margin-bottom: 15px;
   font-size: min(4vw, 17px);
 }
-.purpose-section .image-container {
-  padding-bottom: 40px;
-  margin: 90px 5%;
-}
+
 .purpose-section .image-container {
   background-color: lightgray;
   text-align: center;
   border-radius: 10px 10px 10px 10px;
+  padding-bottom: 40px;
+  margin: 75px 5% 0px;
 }
 
 .purpose-section .tab-selection .first-tab {
