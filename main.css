@@ -11,8 +11,6 @@ div {
 /* Fonts */
 h2 {
   font-family: IvyJournal;
-  font-size: 9.5vw;
-  margin: 8rem 0 0rem;
 }
 p {
   font-size: min(4vw, 17px);
@@ -335,13 +333,15 @@ button.black {
 /* Desktop Only Rules */
 
 @media screen and (min-width: 600px) {
-  /* Hero Image Section */
   .mobile {
     display: none !important;
   }
   .main {
     background-color: red;
   }
+
+  /* Hero Image Section */
+
   .stackable-content.hero-image {
     display: flex;
   }
@@ -372,13 +372,19 @@ button.black {
 
 /* Moble Only Rules */
 @media screen and (max-width: 600px) {
-  /* Hero Image Section */
+  h2 {
+    font-family: IvyJournal;
+    font-size: 9.5vw;
+    margin: 8rem 0 0rem;
+  }
+
   .desktop {
     display: none !important;
   }
   .main {
     background-color: white;
   }
+  /* Hero Image Section */
   .hero-image .text-container {
     display: flex;
     justify-content: center;
