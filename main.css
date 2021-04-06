@@ -233,7 +233,7 @@ button.black {
   background-color: #b8c1c1;
   border-radius: 15px;
   padding: 2rem 2rem 3rem;
-  margin: 5rem 1rem;
+  margin: 5rem 5%;
 }
 .email-pdf .text-container {
   display: flex;
@@ -368,6 +368,12 @@ button.black {
     padding: 375px 35px 50px 30px;
   }
   /* End of Conquer Cores Section */
+
+  /* Email PDF Section */
+  .stackable-content.email-pdf {
+    margin: 5rem 20%;
+  }
+  /* End Email PDF Section */
 }
 
 /* Moble Only Rules */
