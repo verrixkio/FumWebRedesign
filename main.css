@@ -191,6 +191,9 @@ button.black {
   display: flex;
   justify-content: center;
 }
+.stackable-content .reviews {
+  margin-top: 8rem;
+}
 /* End of Reviews Section */
 
 /* Help Section */
@@ -429,6 +432,7 @@ button.black {
   /* End of Best Sellers Section */
 
   /* Reviews Section */
+
   .image-container.reviews img {
     padding: 13%;
     width: 75%;
