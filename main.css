@@ -122,7 +122,7 @@ button.black {
 .habit-options .image-container {
   color: white;
   border-radius: 30px;
-  margin: 90px 2rem 2rem;
+  margin: 90px 2rem 2rem 2rem;
   max-width: 270px;
 }
 .habit-options .popular-token {
@@ -140,6 +140,45 @@ button.black {
 .habit-options .image-container.addiction {
   background-color: #b0bdc6;
 }
+.habit-options .image-container.focus {
+  background-color: #b5b5b5;
+}
+.habit-options .image-container.relaxation {
+  background-color: #8E9A9A;
+}
+.habit-options .image-container.emotional{
+  background-color: #8E959A;
+}
+.habit-options .image-container.physical {
+  background-color: #BFCECE;
+}
+.habit-options .image-container.respiratory {
+  background-color: #9FADAD;
+}
+
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 75%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
 .habit-options .image-container .habit-text-container .habit-arrow {
   margin: 0px;
   width: 9%;
