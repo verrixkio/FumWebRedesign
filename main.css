@@ -30,7 +30,7 @@ a {
 /* Buttons */
 button {
   font-family: "Montserrat";
-  padding: 18px 40px;
+  padding: 1rem 2rem;
   border-radius: 30px;
   background-color: #b8c1c1;
   border: solid #b8c1c1;
@@ -255,8 +255,8 @@ button.black {
   text-align: center;
 }
 .help-section .image-container .circle-selection .circle-test {
-border: 1.7px solid black;
-border-radius: 50%;
+  border: 1.7px solid black;
+  border-radius: 50%;
 }
 
 .help-section .image-container .circle-selection img {
@@ -380,7 +380,10 @@ border-radius: 50%;
     display: none !important;
   }
   .main {
-    background-color: red;
+    background-image: url(./images/wave.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
 
   /* Hero Image Section */
@@ -390,10 +393,11 @@ border-radius: 50%;
     margin: 3rem 5%;
   }
   .hero-image .text-container {
-    margin: 13% 0% 0% 10%;
+    margin: 13% 0% 0% 5%;
+    width: 35%;
   }
   .hero-image h2 {
-    font-size: min(3vw, 70px);
+    font-size: min(4vw, 70px);
     margin: 0;
     margin-bottom: 10px;
   }
@@ -403,12 +407,19 @@ border-radius: 50%;
   a {
     padding: 0px 0px 0px 10%;
   }
-  .button-link {
-    display: flex;
-    align-items: center;
+  .button-link .button-float {
+    float: left;
+    padding-right: 7%;
+    padding-bottom: 5%;
+  }
+  .button-link .link-float {
+    padding-top: 5%;
+  }
+  .image-container.image-container.offset-big {
+    width: 50%;
   }
   .image-container.offset-big img {
-    width: 110%;
+    width: 130%;
   }
   /*End  Hero Image Section */
 
