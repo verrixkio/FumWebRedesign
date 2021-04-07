@@ -145,28 +145,27 @@ button.black {
   background-color: #b5b5b5;
 }
 .habit-options .image-container.relaxation {
-  background-color: #8E9A9A;
+  background-color: #8e9a9a;
 }
-.habit-options .image-container.emotional{
-  background-color: #8E959A;
+.habit-options .image-container.emotional {
+  background-color: #8e959a;
 }
 .habit-options .image-container.physical {
-  background-color: #BFCECE;
+  background-color: #bfcece;
 }
 .habit-options .image-container.respiratory {
-  background-color: #9FADAD;
+  background-color: #9fadad;
 }
 
-
 .carousel {
-  background: #EEE;
+  background: #eee;
 }
 
 .carousel-cell {
   width: 75%;
   height: 200px;
   margin-right: 10px;
-  background: #8C8;
+  background: #8c8;
   border-radius: 5px;
 }
 
@@ -178,7 +177,6 @@ button.black {
   font-size: 80px;
   color: white;
 }
-
 
 .habit-options .image-container .habit-text-container .habit-arrow {
   margin: 0px;
@@ -388,19 +386,28 @@ button.black {
 
   .stackable-content.hero-image {
     display: flex;
+    margin: 3rem 5%;
   }
   .hero-image .text-container {
-    margin: 8% 0% 0% 10%;
+    margin: 13% 0% 0% 10%;
+  }
+  .hero-image h2 {
+    font-size: min(3vw, 70px);
+    margin: 0;
+    margin-bottom: 10px;
   }
   .hero-image .text-content p {
-    font-size: small;
+    font-size: min(2vw, 13px);
+  }
+  a {
+    padding: 0px 0px 0px 10%;
   }
   .button-link {
     display: flex;
     align-items: center;
   }
   .image-container.offset-big img {
-    width: 100%;
+    width: 110%;
   }
   /*End  Hero Image Section */
 
@@ -508,7 +515,6 @@ button.black {
     border-radius: 10px;
     width: 85%;
     height: 40vw;
-
   }
   /* End of Purpose Section */
 }
