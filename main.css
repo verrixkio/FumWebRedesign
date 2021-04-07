@@ -504,5 +504,11 @@ button.black {
   .purpose-section .image-container img {
     width: 85%;
   }
+  .dynamic-container iframe {
+    border-radius: 10px;
+    width: 85%;
+    height: 40vw;
+
+  }
   /* End of Purpose Section */
 }
