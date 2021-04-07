@@ -19,6 +19,7 @@ p {
 }
 .bold-text {
   -webkit-text-stroke: thin;
+  font-weight: bold;
 }
 a {
   font-family: "Montserrat";
@@ -334,6 +335,10 @@ button.black {
   border-radius: 10px 10px 10px 10px;
   padding-bottom: 40px;
   margin: 75px 5% 0px;
+}
+
+.tab-selection {
+  cursor: pointer;
 }
 
 .purpose-section .tab-selection .first-tab {
