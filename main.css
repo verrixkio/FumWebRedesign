@@ -256,12 +256,15 @@ button.black {
   width: 33%;
   text-align: center;
 }
+.help-section .image-container .circle-selection .circle-test {
+border: 1.7px solid black;
+border-radius: 50%;
+}
+
 .help-section .image-container .circle-selection img {
-  padding: 10%;
-  border: 1.7px solid black;
-  border-radius: 50%;
   height: 37%;
   width: 50%;
+  padding: 25%;
 }
 .circle-selection .addiction {
 }
