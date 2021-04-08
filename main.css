@@ -293,7 +293,7 @@ button.black {
   padding: 20px;
   border-radius: 10px;
   border: solid white;
-  margin-bottom: 2rem;
+  margin-bottom: 10%;
   margin-top: 10%;
   min-width: 100px;
   width: 100%;
@@ -559,7 +559,32 @@ button.black {
 
   /* Email PDF Section */
   .stackable-content.email-pdf {
-    margin: 5rem 20%;
+    padding: 2rem 20% 6rem;
+    margin: 5rem 10%;
+    background-image: url("./images/grey-rectangle.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 30%;
+    /* background-position-y: 110%; */
+    background-size: 50%;
+}
+  }
+  .email-pdf .text-container h2 {
+    font-size: 4vw;
+    margin: -1rem 0rem 3%;
+  }
+  .email-pdf .text-container p {
+    font-size: min(2vw, 15px);
+    padding: 0% 15%;
+  }
+  .email-pdf h4 {
+    font-size: 1vw;
+  }
+  .email-pdf .image-container img {
+    width: 35%;
+  }
+  .email-pdf .email-submission {
+    padding: 0% 10%;
   }
   /* End Email PDF Section */
 }
