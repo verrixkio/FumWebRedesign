@@ -223,6 +223,14 @@ button.black {
 /* End of Best Sellers Section */
 
 /* Reviews Section */
+.reviews .image-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.image-container.reviews img {
+  width: 75%;
+}
 .reviews .text-container {
   display: flex;
   justify-content: center;
@@ -232,7 +240,7 @@ button.black {
   display: flex;
   justify-content: center;
 }
-.stackable-content .reviews {
+.stackable-content.reviews {
   margin-top: 8rem;
 }
 /* End of Reviews Section */
@@ -494,10 +502,25 @@ button.black {
   .conquer-cores h2 {
     font-size: 4vw;
   }
+  .conquer-cores p {
+    padding-right: 40%;
+  }
   .conquer-cores .text-container {
     padding: 375px 0px 5% 10%;
   }
   /* End of Conquer Cores Section */
+
+  /* Best Sellers Section */
+  .stackable-content.best-sellers {
+    margin-top: 8rem;
+  }
+  /* End of Best Sellers Section */
+
+  /* Reviews Section */
+  .image-container.reviews img {
+    width: 25%;
+  }
+  /* End of Reviews Section */
 
   /* Email PDF Section */
   .stackable-content.email-pdf {
@@ -583,10 +606,6 @@ button.black {
 
   /* Reviews Section */
 
-  .image-container.reviews img {
-    padding: 13%;
-    width: 75%;
-  }
   /* End of Reviews Section */
 
   /* Start of Purpose Section */
