@@ -45,6 +45,9 @@ button.black {
   background-color: black;
   border: solid black;
 }
+.conquer-cores button {
+  padding: 1rem 3rem;
+}
 .best-sellers button {
   padding: 1rem 6rem;
 }
@@ -83,11 +86,7 @@ button.black {
 /* End Hero-Image Section */
 
 /* Conquer Cores Section */
-.conquer-cores {
-  background-image: url(images/ConquerCores.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .conquer-cores h2 {
   font-size: 7.5vw;
   margin: -1rem 0 1rem;
@@ -97,6 +96,7 @@ button.black {
 .conquer-cores h4 {
   font-family: "Montserrat";
   font-size: medium;
+  font-weight: 200;
 }
 .conquer-cores p {
   font-size: min(4vw, 15px);
@@ -328,10 +328,6 @@ button.black {
   text-align: initial;
   margin: 30px 10% 60px 10%;
 }
-.purpose-section p {
-  margin-bottom: 15px;
-  font-size: min(4vw, 17px);
-}
 
 .purpose-section .image-container {
   background-color: lightgray;
@@ -390,6 +386,14 @@ button.black {
     background-repeat: no-repeat;
     background-position-x: right;
   }
+  h2 {
+    font-size: min(4vw, 70px);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: min(2vw, 13px);
+  }
 
   /* Hero Image Section */
 
@@ -439,6 +443,7 @@ button.black {
     margin: 2rem 5%;
     background-position-y: bottom;
     background-size: max(42%, 200px);
+    margin-top: 12rem;
   }
   .HollowWood-image .natural-leaf-image {
     font-family: "Montserrat";
@@ -471,12 +476,26 @@ button.black {
   }
 
   /* End of HollowWood Section */
+
+  /* Habit Options Section */
+  .stackable-content.habit-options {
+    margin-top: 12rem;
+  }
+  /* End Habit Options Section */
+
   /* Conquer Cores Section */
   .stackable-content.conquer-cores {
-    background-position: 0% 50%;
+    margin-top: 12rem;
+    background-image: url("images/conquerCoresDesk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
+  .conquer-cores h2 {
+    font-size: 4vw;
   }
   .conquer-cores .text-container {
-    padding: 375px 35px 50px 30px;
+    padding: 375px 0px 5% 10%;
   }
   /* End of Conquer Cores Section */
 
@@ -515,7 +534,6 @@ button.black {
     left: -60px;
     width: 136%;
   }
-
   /* End Hero Image Section */
 
   /* HollowWood Section */
@@ -531,10 +549,19 @@ button.black {
   .image-container.HollowWood-image img {
     width: 25rem;
   }
-
   /* End of HollowWood Section */
 
   /* Conquer Cores Section */
+  .conquer-cores {
+    background-image: url(images/ConquerCores.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
+  .conquer-cores h2 {
+    font-size: 7.5vw;
+  }
+
   .conquer-cores .text-container {
     padding: 375px 35px 50px 30px;
   }
@@ -575,6 +602,10 @@ button.black {
     border-radius: 10px;
     width: 85%;
     height: 40vw;
+  }
+  .purpose-section p {
+    margin-bottom: 15px;
+    font-size: min(4vw, 17px);
   }
   /* End of Purpose Section */
 }
