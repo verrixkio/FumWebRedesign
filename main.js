@@ -9,6 +9,7 @@ $(document).ready(function() {
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
+    wrapAround: true,
   });
 
   var obj = {"video": {
@@ -119,7 +120,6 @@ $(document).ready(function() {
     if (form.elements[0].value == false){
       // Make this fancy styling
       alert("Please make a selection")
-      $(".next-black").css("border-color", "red")
     }
     else {
       $("#svg_form_time rect").css("fill", active_color);
@@ -166,14 +166,11 @@ $(document).ready(function() {
   let form = document.getElementById('signup');
   let name = form.elements[0];
 
-  // $(".next-black").prop('disabled', true);
-
   $(".multi-button").click(function() {
     $(".multi-button").css("filter", "opacity(1)")
     form.elements[0].value = $(this).parent().attr("id")
     
     $(this).css("filter", "opacity(0.5)");
-    // $(".next-black").prop('disabled', false);;
   })
   
   $("#next").click(function () {
@@ -183,6 +180,8 @@ $(document).ready(function() {
       console.log(form.elements[0].value, "current selected value")
       console.log(child, "current step of form")
       console.log(form.elements[0].value + " is the carried over value")
+
+      $(".dynamic-title-p").text(form.elements[0].value)
     }
   })
   //Setup Multi Step Form

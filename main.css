@@ -35,6 +35,10 @@ button {
   background-color: #b8c1c1;
   border: solid #b8c1c1;
   color: white;
+  cursor: pointer;
+}
+.disabled {
+  display: none;
 }
 
 .multi-button circle {
@@ -44,12 +48,14 @@ button {
 button.black {
   background-color: black;
   border: solid black;
+  cursor: pointer;
 }
 .conquer-cores button {
   padding: 1rem 3rem;
 }
 .best-sellers button {
   padding: 1rem 6rem;
+  cursor: pointer;
 }
 .email-pdf button {
   padding: 1rem 4rem;
@@ -242,6 +248,12 @@ button.black {
 /* End of Reviews Section */
 
 /* Help Section */
+#svg_wrap {
+  margin: 40px;
+}
+.help-section .text-content p {
+  padding: 0 20%;
+}
 .help-section .text-container {
   display: flex;
   justify-content: center;
@@ -255,7 +267,7 @@ button.black {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 90px 5% 2rem;
+  margin: 35px 5% 60px;
   font-family: "Montserrat";
   font-size: 4vw;
 }
@@ -271,8 +283,109 @@ button.black {
 .help-section .image-container .circle-selection img {
   width: 65%;
 }
-.circle-selection .addiction {
+.multi-button{
+  cursor: pointer;
 }
+.dynamic-title-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.dynamic-title-block .option-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b0bdc6;
+  padding: 0;
+  width: 80%;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+.dynamic-title-block .option-block p {
+  padding: 6% 8%;
+  color: white;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.dynamic-title-block .option-block img {
+  width: 11%;
+  padding-right: 8%;
+}
+
+.cell-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.cell-flex.two {
+  margin-bottom: 80px;
+}
+
+.dynamic-options {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 13px;
+}
+.dynamic-options .option {
+  border: solid 1px #707070;
+  width: 48%;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+.multi-step-buttons {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat';
+  cursor: pointer;
+}
+
+.multi-step-buttons .prev {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #141414;
+  cursor: pointer;
+}
+
+.email-step {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-step p {
+  margin-left: 10%;
+  font-size: min(3vw, 15px);
+  padding-right: 5%;
+}
+
+.email-input-step .text-content{
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.email-input-step input{
+  font-family: "Montserrat";
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #707070;
+  margin-bottom: 1rem;
+  min-width: 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
 
 /* End Help Section */
 
@@ -594,7 +707,7 @@ button.black {
   h2 {
     font-family: IvyJournal;
     font-size: 9.5vw;
-    margin: 8rem 0 0rem;
+    margin: 7rem 0 0rem;
   }
 
   .desktop {

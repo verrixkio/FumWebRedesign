@@ -296,9 +296,10 @@
           </div>
         </div>
         <form action="/signup" method="post" id="signup">
+          <input type="name" class="disabled selection 1" placeholder="First Name"></input>
           <section>
             <div class="image-container help-section">
-              <div id="addiction" class="circle-selection addiction">
+              <div id="Addiction" class="circle-selection addiction">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
                   <g id="Group_1269" data-name="Group 1269" transform="translate(-51 -5059)">
                     <g id="Group_1268" data-name="Group 1268" transform="translate(51 5059)">
@@ -312,7 +313,7 @@
                 </svg>
                 <h5>Addiction</h5>
               </div>
-              <div id="focus" class="circle-selection focus">
+              <div id="Focus" class="circle-selection focus">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
                   <g id="Group_1270" data-name="Group 1270" transform="translate(-155 -5059)">
                     <g id="Ellipse_67" data-name="Ellipse 67" transform="translate(155 5059)" fill="#fff" stroke="#141414" stroke-width="1">
@@ -324,7 +325,7 @@
                 </svg>
                 <h5>Focus</h5>
               </div>
-              <div id="relaxation" class="circle-selection relaxation">
+              <div id="Relaxation" class="circle-selection relaxation">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
                   <g id="Group_1271" data-name="Group 1271" transform="translate(-259 -5059)">
                     <g id="Ellipse_68" data-name="Ellipse 68" transform="translate(259 5059)" fill="#fff" stroke="#141414" stroke-width="1">
@@ -336,7 +337,7 @@
                 </svg>                
                 <h5>Relaxation</h5>
               </div>
-              <div id="mood" class="circle-selection mood">
+              <div id="Mood" class="circle-selection mood">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65%" height="65%" viewBox="0 0 65 65">
                   <defs>
                     <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 242 192">
@@ -353,7 +354,7 @@
                 </svg>
                 <h5>Mood</h5>
               </div>
-              <div id="physical" class="circle-selection physical">
+              <div id="Physical" class="circle-selection physical">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
                   <g id="Group_1273" data-name="Group 1273" transform="translate(-155 -5199)">
                     <g id="Ellipse_70" data-name="Ellipse 70" transform="translate(155 5199)" fill="#fff" stroke="#141414" stroke-width="1">
@@ -365,7 +366,7 @@
                 </svg>              
                 <h5>Physical</h5>
               </div>
-              <div id="respiratory" class="circle-selection respiratory">
+              <div id="Respiratory" class="circle-selection respiratory">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
                   <g id="Group_1274" data-name="Group 1274" transform="translate(-259 -5199)">
                     <g id="Ellipse_69" data-name="Ellipse 69" transform="translate(259 5199)" fill="#fff" stroke="#141414" stroke-width="1">
@@ -394,15 +395,40 @@
           </section>
 
           <section>
-            <div class="style-block option-block">ADdiction</div>
+            <div class="dynamic-title-block">
+              <div class="style-block option-block">
+                <p class="dynamic-title-p">Addiction</p>
+                <img class="dynamic-img-render" src="images/broken-cig.png" alt="fum-packets-main-image" />
+              </div>
+            </div>
+            <div class="cell-flex">
+              <div class="dynamic-options">
+                <div class="option one">Test</div>
+                <div class="option two">Test 2</div>
+              </div>
+            </div>
+            <div class="cell-flex two">
+              <div class="dynamic-options">
+                <div class="option three">Test 3</div>
+                <div class="option four"> Test 4</div>
+              </div>
+            </div>
           </section>
 
           <section>
-            <p>Address</p>
-            <input type="text" placeholder="Street, nbr" />
-            <input type="text" placeholder="City" />
-            <input type="text" placeholder="Postcode" />
-            <input type="text" placeholder="Country" />
+              <!-- Start Here-->
+              <div class="email-step">
+                <img src="images/pdf thing.png" alt="fum-packets-main-image" />
+                <p>Check your email for a full report on which products & plants can naturally support you.</p>
+              </div>
+              <div class="text-container email-input-step">
+                <div class="text-content">
+                  <div class="email-submission">
+                    <input type="name" placeholder="First Name"></input>
+                    <input type="email" placeholder="Enter Your Email"></input>
+                  </div>
+                </div>
+              </div>
           </section>
 
           <section>
@@ -412,9 +438,15 @@
             <input type="text" placeholder="Mobile" />
           </section>
 
-          <div class="button" id="prev">&larr; Previous</div>
-          <button type="button" class="button next-black" id="next">Continue &rarr;</div>
-          <div class="button" id="submit">Agree and send application</div>
+          <div class="multi-step-buttons">
+            <button type="button" class="button black next-black" id="next">Continue &rarr;</div>
+          </div>
+          <div class="multi-step-buttons">
+            <div class="button prev" id="prev">&larr; Go Back</div>
+          </div>
+          <div class="multi-step-buttons">
+            <div class="button" id="submit">Agree and send application</div>
+          </div>
         </form>
 <!-- End MultiStep Form -->
 
