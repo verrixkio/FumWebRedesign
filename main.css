@@ -54,10 +54,6 @@ button.black {
 .email-pdf button {
   padding: 1rem 4rem;
 }
-.purpose-section button {
-  padding: 1rem 5rem;
-  margin: 0% 5%;
-}
 
 /* Scroll arrows */
 .scroll-arrows {
@@ -336,6 +332,10 @@ button.black {
   text-align: initial;
   margin: 30px 10% 60px 10%;
 }
+.purpose-section p {
+  margin-bottom: 15px;
+  font-size: min(4vw, 17px);
+}
 
 .purpose-section .image-container {
   background-color: lightgray;
@@ -522,6 +522,41 @@ button.black {
   }
   /* End of Reviews Section */
 
+  /* Purpose Section */
+  .stackable-content.purpose-section {
+    margin-top: 8rem;
+  }
+  .purpose-section .image-container {
+    margin: 75px 15% 0px;
+  }
+  .desktop-purpose-section {
+    display: flex;
+    margin: 5% 7%;
+  }
+  .purpose-section .tab-selection {
+    font-size: 1vw;
+  }
+  .purpose-section .tab-selection .first-tab {
+    padding: 4% 5%;
+  }
+  .purpose-section .tab-selection .second-tab {
+    padding: 4% 5%;
+  }
+  .purpose-section .tab-selection .third-tab {
+    padding: 4% 5%;
+  }
+  .purpose-section button {
+    margin: 0px;
+    padding: 1rem 3rem;
+  }
+  /* End of Purpose Section */
+
+  /* Help Section */
+  .stackable-content.help-section {
+    margin-top: 8rem;
+  }
+  /* End of Help Section */
+
   /* Email PDF Section */
   .stackable-content.email-pdf {
     margin: 5rem 20%;
@@ -622,9 +657,10 @@ button.black {
     width: 85%;
     height: 40vw;
   }
-  .purpose-section p {
-    margin-bottom: 15px;
-    font-size: min(4vw, 17px);
+  .purpose-section button {
+    margin: 0% 5%;
+    padding: 1rem 5rem;
   }
+
   /* End of Purpose Section */
 }
