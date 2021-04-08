@@ -423,6 +423,49 @@ button.black {
   }
   /*End  Hero Image Section */
 
+  /* HollowWood Section */
+  .stackable-content.HollowWood-image {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-image: url("./images/light-grey-circle.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 2rem 5%;
+    background-position-y: bottom;
+    background-size: max(42%, 200px);
+  }
+  .HollowWood-image .natural-leaf-image {
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1vw;
+    align-self: flex-end;
+    left: -5%;
+    position: relative;
+  }
+  .HollowWood-image .natural-leaf-image img {
+    padding-bottom: 1rem;
+    width: 75%;
+  }
+  .HollowWood-image p {
+    font-size: min(2vw, 13px);
+    margin-bottom: 2rem;
+    max-width: 18rem;
+  }
+  .image-container.HollowWood-image {
+    width: 50%;
+  }
+  .image-container.HollowWood-image img {
+    width: 95%;
+  }
+  .HollowWood-image .text-container {
+    width: 35%;
+  }
+  .HollowWood-image .button-link button {
+    font-size: min(2vw, 10px);
+  }
+
+  /* End of HollowWood Section */
   /* Conquer Cores Section */
   .stackable-content.conquer-cores {
     background-position: 0% 50%;
