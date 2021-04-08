@@ -60,28 +60,6 @@ $(document).ready(function() {
     $('.paragraph-section .tab-paragraph').html("We live in a world where it is easy to make destructive habits, but hard to make positive habits.<br><br>We are here to help people create positive habits through natural solutions to lead to better lives, in a better world.”")
   });
 
-  // Start of Multi-Step Form
-  let form = document.getElementById('signup');
-  let name = form.elements[0];
-  
-  $( "#submit" ).click(function() {
-    console.log(name.value)
-  })
-
-  $(".multi-button").click(function() {
-    $(".multi-button").css("filter", "opacity(1)")
-    form.elements[0].value = $(this).parent().attr("id")
-    console.log(form.elements[0].value)
-    $(this).css("filter", "opacity(0.5)");
-
-  })
-
-  //Setup Multi Step Form
-  //Make each img a clickable button.
-
-
-
-
   // SVG styling
   var base_color = "rgb(230,230,230)";
   var active_color = "rgb(164,181,181)";
@@ -137,26 +115,34 @@ $(document).ready(function() {
 
   
   $(".button").click(function () {
-    $("#svg_form_time rect").css("fill", active_color);
-    $("#svg_form_time circle").css("fill", active_color);
-    var id = $(this).attr("id");
-    if (id == "next") {
-      $("#prev").removeClass("disabled");
-      if (child >= length) {
-        $(this).addClass("disabled");
-        $('#submit').removeClass("disabled");
-      }
-      if (child <= length) {
-        child++;
-      }
-    } else if (id == "prev") {
-      $("#next").removeClass("disabled");
-      $('#submit').addClass("disabled");
-      if (child <= 2) {
-        $(this).addClass("disabled");
-      }
-      if (child > 1) {
-        child--;
+    console.log(typeof(form.elements[0].value))
+    if (form.elements[0].value == false){
+      // Make this fancy styling
+      alert("Please make a selection")
+      $(".next-black").css("border-color", "red")
+    }
+    else {
+      $("#svg_form_time rect").css("fill", active_color);
+      $("#svg_form_time circle").css("fill", active_color);
+      var id = $(this).attr("id");
+      if (id == "next") {
+        $("#prev").removeClass("disabled");
+        if (child >= length) {
+          $(this).addClass("disabled");
+          $('#submit').removeClass("disabled");
+        }
+        if (child <= length) {
+          child++;
+        }
+      } else if (id == "prev") {
+        $("#next").removeClass("disabled");
+        $('#submit').addClass("disabled");
+        if (child <= 2) {
+          $(this).addClass("disabled");
+        }
+        if (child > 1) {
+          child--;
+        }
       }
     }
     var circle_child = child + 1;
@@ -175,6 +161,33 @@ $(document).ready(function() {
     currentSection.nextAll('section').css('transform','translateX(100px)');
     $('section').not(currentSection).hide();
   });
+
+  // Start of Multi-Step Form
+  let form = document.getElementById('signup');
+  let name = form.elements[0];
+
+  // $(".next-black").prop('disabled', true);
+
+  $(".multi-button").click(function() {
+    $(".multi-button").css("filter", "opacity(1)")
+    form.elements[0].value = $(this).parent().attr("id")
+    
+    $(this).css("filter", "opacity(0.5)");
+    // $(".next-black").prop('disabled', false);;
+  })
+  
+  $("#next").click(function () {
+
+    if (child == 2) {
+      // Check to see if an option has beend selected
+      console.log(form.elements[0].value, "current selected value")
+      console.log(child, "current step of form")
+      console.log(form.elements[0].value + " is the carried over value")
+    }
+  })
+  //Setup Multi Step Form
+  //Make each img a clickable button.
+
 });
     
     
