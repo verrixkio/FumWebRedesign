@@ -36,6 +36,11 @@ button {
   border: solid #b8c1c1;
   color: white;
 }
+
+.multi-button circle {
+  fill: none !important;
+}
+
 button.black {
   background-color: black;
   border: solid black;
