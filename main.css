@@ -283,7 +283,7 @@ button.black {
 .help-section .image-container .circle-selection img {
   width: 65%;
 }
-.multi-button{
+.multi-button {
   cursor: pointer;
 }
 .dynamic-title-block {
@@ -314,7 +314,7 @@ button.black {
   padding-right: 8%;
 }
 
-.cell-flex{
+.cell-flex {
   display: flex;
   justify-content: center;
 }
@@ -344,7 +344,7 @@ button.black {
 .multi-step-buttons {
   display: flex;
   justify-content: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   cursor: pointer;
 }
 
@@ -368,13 +368,13 @@ button.black {
   padding-right: 5%;
 }
 
-.email-input-step .text-content{
+.email-input-step .text-content {
   width: 80%;
   margin-top: 15px;
   margin-bottom: 60px;
 }
 
-.email-input-step input{
+.email-input-step input {
   font-family: "Montserrat";
   padding: 20px;
   border-radius: 10px;
@@ -384,8 +384,6 @@ button.black {
   width: 100%;
   box-sizing: border-box;
 }
-
-
 
 /* End Help Section */
 
@@ -642,9 +640,26 @@ button.black {
   .purpose-section .image-container {
     margin: 75px 15% 0px;
   }
+  .image-section.purpose-section {
+    width: 50%;
+  }
+  .image-section.purpose-section img {
+    width: 100%;
+  }
+  .purpose-section .paragraph-section {
+    width: 50%;
+    margin: 0% 0% 0% 10%;
+  }
+  .purpose-section .paragraph-section .bold-text {
+    font-size: min(2vw, 16px);
+  }
+  .purpose-section .paragraph-section .tab-paragraph {
+    font-size: min(2vw, 14px);
+  }
   .desktop-purpose-section {
     display: flex;
-    margin: 5% 7%;
+    align-items: center;
+    padding: 3% 7%;
   }
   .purpose-section .tab-selection {
     font-size: 1vw;
@@ -658,9 +673,12 @@ button.black {
   .purpose-section .tab-selection .third-tab {
     padding: 4% 5%;
   }
-  .purpose-section button {
+  .purpose-section .button-container {
+    padding-top: 10%;
+  }
+  .purpose-section .button-container button {
     margin: 0px;
-    padding: 1rem 3rem;
+    padding: 1rem 13%;
   }
   /* End of Purpose Section */
 
@@ -703,7 +721,6 @@ button.black {
 
 /* Moble Only Rules */
 @media only screen and (max-width: 600px) {
-
   h2 {
     font-family: IvyJournal;
     font-size: 9.5vw;

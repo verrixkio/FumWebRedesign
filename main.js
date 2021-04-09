@@ -1,11 +1,10 @@
 // Jquery if you want it!
-$(document).ready(function() {
-
+$(document).ready(function () {
   // Flickity!
-  var elem = document.querySelector('.main-carousel');
-  var flkty = new Flickity( elem, {
+  var elem = document.querySelector(".main-carousel");
+  var flkty = new Flickity(elem, {
     // options
-    cellAlign: 'left',
+    cellAlign: "left",
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
@@ -20,7 +19,7 @@ $(document).ready(function() {
       optionOne: "Cigarettes",
       optionTwo: "Vaping",
       optionThree: "Food Cravings",
-      optionFour: "Other"
+      optionFour: "Other",
     },
     Focus: {
       name: "Focus",
@@ -29,7 +28,7 @@ $(document).ready(function() {
       optionOne: "TBD",
       optionTwo: "TBD",
       optionThree: "TBD",
-      optionFour: "TBD"
+      optionFour: "TBD",
     },
     Relaxation: {
       name: "Relaxation",
@@ -38,7 +37,7 @@ $(document).ready(function() {
       optionOne: "TBD",
       optionTwo: "TBD",
       optionThree: "TBD",
-      optionFour: "TBD"
+      optionFour: "TBD",
     },
     Mood: {
       name: "Mood",
@@ -47,7 +46,7 @@ $(document).ready(function() {
       optionOne: "TBD",
       optionTwo: "TBD",
       optionThree: "TBD",
-      optionFour: "TBD"
+      optionFour: "TBD",
     },
     Physical: {
       name: "Physical",
@@ -56,7 +55,7 @@ $(document).ready(function() {
       optionOne: "TBD",
       optionTwo: "TBD",
       optionThree: "TBD",
-      optionFour: "TBD"
+      optionFour: "TBD",
     },
     Respiratory: {
       name: "Respiratory",
@@ -65,57 +64,66 @@ $(document).ready(function() {
       optionOne: "TBD",
       optionTwo: "TBD",
       optionThree: "TBD",
-      optionFour: "TBD"
+      optionFour: "TBD",
     },
-  }
+  };
 
-  var obj = {"video": {
-    "value": '<iframe src="https://www.youtube.com/embed/N9rurWftUmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-    }}
+  var obj = {
+    video: {
+      value:
+        '<iframe src="https://www.youtube.com/embed/N9rurWftUmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+    },
+  };
 
-  $( ".first-tab" ).click(function() {
+  $(".first-tab").click(function () {
     // Video update
-    $(".dynamic-container").hide()
-    $(".dynamic-img").show();
+    $(".dynamic-container").hide();
+    $(".dynamic-img mobile").show();
     // CSS
-    $(".purpose-section .image-container").css("background-color", "#D1D1D1")
-    $(".first-tab").css("border-radius", "10px 0px 0px 0px")
-    $(".second-tab").css("border-radius", "0px 0px 0px 10px")
-    $(".third-tab").css("border-radius", "0px 10px 0px 0px")
+    $(".purpose-section .image-container").css("background-color", "#D1D1D1");
+    $(".first-tab").css("border-radius", "10px 0px 0px 0px");
+    $(".second-tab").css("border-radius", "0px 0px 0px 10px");
+    $(".third-tab").css("border-radius", "0px 10px 0px 0px");
     // Text
     $(".dynamic-img").attr("src", "images/M4kkids.png");
-    $('.paragraph-section .bold-text').text("M4K Orphanage - Füm™ Partnership")
-    $('.paragraph-section .tab-paragraph').html("Each purchase of a Füm provides 6 orphans with a healthy meal for the day, and we look to increase that.<br><br>Together we have a positive impact.")
+    $(".paragraph-section .bold-text").text("M4K Orphanage - Füm™ Partnership");
+    $(".paragraph-section .tab-paragraph").html(
+      "Each purchase of a Füm provides 6 orphans with a healthy meal for the day, and we look to increase that.<br><br>Together we have a positive impact."
+    );
   });
 
-  $( ".second-tab" ).click(function() {
+  $(".second-tab").click(function () {
     // Video Update
-    $(".dynamic-container").hide()
+    $(".dynamic-container").hide();
     $(".dynamic-img").show();
     // CSS
-    $(".purpose-section .image-container").css("background-color", "#B8C1C1")
-    $(".first-tab").css("border-radius", "10px 0px 10px 0px")
-    $(".second-tab").css("border-radius", "0px 0px 0px 0px")
-    $(".third-tab").css("border-radius", "0px 10px 0px 10px")
+    $(".purpose-section .image-container").css("background-color", "#B8C1C1");
+    $(".first-tab").css("border-radius", "10px 0px 10px 0px");
+    $(".second-tab").css("border-radius", "0px 0px 0px 0px");
+    $(".third-tab").css("border-radius", "0px 10px 0px 10px");
     // Text
     $(".dynamic-img").attr("src", "images/core4pic.png");
-    $('.paragraph-section .bold-text').text("Two sets of brothers, one idea…")
-    $('.paragraph-section .tab-paragraph').html("So in the spring of 2018, at the average age of 22, the 2 sets of brothers, quit their day jobs and decided they wanted to build a company dedicated to natural solutions to the world.<br><br>Soon friends began asking “Wow, what is that? Can I try it?”")
+    $(".paragraph-section .bold-text").text("Two sets of brothers, one idea…");
+    $(".paragraph-section .tab-paragraph").html(
+      "So in the spring of 2018, at the average age of 22, the 2 sets of brothers, quit their day jobs and decided they wanted to build a company dedicated to natural solutions to the world.<br><br>Soon friends began asking “Wow, what is that? Can I try it?”"
+    );
   });
 
-  $( ".third-tab" ).click(function() {
+  $(".third-tab").click(function () {
     // On click - hide image
     $(".dynamic-img").hide();
-    $(".dynamic-container").show()
-    $(".dynamic-container").html(obj.video.value)
+    $(".dynamic-container").show();
+    $(".dynamic-container").html(obj.video.value);
     // CSS
-    $(".purpose-section .image-container").css("background-color", "#9FA7A7")
-    $(".first-tab").css("border-radius", "10px 0px 0px 0px")
-    $(".second-tab").css("border-radius", "0px 0px 10px 0px")
-    $(".third-tab").css("border-radius", "0px 10px 0px 0px")
+    $(".purpose-section .image-container").css("background-color", "#9FA7A7");
+    $(".first-tab").css("border-radius", "10px 0px 0px 0px");
+    $(".second-tab").css("border-radius", "0px 0px 10px 0px");
+    $(".third-tab").css("border-radius", "0px 10px 0px 0px");
     // Text
-    $('.paragraph-section .bold-text').text("Create Positive Habits")
-    $('.paragraph-section .tab-paragraph').html("We live in a world where it is easy to make destructive habits, but hard to make positive habits.<br><br>We are here to help people create positive habits through natural solutions to lead to better lives, in a better world.”")
+    $(".paragraph-section .bold-text").text("Create Positive Habits");
+    $(".paragraph-section .tab-paragraph").html(
+      "We live in a world where it is easy to make destructive habits, but hard to make positive habits.<br><br>We are here to help people create positive habits through natural solutions to lead to better lives, in a better world.”"
+    );
   });
 
   // SVG styling
@@ -128,7 +136,9 @@ $(document).ready(function() {
   $("#submit").addClass("disabled");
 
   $("section").not("section:nth-of-type(1)").hide();
-  $("section").not("section:nth-of-type(1)").css('transform','translateX(100px)');
+  $("section")
+    .not("section:nth-of-type(1)")
+    .css("transform", "translateX(100px)");
 
   var svgWidth = length * 200 + 24;
   $("#svg_wrap").html(
@@ -153,7 +163,7 @@ $(document).ready(function() {
       cy: 12,
       r: 12,
       width: positionX,
-      height: 6
+      height: 6,
     });
     document.getElementById("svg_form_time").appendChild(circle);
   }
@@ -163,22 +173,20 @@ $(document).ready(function() {
     cy: 12,
     r: 12,
     width: positionX,
-    height: 6
+    height: 6,
   });
   document.getElementById("svg_form_time").appendChild(circle);
 
-  $('#svg_form_time rect').css('fill',base_color);
-  $('#svg_form_time circle').css('fill',base_color);
+  $("#svg_form_time rect").css("fill", base_color);
+  $("#svg_form_time circle").css("fill", base_color);
   $("circle:nth-of-type(1)").css("fill", active_color);
 
-  
   $(".button").click(function () {
-    console.log(typeof(form.elements[0].value))
-    if (form.elements[0].value == false){
+    console.log(typeof form.elements[0].value);
+    if (form.elements[0].value == false) {
       // Make this fancy styling
-      alert("Please make a selection")
-    }
-    else {
+      alert("Please make a selection");
+    } else {
       $("#svg_form_time rect").css("fill", active_color);
       $("#svg_form_time circle").css("fill", active_color);
       var id = $(this).attr("id");
@@ -186,14 +194,14 @@ $(document).ready(function() {
         $("#prev").removeClass("disabled");
         if (child >= length) {
           $(this).addClass("disabled");
-          $('#submit').removeClass("disabled");
+          $("#submit").removeClass("disabled");
         }
         if (child <= length) {
           child++;
         }
       } else if (id == "prev") {
         $("#next").removeClass("disabled");
-        $('#submit').addClass("disabled");
+        $("#submit").addClass("disabled");
         if (child <= 2) {
           $(this).addClass("disabled");
         }
@@ -213,64 +221,61 @@ $(document).ready(function() {
     );
     var currentSection = $("section:nth-of-type(" + child + ")");
     currentSection.fadeIn();
-    currentSection.css('transform','translateX(0)');
-  currentSection.prevAll('section').css('transform','translateX(-100px)');
-    currentSection.nextAll('section').css('transform','translateX(100px)');
-    $('section').not(currentSection).hide();
+    currentSection.css("transform", "translateX(0)");
+    currentSection.prevAll("section").css("transform", "translateX(-100px)");
+    currentSection.nextAll("section").css("transform", "translateX(100px)");
+    $("section").not(currentSection).hide();
   });
 
   // Start of Multi-Step Form
-  let form = document.getElementById('signup');
+  let form = document.getElementById("signup");
   let name = form.elements[0];
 
-  $(".multi-button").click(function() {
-    $(".multi-button").css("filter", "opacity(1)")
-    form.elements[0].value = $(this).parent().attr("id")
-    
-    $(this).css("filter", "opacity(0.5)");
-  })
-  
-  $("#next").click(function () {
+  $(".multi-button").click(function () {
+    $(".multi-button").css("filter", "opacity(1)");
+    form.elements[0].value = $(this).parent().attr("id");
 
+    $(this).css("filter", "opacity(0.5)");
+  });
+
+  $("#next").click(function () {
     if (child == 2) {
       // Check to see if an option has beend selected
-      console.log(form.elements[0].value, "current selected value")
-      let selectedOption = form.elements[0].value
-      console.log(selectedOption)
+      console.log(form.elements[0].value, "current selected value");
+      let selectedOption = form.elements[0].value;
+      console.log(selectedOption);
       for (const option in filterOptions) {
         if (selectedOption === option) {
-          let selectedObject = filterOptions[selectedOption]
-          console.log(selectedObject.optionOne)
-          $(".dynamic-title-p").text(selectedObject.name)
-          $(".dynamic-img-render").attr("src", selectedObject.img)
-          $(".dynamic-title-block .option-block").css("background-color", selectedObject.color)
-          $(".option.one p").text(selectedObject.optionOne)
-          $(".option.two p").text(selectedObject.optionTwo)
-          $(".option.three p").text(selectedObject.optionThree)
-          $(".option.four p").text(selectedObject.optionFour)
+          let selectedObject = filterOptions[selectedOption];
+          console.log(selectedObject.optionOne);
+          $(".dynamic-title-p").text(selectedObject.name);
+          $(".dynamic-img-render").attr("src", selectedObject.img);
+          $(".dynamic-title-block .option-block").css(
+            "background-color",
+            selectedObject.color
+          );
+          $(".option.one p").text(selectedObject.optionOne);
+          $(".option.two p").text(selectedObject.optionTwo);
+          $(".option.three p").text(selectedObject.optionThree);
+          $(".option.four p").text(selectedObject.optionFour);
           break;
         }
       }
     }
-  })
+  });
 
-// Function that render Step 2 of the multistep form.
-//Option 1
+  // Function that render Step 2 of the multistep form.
+  //Option 1
 
-// Addiction is selected as the first input.
-// When next is clicked, and the child is 2.
-// Take the selected term and set the object to that option.
-// That object will need to contain:
-// Background-color, icon, support options.
-// This option will then populate the content and we can just add things to the object for the future.
+  // Addiction is selected as the first input.
+  // When next is clicked, and the child is 2.
+  // Take the selected term and set the object to that option.
+  // That object will need to contain:
+  // Background-color, icon, support options.
+  // This option will then populate the content and we can just add things to the object for the future.
 
-
-// Function that maps each selection to it's appropriate values
-
+  // Function that maps each selection to it's appropriate values
 
   //Setup Multi Step Form
   //Make each img a clickable button.
-
 });
-    
-    
