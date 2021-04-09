@@ -184,6 +184,16 @@ $(document).ready(function() {
       $(".dynamic-title-p").text(form.elements[0].value)
     }
   })
+
+// Function that maps each selection to it's appropriate values
+// let filterOptions = {
+//   Addiction: {
+//     name: "Addiction",
+//     color: 
+//   }
+
+// }
+
   //Setup Multi Step Form
   //Make each img a clickable button.
 

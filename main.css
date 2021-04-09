@@ -497,7 +497,7 @@ button.black {
 
 /* Desktop Only Rules */
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .mobile {
     display: none !important;
   }
@@ -680,7 +680,6 @@ button.black {
     background-position-x: 30%;
     /* background-position-y: 110%; */
     background-size: 50%;
-}
   }
   .email-pdf .text-container h2 {
     font-size: 4vw;
@@ -703,7 +702,8 @@ button.black {
 }
 
 /* Moble Only Rules */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+
   h2 {
     font-family: IvyJournal;
     font-size: 9.5vw;
@@ -713,6 +713,7 @@ button.black {
   .desktop {
     display: none !important;
   }
+
   .main {
     background-color: white;
   }
