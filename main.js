@@ -182,8 +182,7 @@ $(document).ready(function () {
   $("circle:nth-of-type(1)").css("fill", active_color);
 
   $(".button").click(function () {
-    console.log(typeof form.elements[0].value);
-    if (form.elements[0].value == false) {
+    if (form.elements[0].value == false ){
       // Make this fancy styling
       alert("Please make a selection");
     } else {
@@ -236,33 +235,58 @@ $(document).ready(function () {
     form.elements[0].value = $(this).parent().attr("id");
 
     $(this).css("filter", "opacity(0.5)");
-  });
+  })
+  
+  $("#prev").click(function () {
+    if (child == 1) {
+
+    }
+  })
 
   $("#next").click(function () {
     if (child == 2) {
       // Check to see if an option has beend selected
-      console.log(form.elements[0].value, "current selected value");
-      let selectedOption = form.elements[0].value;
-      console.log(selectedOption);
+      let selectedOption = form.elements[0].value
+      $(".multi-step.text-container").html(`<p>Choose which area of ${selectedOption.toLowerCase()} you’d like support with.</p>`)
       for (const option in filterOptions) {
         if (selectedOption === option) {
-          let selectedObject = filterOptions[selectedOption];
-          console.log(selectedObject.optionOne);
-          $(".dynamic-title-p").text(selectedObject.name);
-          $(".dynamic-img-render").attr("src", selectedObject.img);
-          $(".dynamic-title-block .option-block").css(
-            "background-color",
-            selectedObject.color
-          );
-          $(".option.one p").text(selectedObject.optionOne);
-          $(".option.two p").text(selectedObject.optionTwo);
-          $(".option.three p").text(selectedObject.optionThree);
-          $(".option.four p").text(selectedObject.optionFour);
+          let selectedObject = filterOptions[selectedOption]
+          $(".dynamic-title-p").text(selectedObject.name)
+          $(".dynamic-img-render").attr("src", selectedObject.img)
+          $(".dynamic-title-block .option-block").css("background-color", selectedObject.color)
+          $(".option.one p").text(selectedObject.optionOne)
+          $(".option.two p").text(selectedObject.optionTwo)
+          $(".option.three p").text(selectedObject.optionThree)
+          $(".option.four p").text(selectedObject.optionFour)
           break;
         }
       }
     }
-  });
+
+    if (child == 4) {
+      $(".info-block").html(
+        form.elements[0].value + "<br>" +
+        form.elements[1].value + "<br>" +
+        form.elements[2].value + "<br>" +
+        form.elements[3].value )
+    }
+
+    $(".dynamic-options .option").click(function() {
+      $(".dynamic-options .option").css("filter", "opacity(1)")
+      form.elements[1].value = $(this).children().text()
+      $(this).css("filter", "opacity(0.5)");
+    })
+  })
+
+// Function that render Step 2 of the multistep form.
+//Option 1
+
+// Addiction is selected as the first input.
+// When next is clicked, and the child is 2.
+// Take the selected term and set the object to that option.
+// That object will need to contain:
+// Background-color, icon, support options.
+// This option will then populate the content and we can just add things to the object for the future.
 
   // Function that render Step 2 of the multistep form.
   //Option 1
@@ -278,4 +302,5 @@ $(document).ready(function () {
 
   //Setup Multi Step Form
   //Make each img a clickable button.
+
 });

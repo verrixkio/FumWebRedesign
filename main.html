@@ -291,14 +291,14 @@
             <h2 class="desktop">How Can We Help You?</h2>
             <h2 class="mobile">How Can<br />We Help You?</h2>
             <div id="svg_wrap"></div>
-            <p>
-              Select which option you could use the most support with.
-            </p>
           </div>
         </div>
         <form action="/signup" method="post" id="signup">
-          <input type="name" class="disabled selection 1" placeholder="First Name"></input>
+          <input type="name" class="disabled selection 1" placeholder="Selection"></input>
           <section>
+            <div class="multi-step text-container">
+              <p>Select which option you could use the most support with.</p>
+            </div>
             <div class="image-container help-section">
               <div id="Addiction" class="circle-selection addiction">
                 <svg class="multi-button" xmlns="http://www.w3.org/2000/svg" width="65%" height="65%" viewBox="0 0 65 65">
@@ -396,6 +396,10 @@
           </section>
 
           <section>
+            <div class="multi-step text-container">
+              <p>Select which option you could use the most support with.</p>
+            </div>
+            <input type="name" class="disabled selection 1" placeholder="Selection"></input>
             <div class="dynamic-title-block">
               <div class="style-block option-block">
                 <p class="dynamic-title-p">Addiction</p>
@@ -441,10 +445,16 @@
           </section>
 
           <section>
-            <p>Contact information</p>
-            <input type="text" placeholder="Email address" />
-            <input type="text" placeholder="Phone" />
-            <input type="text" placeholder="Mobile" />
+            <div class="dynamic-title-block">
+              <div class="style-block option-block">
+                <p class="end">An email will be sent with the information.</p>
+                <div class="info-block">
+                  <p>
+                  </p>
+                </div>
+              </div>
+              
+            </div>
           </section>
 
           <div class="multi-step-buttons">
@@ -453,9 +463,9 @@
           <div class="multi-step-buttons">
             <div class="button prev" id="prev">&larr; Go Back</div>
           </div>
-          <div class="multi-step-buttons">
+          <!-- <div class="multi-step-buttons">
             <div class="button" id="submit">Agree and send application</div>
-          </div>
+          </div> -->
         </form>
 <!-- End MultiStep Form -->
 
