@@ -12,6 +12,63 @@ $(document).ready(function() {
     wrapAround: true,
   });
 
+  let filterOptions = {
+    Addiction: {
+      name: "Addiction",
+      img: "images/broken-cig.png",
+      color: "#b0bdc6",
+      optionOne: "Cigarettes",
+      optionTwo: "Vaping",
+      optionThree: "Food Cravings",
+      optionFour: "Other"
+    },
+    Focus: {
+      name: "Focus",
+      img: "images/brain.png",
+      color: "#B5B5B5",
+      optionOne: "TBD",
+      optionTwo: "TBD",
+      optionThree: "TBD",
+      optionFour: "TBD"
+    },
+    Relaxation: {
+      name: "Relaxation",
+      img: "images/pot.png",
+      color: "#8E9A9A",
+      optionOne: "TBD",
+      optionTwo: "TBD",
+      optionThree: "TBD",
+      optionFour: "TBD"
+    },
+    Mood: {
+      name: "Mood",
+      img: "images/happyguy.png",
+      color: "#8E959A",
+      optionOne: "TBD",
+      optionTwo: "TBD",
+      optionThree: "TBD",
+      optionFour: "TBD"
+    },
+    Physical: {
+      name: "Physical",
+      color: "#BFCECE",
+      img: "images/arm.png",
+      optionOne: "TBD",
+      optionTwo: "TBD",
+      optionThree: "TBD",
+      optionFour: "TBD"
+    },
+    Respiratory: {
+      name: "Respiratory",
+      color: "#9FADAD",
+      img: "images/wind.png",
+      optionOne: "TBD",
+      optionTwo: "TBD",
+      optionThree: "TBD",
+      optionFour: "TBD"
+    },
+  }
+
   var obj = {"video": {
     "value": '<iframe src="https://www.youtube.com/embed/N9rurWftUmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
     }}
@@ -178,21 +235,38 @@ $(document).ready(function() {
     if (child == 2) {
       // Check to see if an option has beend selected
       console.log(form.elements[0].value, "current selected value")
-      console.log(child, "current step of form")
-      console.log(form.elements[0].value + " is the carried over value")
-
-      $(".dynamic-title-p").text(form.elements[0].value)
+      let selectedOption = form.elements[0].value
+      console.log(selectedOption)
+      for (const option in filterOptions) {
+        if (selectedOption === option) {
+          let selectedObject = filterOptions[selectedOption]
+          console.log(selectedObject.optionOne)
+          $(".dynamic-title-p").text(selectedObject.name)
+          $(".dynamic-img-render").attr("src", selectedObject.img)
+          $(".dynamic-title-block .option-block").css("background-color", selectedObject.color)
+          $(".option.one p").text(selectedObject.optionOne)
+          $(".option.two p").text(selectedObject.optionTwo)
+          $(".option.three p").text(selectedObject.optionThree)
+          $(".option.four p").text(selectedObject.optionFour)
+          break;
+        }
+      }
     }
   })
 
-// Function that maps each selection to it's appropriate values
-// let filterOptions = {
-//   Addiction: {
-//     name: "Addiction",
-//     color: 
-//   }
+// Function that render Step 2 of the multistep form.
+//Option 1
 
-// }
+// Addiction is selected as the first input.
+// When next is clicked, and the child is 2.
+// Take the selected term and set the object to that option.
+// That object will need to contain:
+// Background-color, icon, support options.
+// This option will then populate the content and we can just add things to the object for the future.
+
+
+// Function that maps each selection to it's appropriate values
+
 
   //Setup Multi Step Form
   //Make each img a clickable button.
