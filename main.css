@@ -7,6 +7,7 @@ input {
 div {
   display: block;
 }
+
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
 /* Fonts */
 h2 {
@@ -686,12 +687,22 @@ button.black {
   .stackable-content.help-section {
     margin-top: 8rem;
   }
+  .image-container.help-section {
+    margin: 7% 20% 10%;
+  }
+  .image-container.help-section .circle-selection h5 {
+    margin-top: 1rem;
+    font-size: 2vw;
+  }
+  .help-section .circle-selection {
+    padding-bottom: 10%;
+  }
   /* End of Help Section */
 
   /* Email PDF Section */
   .stackable-content.email-pdf {
     padding: 2rem 20% 6rem;
-    margin: 5rem 10%;
+    margin: 12rem 10%;
     background-image: url("./images/grey-rectangle.png");
     background-repeat: no-repeat;
     background-position: bottom;
