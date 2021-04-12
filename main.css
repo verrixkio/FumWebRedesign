@@ -226,11 +226,7 @@ button.black {
 /* End of Best Sellers Section */
 
 /* Reviews Section */
-.reviews .image-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
+
 .image-container.reviews img {
   width: 75%;
 }
@@ -245,6 +241,13 @@ button.black {
 }
 .stackable-content.reviews {
   margin-top: 8rem;
+}
+.testimonial-person .grey-text {
+  color: #8e9a9a;
+  margin-top: 0.5rem;
+}
+.testimonial-arrow-block {
+  margin: 5% 0%;
 }
 /* End of Reviews Section */
 
@@ -630,7 +633,23 @@ button.black {
 
   /* Reviews Section */
   .image-container.reviews img {
-    width: 25%;
+    width: 40%;
+  }
+  .reviews .text-container.testimonial {
+    text-align: inherit;
+    width: 75%;
+  }
+  .testimonial.content-container {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    margin: 5rem 0% 3rem 10%;
+  }
+  .reviews .image-container {
+    width: 95%;
+  }
+  .testimonial-arrow-block p {
+    font-size: min(3vw, 25px);
   }
   /* End of Reviews Section */
 
@@ -813,11 +832,15 @@ button.black {
     margin: 0% 6%;
     margin-bottom: 10%;
   }
+  .reviews .image-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
 
   .testimonial-arrow-block {
     display: flex;
     align-items: center;
-    margin: 5% 0%;
   }
   .testimonial-arrow-block p {
     font-size: min(5vw, 20px);
@@ -825,8 +848,6 @@ button.black {
   }
 
   .testimonial-person .grey-text {
-    color: #8e9a9a;
-    margin-top: 0.5rem;
     font-size: min(4vw, 15px);
   }
   /* End of Reviews Section */
