@@ -137,7 +137,7 @@ button.black {
 .habit-options .popular-token {
   display: flex;
   justify-content: center;
-  background-color: darkgray;
+  background-color: #869098;
   font-family: "Montserrat";
   font-size: small;
   margin-left: 25%;
@@ -145,6 +145,33 @@ button.black {
   padding: 3px;
   position: relative;
   top: -7px;
+}
+.habit-options .image-container .plant-image {
+  position: absolute;
+}
+.habit-options .image-container .plant-image.black-pepper {
+  margin: -23px 0px 0px -48px;
+  width: 95%;
+}
+.habit-options .image-container .plant-image.mint {
+  margin: 0px 0px 0px 46px;
+  width: 60%;
+}
+.habit-options .image-container .plant-image.bergamot {
+  margin: 0px 0px 0px -43px;
+  width: 95%;
+}
+.habit-options .image-container .plant-image.lavender {
+  margin: 0px 0px 0px -43px;
+  width: 90%;
+}
+.habit-options .image-container .plant-image.thyme {
+  margin: 0px 0px 0px -43px;
+  width: 95%;
+}
+.habit-options .image-container .plant-image.eucalyptus {
+  margin: 0px 0px 0px -43px;
+  width: 95%;
 }
 .habit-options .image-container.addiction {
   background-color: #b0bdc6;
