@@ -73,7 +73,7 @@ button.black {
   font-size: small;
   margin: 1.33em;
 }
-.scroll-arrows .left-arrow {
+.left-arrow {
   transform: rotate(180deg);
 }
 .best-sellers .scroll-arrows {
@@ -801,7 +801,34 @@ button.black {
   /* End of Best Sellers Section */
 
   /* Reviews Section */
+  .stackable-content.reviews {
+    background-image: url("./images/grey-backgroundtestimonials.png");
+    background-repeat: no-repeat;
+    background-size: min(100%, 540px);
+    padding-bottom: 10rem;
+    background-position: center;
+    background-position-y: 30%;
+  }
+  .text-container.testimonial {
+    margin: 0% 6%;
+    margin-bottom: 10%;
+  }
 
+  .testimonial-arrow-block {
+    display: flex;
+    align-items: center;
+    margin: 5% 0%;
+  }
+  .testimonial-arrow-block p {
+    font-size: min(5vw, 20px);
+    margin: 4%;
+  }
+
+  .testimonial-person .grey-text {
+    color: #8e9a9a;
+    margin-top: 0.5rem;
+    font-size: min(4vw, 15px);
+  }
   /* End of Reviews Section */
 
   /* Start of Purpose Section */
