@@ -11,24 +11,40 @@ $(document).ready(function () {
     wrapAround: true,
   });
 
+  // Need a function that maps numbers to words to support multi-step form.
+  numToWords = (num) => {
+    if (num == 0) {
+      return "zero"
+    } else if (num == 1) {
+      return "one"
+    } else if (num == 2) {
+      return "two"
+    } else if (num == 3) {
+      return "three"
+    } else if (num == 4) {
+      return "four"
+    } else if (num == 5) {
+      return "five"
+    } else if (num == 6) {
+      return "six"
+    } else {
+      return "numToWords does not support that number"
+    }
+  }
+
+  // Easy place for Fum to come and change information in the multi step form.
   let filterOptions = {
     Addiction: {
       name: "Addiction",
       img: "images/broken-cig.png",
       color: "#b0bdc6",
-      optionOne: "Cigarettes",
-      optionTwo: "Vaping",
-      optionThree: "Food Cravings",
-      optionFour: "Other",
+      options: ["Cigarettes", "Vaping", "Food Cravings", "Other","checking", "Support Up to 6 Blocks"]
     },
     Focus: {
       name: "Focus",
       img: "images/brain.png",
       color: "#B5B5B5",
-      optionOne: "TBD",
-      optionTwo: "TBD",
-      optionThree: "TBD",
-      optionFour: "TBD",
+      options: ["TBD", "TBD", "TBD"]
     },
     Relaxation: {
       name: "Relaxation",
@@ -184,7 +200,8 @@ $(document).ready(function () {
   $(".button").click(function () {
     if (form.elements[0].value == false ){
       // Make this fancy styling
-      alert("Please make a selection");
+      $(".multi-step.text-container p").css("color", "red");
+
     } else {
       $("#svg_form_time rect").css("fill", active_color);
       $("#svg_form_time circle").css("fill", active_color);
@@ -231,6 +248,7 @@ $(document).ready(function () {
   let name = form.elements[0];
 
   $(".multi-button").click(function () {
+    $(".multi-step.text-container p").css("color", "black");
     $(".multi-button").css("filter", "opacity(1)");
     form.elements[0].value = $(this).parent().attr("id");
 
@@ -239,14 +257,17 @@ $(document).ready(function () {
   
   $("#prev").click(function () {
     if (child == 1) {
-
+      $("div").remove(".cell-flex")
     }
   })
 
+  
   $("#next").click(function () {
+    let multiStepCount = 0
+    let selectedOption = form.elements[0].value
     if (child == 2) {
       // Check to see if an option has beend selected
-      let selectedOption = form.elements[0].value
+
       $(".multi-step.text-container").html(`<p>Choose which area of ${selectedOption.toLowerCase()} you’d like support with.</p>`)
       for (const option in filterOptions) {
         if (selectedOption === option) {
@@ -254,15 +275,48 @@ $(document).ready(function () {
           $(".dynamic-title-p").text(selectedObject.name)
           $(".dynamic-img-render").attr("src", selectedObject.img)
           $(".dynamic-title-block .option-block").css("background-color", selectedObject.color)
-          $(".option.one p").text(selectedObject.optionOne)
-          $(".option.two p").text(selectedObject.optionTwo)
-          $(".option.three p").text(selectedObject.optionThree)
-          $(".option.four p").text(selectedObject.optionFour)
+          break;
+          }
+        }
+      
+
+      for (const option in filterOptions) {
+        if (selectedOption === option) {
+          let selectedObject = filterOptions[selectedOption]
+          
+          // Dynamically Set up the containers for the Divs
+          for ( const menuOption in selectedObject.options) {
+            // Dynamically build the div.
+            //Build Cell Flex
+            if (menuOption % 2 == 0) {
+              multiStepCount++
+              $(".menuOption-holder").append(`<div class='cell-flex ${numToWords(multiStepCount)}'></div>`)
+
+              $(`.cell-flex.${numToWords(multiStepCount)}`).append(`<div class='dynamic-options ${numToWords(multiStepCount)}'></div>`)
+            }
+          }
+          for ( const menuOption in selectedObject.options) {
+            // For every 2 options Append it to each dynamic Options.
+            if (menuOption == 0 || menuOption == 1){
+              $(`.dynamic-options.one`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
+
+              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+            }
+            if (menuOption == 2 || menuOption == 3){
+              $(`.dynamic-options.two`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
+              
+              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+            }
+            if (menuOption == 4 || menuOption == 5){
+              $(`.dynamic-options.three`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
+              
+              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+            }
+          }
           break;
         }
       }
     }
-
     if (child == 4) {
       $(".info-block").html(
         form.elements[0].value + "<br>" +
@@ -276,31 +330,7 @@ $(document).ready(function () {
       form.elements[1].value = $(this).children().text()
       $(this).css("filter", "opacity(0.5)");
     })
+  
   })
-
-// Function that render Step 2 of the multistep form.
-//Option 1
-
-// Addiction is selected as the first input.
-// When next is clicked, and the child is 2.
-// Take the selected term and set the object to that option.
-// That object will need to contain:
-// Background-color, icon, support options.
-// This option will then populate the content and we can just add things to the object for the future.
-
-  // Function that render Step 2 of the multistep form.
-  //Option 1
-
-  // Addiction is selected as the first input.
-  // When next is clicked, and the child is 2.
-  // Take the selected term and set the object to that option.
-  // That object will need to contain:
-  // Background-color, icon, support options.
-  // This option will then populate the content and we can just add things to the object for the future.
-
-  // Function that maps each selection to it's appropriate values
-
-  //Setup Multi Step Form
-  //Make each img a clickable button.
 
 });

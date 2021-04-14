@@ -37,6 +37,7 @@ button {
   border: solid #b8c1c1;
   color: white;
   cursor: pointer;
+  outline: none;
 }
 .disabled {
   display: none;
@@ -350,7 +351,7 @@ button.black {
   justify-content: center;
 }
 
-.cell-flex.two {
+.menuOption-holder {
   margin-bottom: 80px;
 }
 
@@ -518,7 +519,7 @@ button.black {
   margin-bottom: 40px;
   color: white;
   border-radius: 10px 10px 0px 0px;
-  -webkit-text-stroke: medium;
+  /* -webkit-text-stroke: medium; */
   font-family: "Montserrat";
   font-size: 3vw;
 }
