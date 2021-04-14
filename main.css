@@ -417,6 +417,98 @@ button.black {
   box-sizing: border-box;
 }
 
+.animated-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animated-loader .progress {
+  width: 35%;
+}
+
+
+        /* Loading Bar Animation. */
+        .progress {
+          justify-content: flex-start;
+          border-radius: 3px;
+          align-items: center;
+          position: relative;
+          padding: 0 5px;
+          display: flex;
+          height: 4vw;
+          width: 500px;
+        }
+        
+        .progress-value {
+          animation: load 1.5s normal forwards;
+          box-shadow: 0 10px 40px -10px #fff;
+          border-radius: 3px;
+          background:#D9D9D9;
+          height: 100%;
+          width: 0;
+        }
+        .progress-value.two {
+          animation: load 1.5s normal forwards;
+          animation-delay: 1.5s;
+          box-shadow: 0 10px 40px -10px #fff;
+          border-radius: 3px;
+          background:#D9D9D9;
+          height: 100%;
+          width: 0;
+        }
+        .progress-value.three {
+          animation: load 1.5s normal forwards;
+          animation-delay: 3s;
+          box-shadow: 0 10px 40px -10px #fff;
+          border-radius: 3px;
+          background:#D9D9D9;
+          height: 100%;
+          width: 0;
+        }
+        
+        @keyframes load {
+          0% { width: 0; }
+          100% { width: 100%; }
+        }
+        
+        .animated-loader svg {
+          width: 8%;
+        }
+        
+        .animated-loader .path {
+          stroke-linecap: round;
+          stroke-dasharray: 27;
+          stroke-dashoffset: -23;
+          animation: dash 300ms ease forwards;
+          animation-delay: 1.5s;
+        }
+        .animated-loader .path.two {
+          stroke-linecap: round;
+          stroke-dasharray: 27;
+          stroke-dashoffset: -23;
+          animation: dash 300ms ease forwards;
+          animation-delay: 3s;
+        }
+        .animated-loader .path.three {
+          stroke-linecap: round;
+          stroke-dasharray: 27;
+          stroke-dashoffset: -23;
+          animation: dash 300ms ease forwards;
+          animation-delay: 4.5s;
+        }
+
+        .animated-loader circle {
+          fill: #D9D9D9 !important;
+        }
+
+        
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+     
+
 /* End Help Section */
 
 /* Email PDF Section */
