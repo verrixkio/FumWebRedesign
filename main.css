@@ -57,10 +57,15 @@ button.black {
 .best-sellers button {
   padding: 1rem 6rem;
   cursor: pointer;
+  font-weight: 300;
 }
 .email-pdf button {
   padding: 1rem 4rem;
 }
+.reviews button {
+  font-weight: 500;
+}
+
 .disabled {
   display: none;
 }
@@ -106,16 +111,17 @@ button.black {
 }
 .conquer-cores h4 {
   font-family: "Montserrat";
-  font-size: medium;
-  font-weight: 200;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .conquer-cores p {
-  font-size: min(4vw, 15px);
-  padding-right: 25%;
+  font-size: min(3vw, 15px);
+  padding-right: 18%;
   margin-bottom: 25px;
 }
 .conquer-cores .style-block {
-  background-color: #b0bdc6;
+  background-color: #9eadb7;
   padding: 5px 0px 5px 28px;
   margin-right: 10.6em;
   max-width: 87px;
@@ -123,6 +129,7 @@ button.black {
   border-radius: 3px;
   font-size: 12px;
   font-family: "Montserrat";
+  font-weight: 500;
 }
 .conquer-cores .text-container {
   display: flex;
@@ -284,7 +291,7 @@ button.black {
 }
 .testimonial-person .grey-text {
   color: #8e9a9a;
-  margin-top: 0.5rem;
+  margin-top: -0.5rem;
 }
 .testimonial-arrow-block {
   margin: 5% 0%;
@@ -747,9 +754,6 @@ button.black {
     background-size: cover;
     background-position-x: center;
   }
-  .conquer-cores h2 {
-    font-size: 4vw;
-  }
   .conquer-cores p {
     padding-right: 40%;
   }
@@ -938,7 +942,7 @@ button.black {
     background-position-x: center;
   }
   .conquer-cores h2 {
-    font-size: 7.5vw;
+    font-size: 9.5vw;
   }
 
   .conquer-cores .text-container {
@@ -964,10 +968,11 @@ button.black {
   .stackable-content.reviews {
     background-image: url("./images/grey-backgroundtestimonials.png");
     background-repeat: no-repeat;
-    background-size: min(100%, 540px);
+    background-size: min(107%, 540px);
     padding-bottom: 10rem;
-    background-position: center;
-    background-position-y: 30%;
+    padding-top: 3rem;
+    background-position: top;
+    background-position-y: 80%;
   }
   .text-container.testimonial {
     margin: 0% 6%;
@@ -977,6 +982,9 @@ button.black {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+  }
+  .reviews .testimonial-person p {
+    font-size: max(2vw, 14px);
   }
 
   .testimonial-arrow-block {
