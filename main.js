@@ -101,14 +101,14 @@ $(document).ready(function () {
   $(".first-tab").click(function () {
     // Video update
     $(".dynamic-container").hide();
-    $(".dynamic-img").show();
+    $(".dynamic-img.Core4").hide();
+    $(".dynamic-img.M4kkids").show();
     // CSS
     $(".purpose-section .image-container").css("background-color", "#D1D1D1");
     $(".first-tab").css("border-radius", "10px 0px 0px 0px");
     $(".second-tab").css("border-radius", "0px 0px 0px 10px");
     $(".third-tab").css("border-radius", "0px 10px 0px 0px");
     // Text
-    $(".dynamic-img").attr("src", "images/M4kkids.png");
     $(".paragraph-section .bold-text").text("M4K Orphanage - Füm™ Partnership");
     $(".paragraph-section .tab-paragraph").html(
       "Each purchase of a Füm provides 6 orphans with a healthy meal for the day, and we look to increase that.<br><br>Together we have a positive impact."
@@ -118,14 +118,17 @@ $(document).ready(function () {
   $(".second-tab").click(function () {
     // Video Update
     $(".dynamic-container").hide();
-    $(".dynamic-img").show();
+    $(".dynamic-img.M4kkids").hide();
+    $(".dynamic-img.Core4").removeClass(".hidden");
+    $(".dynamic-img.Core4").show();
+
     // CSS
     $(".purpose-section .image-container").css("background-color", "#B8C1C1");
     $(".first-tab").css("border-radius", "10px 0px 10px 0px");
     $(".second-tab").css("border-radius", "0px 0px 0px 0px");
     $(".third-tab").css("border-radius", "0px 10px 0px 10px");
     // Text
-    $(".dynamic-img").attr("src", "images/core4pic.png");
+
     $(".paragraph-section .bold-text").text("Two sets of brothers, one idea…");
     $(".paragraph-section .tab-paragraph").html(
       "So in the spring of 2018, at the average age of 22, the 2 sets of brothers, quit their day jobs and decided they wanted to build a company dedicated to natural solutions to the world.<br><br>Soon friends began asking “Wow, what is that? Can I try it?”"
@@ -134,9 +137,10 @@ $(document).ready(function () {
 
   $(".third-tab").click(function () {
     // On click - hide image
-    $(".dynamic-img").hide();
+    $(".dynamic-container").hide();
     $(".dynamic-container").show();
     $(".dynamic-container").html(obj.video.value);
+    $(".dynamic-img").css("display", "none");
     // CSS
     $(".purpose-section .image-container").css("background-color", "#9FA7A7");
     $(".first-tab").css("border-radius", "10px 0px 0px 0px");
