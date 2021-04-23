@@ -171,11 +171,11 @@ button.black {
   position: absolute;
 }
 .habit-options .image-container .plant-image.black-pepper {
-  margin: -23px 0px 0px -48px;
+  margin: -23px 0px 0px -75px;
   width: 95%;
 }
 .habit-options .image-container .plant-image.mint {
-  margin: 0px 0px 0px 46px;
+  margin: 0px 0px 0px 30px;
   width: 60%;
 }
 .habit-options .image-container .plant-image.bergamot {
@@ -183,16 +183,16 @@ button.black {
   width: 95%;
 }
 .habit-options .image-container .plant-image.lavender {
-  margin: 0px 0px 0px -43px;
+  margin: 0px 0px 0px -60px;
   width: 90%;
 }
 .habit-options .image-container .plant-image.thyme {
-  margin: 0px 0px 0px -43px;
+  margin: 0px 0px 0px -63px;
   width: 95%;
 }
 .habit-options .image-container .plant-image.eucalyptus {
-  margin: 0px 0px 0px -43px;
-  width: 95%;
+  margin: 0px 0px 0px -56px;
+  width: 92%;
 }
 .habit-options .image-container.addiction {
   background-color: #b0bdc6;
@@ -236,11 +236,17 @@ button.black {
 
 .habit-options .image-container .habit-text-container .habit-arrow {
   margin: 0px;
-  width: 9%;
+  width: 12%;
+}
+.habit-options .image-container.addiction img {
+  margin: 17% 0px 0px 9%;
+}
+.habit-options .image-container.relaxation img {
+  margin: 26% 0px 0px 1%;
 }
 .habit-options .image-container img {
-  width: 2rem;
-  margin: 25% 0px 0px 11%;
+  width: 4rem;
+  margin: 25% 0px 0px 6%;
 }
 .habit-text-container {
   display: flex;
@@ -256,7 +262,7 @@ button.black {
 }
 .habit-options h3 {
   margin-bottom: 5px;
-  margin-top: 13px;
+  margin-top: 0px;
   font-size: 1.4em;
   font-weight: 600;
 }
@@ -919,7 +925,7 @@ button.black {
   }
   .image-container.offset-big img {
     position: relative;
-    left: -60px;
+    left: -13%;
     width: 136%;
   }
   .link-float {
@@ -939,7 +945,7 @@ button.black {
     margin: 5rem 3rem 3rem;
   }
   .image-container.HollowWood-image img {
-    width: 25rem;
+    width: 100%;
   }
   /* End of HollowWood Section */
 
@@ -1018,6 +1024,7 @@ button.black {
 
   .purpose-section .image-container img {
     width: 85%;
+    border-radius: 10px;
   }
   .dynamic-container iframe {
     border-radius: 10px;
