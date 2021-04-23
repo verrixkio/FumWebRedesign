@@ -14,23 +14,23 @@ $(document).ready(function () {
   // Need a function that maps numbers to words to support multi-step form.
   numToWords = (num) => {
     if (num == 0) {
-      return "zero"
+      return "zero";
     } else if (num == 1) {
-      return "one"
+      return "one";
     } else if (num == 2) {
-      return "two"
+      return "two";
     } else if (num == 3) {
-      return "three"
+      return "three";
     } else if (num == 4) {
-      return "four"
+      return "four";
     } else if (num == 5) {
-      return "five"
+      return "five";
     } else if (num == 6) {
-      return "six"
+      return "six";
     } else {
-      return "numToWords does not support that number"
+      return "numToWords does not support that number";
     }
-  }
+  };
 
   // Easy place for Fum to come and change information in the multi step form.
   let filterOptions = {
@@ -38,13 +38,20 @@ $(document).ready(function () {
       name: "Addiction",
       img: "images/broken-cig.png",
       color: "#b0bdc6",
-      options: ["Cigarettes", "Vaping", "Food Cravings", "Other","checking", "Support Up to 6 Blocks"]
+      options: [
+        "Cigarettes",
+        "Vaping",
+        "Food Cravings",
+        "Other",
+        "checking",
+        "Support Up to 6 Blocks",
+      ],
     },
     Focus: {
       name: "Focus",
       img: "images/brain.png",
       color: "#B5B5B5",
-      options: ["TBD", "TBD", "TBD"]
+      options: ["TBD", "TBD", "TBD"],
     },
     Relaxation: {
       name: "Relaxation",
@@ -94,7 +101,7 @@ $(document).ready(function () {
   $(".first-tab").click(function () {
     // Video update
     $(".dynamic-container").hide();
-    $(".dynamic-img mobile").show();
+    $(".dynamic-img").show();
     // CSS
     $(".purpose-section .image-container").css("background-color", "#D1D1D1");
     $(".first-tab").css("border-radius", "10px 0px 0px 0px");
@@ -198,10 +205,9 @@ $(document).ready(function () {
   $("circle:nth-of-type(1)").css("fill", active_color);
 
   $(".button").click(function () {
-    if (form.elements[0].value == false ){
+    if (form.elements[0].value == false) {
       // Make this fancy styling
       $(".multi-step.text-container p").css("color", "red");
-
     } else {
       $("#svg_form_time rect").css("fill", active_color);
       $("#svg_form_time circle").css("fill", active_color);
@@ -253,64 +259,85 @@ $(document).ready(function () {
     form.elements[0].value = $(this).parent().attr("id");
 
     $(this).css("filter", "opacity(0.5)");
-  })
-  
+  });
+
   $("#prev").click(function () {
     if (child == 1) {
-      $("div").remove(".cell-flex")
+      $("div").remove(".cell-flex");
     }
-  })
+  });
 
-  
   $("#next").click(function () {
-    let multiStepCount = 0
-    let selectedOption = form.elements[0].value
+    let multiStepCount = 0;
+    let selectedOption = form.elements[0].value;
     if (child == 2) {
       // Check to see if an option has beend selected
 
-      $(".multi-step.text-container").html(`<p>Choose which area of ${selectedOption.toLowerCase()} you’d like support with.</p>`)
+      $(".multi-step.text-container").html(
+        `<p>Choose which area of ${selectedOption.toLowerCase()} you’d like support with.</p>`
+      );
       for (const option in filterOptions) {
         if (selectedOption === option) {
-          let selectedObject = filterOptions[selectedOption]
-          $(".dynamic-title-p").text(selectedObject.name)
-          $(".dynamic-img-render").attr("src", selectedObject.img)
-          $(".dynamic-title-block .option-block").css("background-color", selectedObject.color)
+          let selectedObject = filterOptions[selectedOption];
+          $(".dynamic-title-p").text(selectedObject.name);
+          $(".dynamic-img-render").attr("src", selectedObject.img);
+          $(".dynamic-title-block .option-block").css(
+            "background-color",
+            selectedObject.color
+          );
           break;
-          }
         }
-      
+      }
 
       for (const option in filterOptions) {
         if (selectedOption === option) {
-          let selectedObject = filterOptions[selectedOption]
-          
+          let selectedObject = filterOptions[selectedOption];
+
           // Dynamically Set up the containers for the Divs
-          for ( const menuOption in selectedObject.options) {
+          for (const menuOption in selectedObject.options) {
             // Dynamically build the div.
             //Build Cell Flex
             if (menuOption % 2 == 0) {
-              multiStepCount++
-              $(".menuOption-holder").append(`<div class='cell-flex ${numToWords(multiStepCount)}'></div>`)
+              multiStepCount++;
+              $(".menuOption-holder").append(
+                `<div class='cell-flex ${numToWords(multiStepCount)}'></div>`
+              );
 
-              $(`.cell-flex.${numToWords(multiStepCount)}`).append(`<div class='dynamic-options ${numToWords(multiStepCount)}'></div>`)
+              $(`.cell-flex.${numToWords(multiStepCount)}`).append(
+                `<div class='dynamic-options ${numToWords(
+                  multiStepCount
+                )}'></div>`
+              );
             }
           }
-          for ( const menuOption in selectedObject.options) {
+          for (const menuOption in selectedObject.options) {
             // For every 2 options Append it to each dynamic Options.
-            if (menuOption == 0 || menuOption == 1){
-              $(`.dynamic-options.one`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
+            if (menuOption == 0 || menuOption == 1) {
+              $(`.dynamic-options.one`).append(
+                `<div class='option ${numToWords(menuOption)}'></div>`
+              );
 
-              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+              $(`.option.${numToWords(menuOption)}`).append(
+                `<p>${selectedObject.options[menuOption]}</p>`
+              );
             }
-            if (menuOption == 2 || menuOption == 3){
-              $(`.dynamic-options.two`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
-              
-              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+            if (menuOption == 2 || menuOption == 3) {
+              $(`.dynamic-options.two`).append(
+                `<div class='option ${numToWords(menuOption)}'></div>`
+              );
+
+              $(`.option.${numToWords(menuOption)}`).append(
+                `<p>${selectedObject.options[menuOption]}</p>`
+              );
             }
-            if (menuOption == 4 || menuOption == 5){
-              $(`.dynamic-options.three`).append(`<div class='option ${numToWords(menuOption)}'></div>`)
-              
-              $(`.option.${numToWords(menuOption)}`).append(`<p>${selectedObject.options[menuOption]}</p>`)
+            if (menuOption == 4 || menuOption == 5) {
+              $(`.dynamic-options.three`).append(
+                `<div class='option ${numToWords(menuOption)}'></div>`
+              );
+
+              $(`.option.${numToWords(menuOption)}`).append(
+                `<p>${selectedObject.options[menuOption]}</p>`
+              );
             }
           }
           break;
@@ -319,18 +346,20 @@ $(document).ready(function () {
     }
     if (child == 4) {
       $(".info-block").html(
-        form.elements[0].value + "<br>" +
-        form.elements[1].value + "<br>" +
-        form.elements[2].value + "<br>" +
-        form.elements[3].value )
+        form.elements[0].value +
+          "<br>" +
+          form.elements[1].value +
+          "<br>" +
+          form.elements[2].value +
+          "<br>" +
+          form.elements[3].value
+      );
     }
 
-    $(".dynamic-options .option").click(function() {
-      $(".dynamic-options .option").css("filter", "opacity(1)")
-      form.elements[1].value = $(this).children().text()
+    $(".dynamic-options .option").click(function () {
+      $(".dynamic-options .option").css("filter", "opacity(1)");
+      form.elements[1].value = $(this).children().text();
       $(this).css("filter", "opacity(0.5)");
-    })
-  
-  })
-
+    });
+  });
 });
