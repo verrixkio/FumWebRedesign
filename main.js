@@ -256,13 +256,25 @@ $(document).ready(function () {
   // Start of Multi-Step Form
   let form = document.getElementById("signup");
   let name = form.elements[0];
+  let colors = [
+    "#b0bdc6",
+    "#b5b5b5",
+    "#8e9a9a",
+    "#8e959a",
+    "#bfcece",
+    "#9fadad",
+  ];
 
   $(".multi-button").click(function () {
     $(".multi-step.text-container p").css("color", "black");
     $(".multi-button").css("filter", "opacity(1)");
+    $(".circle-stylings").attr("stroke", "red");
+    $(".SVG-image").attr("fill", "red");
     form.elements[0].value = $(this).parent().attr("id");
 
     $(this).css("filter", "opacity(0.5)");
+    // $(".circle-stylings").attr("stroke", "black");
+    // $(".SVG-image").attr("fill", "black");
   });
 
   $("#prev").click(function () {
