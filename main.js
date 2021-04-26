@@ -266,15 +266,24 @@ $(document).ready(function () {
   ];
 
   $(".multi-button").click(function () {
+    let id = $(this).attr("id");
+    console.log(id);
+    numberColor = id;
     $(".multi-step.text-container p").css("color", "black");
-    $(".multi-button").css("filter", "opacity(1)");
-    $(".circle-stylings").attr("stroke", "red");
-    $(".SVG-image").attr("fill", "red");
-    form.elements[0].value = $(this).parent().attr("id");
+    $(`#Ellipse_${id}`).removeClass("circle-stylings");
+    $(`#Union_${id}`).removeClass("SVG-image");
 
-    $(this).css("filter", "opacity(0.5)");
+    $(`#Ellipse_${id}`).addClass("circle-stylings");
+    $(`#Union_${id}`).addClass("SVG-image");
+    $(".circle-stylings").attr("stroke", colors[numberColor]);
+    $(".SVG-image").attr("fill", colors[numberColor]);
+
     // $(".circle-stylings").attr("stroke", "black");
     // $(".SVG-image").attr("fill", "black");
+
+    form.elements[0].value = $(this).parent().attr("id");
+    // $(".multi-button").css("filter", "opacity(1)");
+    // $(this).css("filter", "opacity(0.5)");
   });
 
   $("#prev").click(function () {
