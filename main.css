@@ -4,6 +4,16 @@ a {
 input {
   display: block;
 }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a#Quiz {
+  padding: none;
+}
+
 div {
   display: block;
 }

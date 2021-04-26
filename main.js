@@ -8,8 +8,16 @@ $(document).ready(function () {
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    wrapAround: true,
+    wrapAround: false,
   });
+
+  $('#scrollToQuiz').click(function(){
+    console.log($(this).attr('href'))
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
 
   // Need a function that maps numbers to words to support multi-step form.
   numToWords = (num) => {
@@ -266,24 +274,9 @@ $(document).ready(function () {
   ];
 
   $(".multi-button").click(function () {
-    let id = $(this).attr("id");
-    console.log(id);
-    numberColor = id;
-    $(".multi-step.text-container p").css("color", "black");
-    $(`#Ellipse_${id}`).removeClass("circle-stylings");
-    $(`#Union_${id}`).removeClass("SVG-image");
-
-    $(`#Ellipse_${id}`).addClass("circle-stylings");
-    $(`#Union_${id}`).addClass("SVG-image");
-    $(".circle-stylings").attr("stroke", colors[numberColor]);
-    $(".SVG-image").attr("fill", colors[numberColor]);
-
-    // $(".circle-stylings").attr("stroke", "black");
-    // $(".SVG-image").attr("fill", "black");
-
     form.elements[0].value = $(this).parent().attr("id");
-    // $(".multi-button").css("filter", "opacity(1)");
-    // $(this).css("filter", "opacity(0.5)");
+    $(".multi-button").css("filter", "opacity(1)");
+    $(this).css("filter", "opacity(0.5)");
   });
 
   $("#prev").click(function () {
