@@ -12,7 +12,6 @@ $(document).ready(function () {
   });
 
   $('#scrollToQuiz').click(function(){
-    console.log($(this).attr('href'))
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
@@ -54,48 +53,42 @@ $(document).ready(function () {
         "checking",
         "Support Up to 6 Blocks",
       ],
+      desc: "Get support with breaking negative habits."
     },
     Focus: {
       name: "Focus",
       img: "images/brain.png",
       color: "#B5B5B5",
       options: ["TBD", "TBD", "TBD"],
+      desc: "Get support in aiding mental clarity."
     },
     Relaxation: {
       name: "Relaxation",
       img: "images/pot.png",
       color: "#8E9A9A",
-      optionOne: "TBD",
-      optionTwo: "TBD",
-      optionThree: "TBD",
-      optionFour: "TBD",
+      options: ["TBD", "TBD", "TBD"],
+      desc: "Get sleep and peace support."
     },
     Mood: {
       name: "Mood",
       img: "images/happyguy.png",
       color: "#8E959A",
-      optionOne: "TBD",
-      optionTwo: "TBD",
-      optionThree: "TBD",
-      optionFour: "TBD",
+      options: ["TBD", "TBD", "TBD"],
+      desc: "Get support for stress and anxiety."
     },
     Physical: {
       name: "Physical",
       color: "#BFCECE",
       img: "images/arm.png",
-      optionOne: "TBD",
-      optionTwo: "TBD",
-      optionThree: "TBD",
-      optionFour: "TBD",
+      options: ["TBD", "TBD", "TBD"],
+      desc: "Get support for body and strength."
     },
     Respiratory: {
       name: "Respiratory",
       color: "#9FADAD",
       img: "images/wind.png",
-      optionOne: "TBD",
-      optionTwo: "TBD",
-      optionThree: "TBD",
-      optionFour: "TBD",
+      options: ["TBD", "TBD", "TBD"],
+      desc: "Get breathe and airway support."
     },
   };
 
@@ -273,15 +266,33 @@ $(document).ready(function () {
     "#9fadad",
   ];
 
+  // Dynamic text and color on select.
+  //Select Addiction 
+
   $(".multi-button").click(function () {
     form.elements[0].value = $(this).parent().attr("id");
+    let svgOption = form.elements[0].value;
     $(".multi-button").css("filter", "opacity(1)");
     $(this).css("filter", "opacity(0.5)");
+
+    for (const option in filterOptions) {
+      if (svgOption === option) {
+        let selectedObject = filterOptions[svgOption];
+        $(".multi-step.text-container").html(
+          `<p>${selectedObject.desc}</p>`
+        );
+        break;
+      }
+    }
+
   });
 
   $("#prev").click(function () {
     if (child == 1) {
       $("div").remove(".cell-flex");
+      $(".multi-step.text-container").html(
+        `<p>Select which option you could <br/> use the most support with.</p>`
+      );
     }
   });
 
