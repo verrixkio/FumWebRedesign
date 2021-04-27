@@ -379,7 +379,7 @@ button.black {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .dynamic-title-block .option-block {
   display: flex;
@@ -392,14 +392,18 @@ button.black {
   font-family: "Montserrat";
 }
 .dynamic-title-block .option-block p {
-  padding: 6% 8%;
+  padding: 0% 8%;
   color: white;
   font-weight: bold;
   font-size: 5vw;
+  margin: 7% 0;
 }
+.dynamic-options p {
+  margin: 0;
+} 
 
 .dynamic-title-block .option-block img {
-  width: 11%;
+  width: 16%;
   padding-right: 8%;
 }
 
