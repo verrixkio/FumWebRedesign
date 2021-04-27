@@ -4,6 +4,7 @@ a {
 input {
   display: block;
 }
+
 body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
@@ -13,18 +14,13 @@ body {
   -ms-user-select: none;
    user-select: none;
 }
-
 .contain {
   max-width: 100%;
   overflow-x: hidden;
 }
-
-
-
 a#Quiz {
-  padding: none;
+  padding: 0px;
 }
-
 div {
   display: block;
 }
