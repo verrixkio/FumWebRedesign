@@ -64,7 +64,7 @@ button {
 .HollowWood-image button {
   font-weight: 300;
   font-size: 11px;
-  padding: 0.8rem 2.3rem;
+  padding: 0.7rem 2rem;
 }
 button.black {
   background-color: black;
@@ -85,7 +85,7 @@ button.black {
 }
 .email-pdf button {
   font-size: 12px;
-  padding: 0.6rem 2.5rem;
+  padding: 0.5rem 2.15rem;
 }
 .reviews button {
   font-weight: 500;
@@ -175,7 +175,7 @@ button.black {
   color: white;
   border-radius: 30px;
   margin: 60px 1rem 2rem 1rem;
-  max-width: 231px;
+  max-width: 220px;
   padding-bottom: 17px;
 }
 .habit-options .popular-token {
@@ -582,8 +582,8 @@ button.black {
 .stackable-content.email-pdf {
   background-color: #b8c1c1;
   border-radius: 15px;
-  padding: 1.5rem 1rem 3rem;
-  margin: 7rem 2%;
+  padding: 1.5rem 1rem 2rem;
+  margin: 7rem 4.2%;
 }
 .email-pdf .text-container {
   display: flex;
@@ -592,18 +592,18 @@ button.black {
 }
 .email-pdf .email-submission input {
   font-family: "Montserrat";
-  padding: 20px;
+  padding: 17px;
   border-radius: 10px;
   border: solid white;
   margin-bottom: 10%;
-  margin-top: 13%;
+  margin-top: 12%;
   min-width: 100px;
   width: 100%;
   box-sizing: border-box;
   font-size: 3vw;
 }
 .email-pdf .text-container h2 {
-  font-size: 9vw;
+  font-size: 8vw;
   margin: -0.5rem 0rem 10%;
 }
 .email-pdf p {
@@ -616,9 +616,11 @@ button.black {
   text-align: center;
   font-family: "Montserrat";
   color: #828888;
-  font-size: 3vw;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 1px;
+  margin: 0px;
+  margin-top: 5px;
 }
 .email-pdf .image-container {
   display: flex;
@@ -977,7 +979,7 @@ button.black {
     margin: 5rem 3rem 2.2rem;
   }
   .image-container.HollowWood-image img {
-    width: 100%;
+    width: 95%;
   }
   /* End of HollowWood Section */
 
