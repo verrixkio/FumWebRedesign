@@ -89,7 +89,7 @@ button.black {
 }
 .reviews button {
   font-weight: 500;
-  padding: 0.7rem 2rem;
+  padding: 0.6rem 1.8rem;
   font-size: 11px;
 }
 
@@ -646,7 +646,7 @@ button.black {
   text-align: center;
   border-radius: 10px 10px 10px 10px;
   padding-bottom: 40px;
-  margin: 75px 5% 0px;
+  margin: 3rem 7% 0px;
 }
 
 .tab-selection {
@@ -677,12 +677,12 @@ button.black {
 .purpose-section .tab-selection {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: white;
   border-radius: 10px 10px 0px 0px;
   font-weight: 600;
   font-family: "Montserrat";
-  font-size: 3vw;
+  font-size: 10px;
 }
 /* End of Purpose Section */
 
@@ -1065,7 +1065,8 @@ button.black {
   }
   .purpose-section button {
     margin: 0% 5%;
-    padding: 1rem 4.5rem;
+    padding: 0.65rem 3.4rem;
+    font-size: 11px;
   }
 
   /* End of Purpose Section */
