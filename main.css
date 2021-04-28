@@ -14,6 +14,18 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+.pathed {
+  fill: white
+}
+.stroked {
+  stroke: white;
+}
+.filled {
+  fill: rgb(164, 181, 181);;
+}
+.special-filled {
+  filter: invert(1);
+}
 .contain {
   max-width: 100%;
   overflow-x: hidden;
@@ -95,10 +107,6 @@ button.black {
 
 .disabled {
   display: none;
-}
-
-.multi-button circle {
-  fill: none !important;
 }
 
 /* Scroll arrows */

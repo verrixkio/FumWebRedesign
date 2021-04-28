@@ -53,42 +53,42 @@ $(document).ready(function () {
         "checking",
         "Support Up to 6 Blocks",
       ],
-      desc: "Get support with breaking negative habits."
+      desc: "Get support with<br>breaking negative habits."
     },
     Focus: {
       name: "Focus",
       img: "images/brain.png",
       color: "#B5B5B5",
       options: ["TBD", "TBD", "TBD"],
-      desc: "Get support in aiding mental clarity."
+      desc: "Get support in<br>aiding mental clarity."
     },
     Relaxation: {
       name: "Relaxation",
       img: "images/pot.png",
       color: "#8E9A9A",
       options: ["TBD", "TBD", "TBD"],
-      desc: "Get sleep and peace support."
+      desc: "Get sleep and<br>peace support."
     },
     Mood: {
       name: "Mood",
       img: "images/happyguy.png",
       color: "#8E959A",
       options: ["TBD", "TBD", "TBD"],
-      desc: "Get support for stress and anxiety."
+      desc: "Get support for<br>stress and anxiety."
     },
     Physical: {
       name: "Physical",
       color: "#BFCECE",
       img: "images/arm.png",
       options: ["TBD", "TBD", "TBD"],
-      desc: "Get support for body and strength."
+      desc: "Get support for<br>body and strength."
     },
     Respiratory: {
       name: "Respiratory",
       color: "#9FADAD",
       img: "images/wind.png",
       options: ["TBD", "TBD", "TBD"],
-      desc: "Get breathe and airway support."
+      desc: "Get breathe and<br>airway support."
     },
   };
 
@@ -205,9 +205,9 @@ $(document).ready(function () {
   });
   document.getElementById("svg_form_time").appendChild(circle);
 
-  $("#svg_form_time rect").css("fill", base_color);
-  $("#svg_form_time circle").css("fill", base_color);
-  $("circle:nth-of-type(1)").css("fill", active_color);
+  $(".text-container #svg_form_time rect").css("fill", base_color);
+  $(".text-container #svg_form_time circle").css("fill", base_color);
+  $(".text-container circle:nth-of-type(1)").css("fill", active_color);
 
   $(".button").click(function () {
     if (form.elements[0].value == false) {
@@ -272,8 +272,18 @@ $(document).ready(function () {
   $(".multi-button").click(function () {
     form.elements[0].value = $(this).parent().attr("id");
     let svgOption = form.elements[0].value;
-    $(".multi-button").css("filter", "opacity(1)");
-    $(this).css("filter", "opacity(0.5)");
+    // $(".multi-button").css("filter", "opacity(1)");
+    // $(this).css("filter", "opacity(0.5)");
+    $(`.pathing`).removeClass("pathed")
+    $(`.stroke`).removeClass("stroked")
+    $(`.filler`).removeClass("filled")
+    $(`.special-fill`).removeClass("special-filled")
+
+    let selection = $(this).parent().attr("id")
+    $(`#${selection} .pathing`).addClass("pathed")
+    $(`#${selection} .stroke`).addClass("stroked")
+    $(`#${selection} .filler`).addClass("filled")
+    $(`#${selection} .special-fill`).addClass("special-filled")
 
     for (const option in filterOptions) {
       if (svgOption === option) {
@@ -284,7 +294,6 @@ $(document).ready(function () {
         break;
       }
     }
-
   });
 
   $("#prev").click(function () {
@@ -300,10 +309,8 @@ $(document).ready(function () {
     let multiStepCount = 0;
     let selectedOption = form.elements[0].value;
     if (child == 2) {
-      // Check to see if an option has beend selected
-
       $(".multi-step.text-container").html(
-        `<p>Choose which area of ${selectedOption.toLowerCase()} you’d like support with.</p>`
+        `<p>Choose which area of ${selectedOption.toLowerCase()}<br>you’d like support with.</p>`
       );
       for (const option in filterOptions) {
         if (selectedOption === option) {
@@ -386,9 +393,11 @@ $(document).ready(function () {
     }
 
     $(".dynamic-options .option").click(function () {
-      $(".dynamic-options .option").css("filter", "opacity(1)");
+      $(".dynamic-options .option").css({"background-color": "white", "color": "black", "border": "solid 1px #707070"});
+
       form.elements[1].value = $(this).children().text();
-      $(this).css("filter", "opacity(0.5)");
+
+      $(this).css({"background-color": "rgb(164, 181, 181)", "color": "white", "border": "solid 1px white"})
     });
   });
 });
