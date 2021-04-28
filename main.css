@@ -635,17 +635,17 @@ button.black {
 }
 .purpose-section .paragraph-section {
   text-align: initial;
-  margin: 30px 10% 60px 10%;
+  margin: 15px 10% 54px 10%;
 }
 .purpose-section p {
-  margin-bottom: 15px;
+  margin-bottom: -10px;
 }
 
 .purpose-section .image-container {
   background-color: lightgray;
   text-align: center;
   border-radius: 10px 10px 10px 10px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   margin: 3rem 7% 0px;
 }
 
@@ -1065,7 +1065,7 @@ button.black {
   }
   .purpose-section button {
     margin: 0% 5%;
-    padding: 0.65rem 3.4rem;
+    padding: 0.6rem 3.4rem;
     font-size: 11px;
   }
 
