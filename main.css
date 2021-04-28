@@ -73,10 +73,13 @@ button.black {
   font-weight: 200;
 }
 .conquer-cores button {
-  padding: 1rem 3rem;
+  padding: 0.8rem 2.45rem;
+  font-size: 11px;
+  font-weight: 400;
 }
 .best-sellers button {
-  padding: 1rem 6rem;
+  padding: 0.9rem 5rem;
+  font-size: 11px;
   cursor: pointer;
   font-weight: 300;
 }
@@ -86,6 +89,8 @@ button.black {
 }
 .reviews button {
   font-weight: 500;
+  padding: 0.7rem 2rem;
+  font-size: 11px;
 }
 
 .disabled {
@@ -133,25 +138,26 @@ button.black {
 }
 .conquer-cores h4 {
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 .conquer-cores p {
-  font-size: min(3vw, 15px);
+  font-size: min(3vw, 11px);
   padding-right: 18%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-top: -4px;
 }
 .conquer-cores .style-block {
   background-color: #9eadb7;
-  padding: 5px 0px 5px 28px;
-  margin-right: 10.6em;
   max-width: 87px;
   min-width: 87px;
   border-radius: 3px;
-  font-size: 12px;
   font-family: "ivyjournal";
   font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  padding: 4px 8px;
 }
 .conquer-cores .text-container {
   display: flex;
@@ -305,7 +311,7 @@ button.black {
 /* Reviews Section */
 
 .image-container.reviews img {
-  width: 75%;
+  width: 70%;
 }
 .reviews .text-container {
   display: flex;
@@ -317,7 +323,7 @@ button.black {
   justify-content: center;
 }
 .stackable-content.reviews {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .testimonial-person .grey-text {
   color: #8e9a9a;
@@ -983,11 +989,11 @@ button.black {
     background-position-x: center;
   }
   .conquer-cores h2 {
-    font-size: 9.5vw;
+    font-size: max(8vw, 30px);
   }
 
   .conquer-cores .text-container {
-    padding: 375px 35px 50px 30px;
+    padding: 290px 35px 47px 25px;
   }
   /* End of Conquer Cores Section */
 
@@ -1025,7 +1031,7 @@ button.black {
     padding-bottom: 50px;
   }
   .reviews .testimonial-person p {
-    font-size: max(2vw, 14px);
+    font-size: max(2vw, 13px);
   }
 
   .testimonial-arrow-block {
@@ -1037,8 +1043,8 @@ button.black {
     margin: 4%;
   }
 
-  .testimonial-person .grey-text {
-    font-size: min(4vw, 15px);
+  .testimonial-person p.grey-text {
+    font-size: max(2vw, 12px);
   }
   /* End of Reviews Section */
 
