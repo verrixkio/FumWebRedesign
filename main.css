@@ -186,6 +186,9 @@ button.black {
   max-width: 220px;
   padding-bottom: 17px;
 }
+.habit-options .flickity-slider {
+  left: 20px !important;
+}
 .habit-options .popular-token {
   display: flex;
   justify-content: center;
