@@ -78,14 +78,20 @@ button {
   font-size: 11px;
   padding: 0.7rem 2rem;
 }
+button.blacktwo {
+  background-color: #262626;
+  border: solid #262626;
+  cursor: pointer;
+  font-weight: 200;
+}
 button.black {
-  background-color: black;
-  border: solid black;
+  background-color: #141414;
+  border: solid #141414;
   cursor: pointer;
   font-weight: 200;
 }
 .conquer-cores button {
-  padding: 0.8rem 2.45rem;
+  padding: 1.3em 2.6rem;
   font-size: 11px;
   font-weight: 400;
 }
@@ -117,7 +123,7 @@ button.black {
 .scroll-arrows h4 {
   font-family: "Montserrat";
   color: lightgrey;
-  font-size: small;
+  font-size: min(3vw, 11px);
   margin: 1.33em;
   font-weight: 200;
 }
@@ -142,7 +148,6 @@ button.black {
   font-size: 7.5vw;
   margin: -1rem 0 1rem;
   position: relative;
-  left: 10px;
 }
 .conquer-cores h4 {
   font-family: "Montserrat";
@@ -187,8 +192,12 @@ button.black {
   padding-bottom: 17px;
 }
 .habit-options .flickity-slider {
-  left: 20px !important;
+  left: 27px !important;
 }
+.habit-options .scroll-arrows {
+ margin: 4px 0px 45px 0px;
+}
+
 .habit-options .popular-token {
   display: flex;
   justify-content: center;
@@ -354,7 +363,7 @@ button.black {
 }
 
 #svg_wrap {
-  margin: 40px;
+  margin: 40px 0 10px 0;
 }
 .help-section .text-content p {
   padding: 0 20%;
@@ -372,7 +381,7 @@ button.black {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 35px 5% 60px;
+  margin: 35px 5% 27px;
   font-family: "Montserrat";
   font-size: 4vw;
 }
@@ -410,9 +419,10 @@ button.black {
 .dynamic-title-block .option-block p {
   padding: 0% 8%;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 5vw;
-  margin: 7% 0;
+  margin: 7% 0; 
+  font-family: IvyJournal;
 }
 .dynamic-options p {
   margin: 0;
@@ -432,6 +442,8 @@ button.black {
   margin-bottom: 80px;
 }
 
+
+
 .dynamic-options {
   display: flex;
   justify-content: space-between;
@@ -446,7 +458,7 @@ button.black {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding: 7px 0;
   font-family: "Montserrat";
   cursor: pointer;
 }
@@ -457,12 +469,21 @@ button.black {
   cursor: pointer;
 }
 
+.multi-step-buttons .button {
+  padding: 1rem 2.5rem;
+}
+
 .multi-step-buttons .prev {
   margin-top: 20px;
   font-size: 13px;
   color: #141414;
   cursor: pointer;
 }
+
+.multi-step .text-container p {
+  font-size: min(3.2vw, 17px)
+}
+
 
 .email-step {
   display: flex;
@@ -494,6 +515,10 @@ button.black {
   box-sizing: border-box;
 }
 
+.loading-section {
+  margin: 35% 0;
+}
+
 .animated-loader {
   display: flex;
   justify-content: center;
@@ -501,6 +526,7 @@ button.black {
 }
 .animated-loader .progress {
   width: 35%;
+  margin: 13px 0;
 }
 
 /* Loading Bar Animation. */
@@ -522,6 +548,7 @@ button.black {
   background: #d9d9d9;
   height: 100%;
   width: 0;
+  padding: 5px 0;
 }
 .progress-value.two {
   animation: load 1.5s normal forwards;
