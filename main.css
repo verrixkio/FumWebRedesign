@@ -203,7 +203,7 @@ button.black {
   justify-content: center;
   background-color: #869098;
   font-family: "Montserrat";
-  font-size: max(2vw, 10px);
+  font-size: 10px;
   margin-left: 25%;
   margin-right: 25%;
   padding: 4px;
@@ -735,9 +735,13 @@ button.black {
   }
   .main {
     background-image: url(./images/wave.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-size: 100%;
+    background-position-x: 6rem;
+    background-position-y: -1rem;
+  }
+  .header {
+    margin-bottom: 5rem;
   }
   h2 {
     font-size: min(4vw, 70px);
@@ -755,7 +759,7 @@ button.black {
     margin: 3rem 5%;
   }
   .hero-image .text-container {
-    margin: 13% 0% 0% 5%;
+    margin: 13% 0% 0% 16%;
     width: 35%;
   }
   .hero-image h2 {
@@ -764,10 +768,15 @@ button.black {
     margin-bottom: 10px;
   }
   .hero-image .text-content p {
-    font-size: min(2vw, 13px);
+    font-size: 1.1vw;
   }
   a {
     padding: 0px 0px 0px 10%;
+    font-size: 1vw;
+  }
+  .hero-image button {
+    padding: 0.85rem 2.2rem;
+    font-size: 1vw;
   }
   .button-link .button-float {
     float: left;
@@ -779,9 +788,11 @@ button.black {
   }
   .image-container.image-container.offset-big {
     width: 50%;
+    position: relative;
+    left: -10%;
   }
   .image-container.offset-big img {
-    width: 130%;
+    width: 112%;
   }
   /*End  Hero Image Section */
 
