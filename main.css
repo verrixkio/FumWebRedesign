@@ -522,8 +522,8 @@ button.black {
   align-items: center;
 }
 .animated-loader .progress {
-  width: 35%;
-  margin: 13px 0;
+  width: 27%;
+  margin: 14px 0;
 }
 
 /* Loading Bar Animation. */
@@ -541,17 +541,17 @@ button.black {
 .progress-value {
   animation: load 1.5s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 3px;
+  border-radius: 6px;
   background: #d9d9d9;
   height: 100%;
   width: 0;
-  padding: 5px 0;
+  padding: 6px 0;
 }
 .progress-value.two {
   animation: load 1.5s normal forwards;
   animation-delay: 1.5s;
   box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 3px;
+  border-radius: 6px;
   background: #d9d9d9;
   height: 100%;
   width: 0;
@@ -560,7 +560,7 @@ button.black {
   animation: load 1.5s normal forwards;
   animation-delay: 3s;
   box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 3px;
+  border-radius: 6px;
   background: #d9d9d9;
   height: 100%;
   width: 0;
@@ -576,7 +576,8 @@ button.black {
 }
 
 .animated-loader svg {
-  width: 8%;
+  width: 9%;
+  margin-left: 7px;
 }
 
 .animated-loader .path {
