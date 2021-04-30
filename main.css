@@ -941,7 +941,8 @@ button.black {
   }
   .purpose-section .button-container button {
     margin: 0px;
-    padding: 1rem 13%;
+    font-size: 0.7vw;
+    padding: 0.5rem 10%;
   }
   /* End of Purpose Section */
 
@@ -950,36 +951,41 @@ button.black {
     margin-top: 8rem;
   }
   .image-container.help-section {
-    margin: 7% 20% 10%;
+    margin: 7% 33% 5%;
   }
   .image-container.help-section .circle-selection h5 {
-    margin-top: 1rem;
-    font-size: 2vw;
+    margin-top: 0.2rem;
+    font-size: 1vw;
+    font-weight: 500;
   }
 
   /* End of Help Section */
 
   /* Email PDF Section */
   .stackable-content.email-pdf {
-    padding: 2rem 20% 6rem;
-    margin: 12rem 10%;
+    padding: 2rem 20% 4rem;
+    margin: 12rem 15%;
   }
   .email-pdf .text-container h2 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     margin: -1rem 0rem 3%;
   }
   .email-pdf .text-container p {
-    font-size: min(2vw, 15px);
+    font-size: min(1vw, 15px);
     padding: 0% 15%;
   }
   .email-pdf h4 {
-    font-size: 1vw;
+    font-size: 0.8vw;
   }
   .email-pdf .image-container img {
-    width: 35%;
+    width: 22%;
   }
   .email-pdf .email-submission {
     padding: 0% 10%;
+  }
+  .email-pdf .email-submission input {
+    font-size: 0.8vw;
+    padding: 20px;
   }
   /* End Email PDF Section */
 }
