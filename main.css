@@ -946,6 +946,9 @@ button.black {
     font-size: 0.7vw;
     padding: 0.5rem 10%;
   }
+  .purpose-section .tab-selection {
+    font-size: 1vw;
+  }
   /* End of Purpose Section */
 
   /* Help Section */
@@ -1141,9 +1144,7 @@ button.black {
     width: 85%;
     height: 40vw;
   }
-  .purpose-section .tab-selection {
-    font-size: 1vw;
-  }
+
   .purpose-section button {
     margin: 0% 5%;
     padding: 0.6rem 3.4rem;
