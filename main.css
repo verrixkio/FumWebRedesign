@@ -91,12 +91,9 @@ button.black {
   font-weight: 200;
 }
 .conquer-cores button {
-  padding: 1.2em 2.55rem;
-  font-size: 11px;
   font-weight: 400;
 }
 .best-sellers button {
-  padding: 0.9rem 5rem;
   font-size: 11px;
   cursor: pointer;
   font-weight: 300;
@@ -145,18 +142,15 @@ button.black {
 /* Conquer Cores Section */
 
 .conquer-cores h2 {
-  font-size: 7.5vw;
   margin: -1rem 0 1rem;
   position: relative;
 }
 .conquer-cores h4 {
   font-family: "Montserrat";
-  font-size: 13px;
   font-weight: 100;
   letter-spacing: 1px;
 }
 .conquer-cores p {
-  font-size: min(3vw, 11px);
   padding-right: 18%;
   margin-bottom: 20px;
   margin-top: -4px;
@@ -203,7 +197,7 @@ button.black {
   justify-content: center;
   background-color: #869098;
   font-family: "Montserrat";
-  font-size: max(2vw, 10px);
+  font-size: 10px;
   margin-left: 25%;
   margin-right: 25%;
   padding: 4px;
@@ -332,6 +326,7 @@ button.black {
 
 .image-container.reviews img {
   width: 70%;
+  height: 70%;
 }
 .reviews .text-container {
   display: flex;
@@ -665,7 +660,9 @@ button.black {
   justify-content: center;
 }
 .email-pdf .image-container img {
-  width: 37%;
+  width: 26%;
+  height: 26%;
+  margin: 1.5rem;
 }
 /* End of Email PDF Section */
 
@@ -734,17 +731,21 @@ button.black {
   }
   .main {
     background-image: url(./images/wave.png);
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-size: 100%;
+    background-position-x: 6rem;
+    background-position-y: -1rem;
+  }
+  .header {
+    margin-bottom: 5rem;
   }
   h2 {
-    font-size: min(4vw, 70px);
+    font-size: min(3vw, 70px);
     margin: 0;
     margin-bottom: 10px;
   }
   p {
-    font-size: min(2vw, 13px);
+    font-size: min(1vw, 13px);
   }
 
   /* Hero Image Section */
@@ -754,7 +755,7 @@ button.black {
     margin: 3rem 5%;
   }
   .hero-image .text-container {
-    margin: 13% 0% 0% 5%;
+    margin: 13% 0% 0% 16%;
     width: 35%;
   }
   .hero-image h2 {
@@ -763,10 +764,15 @@ button.black {
     margin-bottom: 10px;
   }
   .hero-image .text-content p {
-    font-size: min(2vw, 13px);
+    font-size: 1.1vw;
   }
   a {
     padding: 0px 0px 0px 10%;
+    font-size: 1vw;
+  }
+  .hero-image button {
+    padding: 0.85rem 2.2rem;
+    font-size: 1vw;
   }
   .button-link .button-float {
     float: left;
@@ -778,9 +784,11 @@ button.black {
   }
   .image-container.image-container.offset-big {
     width: 50%;
+    position: relative;
+    left: -10%;
   }
   .image-container.offset-big img {
-    width: 130%;
+    width: 112%;
   }
   /*End  Hero Image Section */
 
@@ -791,26 +799,26 @@ button.black {
     align-items: center;
     background-image: url("./images/light-grey-circle.png");
     background-repeat: no-repeat;
-    background-position: left;
-    margin: 2rem 5%;
+    margin: 14rem 10% 2rem;
+    background-position-x: 12%;
     background-position-y: bottom;
-    background-size: max(42%, 200px);
-    margin-top: 12rem;
+    background-size: 28%;
   }
   .HollowWood-image .natural-leaf-image {
     font-family: "Montserrat";
     text-align: center;
-    font-size: 1vw;
+    font-size: min(1vw, 10px);
     align-self: flex-end;
-    left: -5%;
+    left: 3%;
     position: relative;
+    width: 11%;
   }
   .HollowWood-image .natural-leaf-image img {
-    padding-bottom: 1rem;
-    width: 75%;
+    padding-bottom: 0.5rem;
+    width: 65%;
   }
   .HollowWood-image p {
-    font-size: min(2vw, 13px);
+    font-size: min(1vw, 13px);
     margin-bottom: 2rem;
     max-width: 18rem;
   }
@@ -818,7 +826,7 @@ button.black {
     width: 50%;
   }
   .image-container.HollowWood-image img {
-    width: 95%;
+    width: 70%;
   }
   .HollowWood-image .text-container {
     width: 35%;
@@ -845,15 +853,29 @@ button.black {
   }
   .conquer-cores p {
     padding-right: 40%;
+    font-size: min(3vw, 13px);
+  }
+  .conquer-cores h4 {
+    font-size: 16px;
+  }
+  .conquer-cores h2 {
+    font-size: 3.5vw;
   }
   .conquer-cores .text-container {
     padding: 375px 0px 5% 10%;
+  }
+  .conquer-cores button {
+    padding: 0.85rem 2.95rem;
+    font-size: 13px;
   }
   /* End of Conquer Cores Section */
 
   /* Best Sellers Section */
   .stackable-content.best-sellers {
     margin-top: 8rem;
+  }
+  .best-sellers button {
+    padding: 0.65rem 3.7rem;
   }
   /* End of Best Sellers Section */
 
@@ -884,7 +906,7 @@ button.black {
     margin-top: 8rem;
   }
   .purpose-section .image-container {
-    margin: 75px 15% 0px;
+    margin: 75px 20% 0px;
   }
   .image-section.purpose-section {
     width: 50%;
@@ -897,34 +919,32 @@ button.black {
     margin: 0% 0% 0% 10%;
   }
   .purpose-section .paragraph-section .bold-text {
-    font-size: min(2vw, 16px);
+    font-size: min(1vw, 16px);
   }
   .purpose-section .paragraph-section .tab-paragraph {
-    font-size: min(2vw, 14px);
+    font-size: min(2vw, 9px);
   }
   .desktop-purpose-section {
     display: flex;
     align-items: center;
     padding: 3% 7%;
   }
-  .purpose-section .tab-selection {
-    font-size: 1vw;
-  }
   .purpose-section .tab-selection .first-tab {
-    padding: 4% 5%;
+    padding: 3% 5%;
   }
   .purpose-section .tab-selection .second-tab {
-    padding: 4% 5%;
+    padding: 3% 5%;
   }
   .purpose-section .tab-selection .third-tab {
-    padding: 4% 5%;
+    padding: 3% 5%;
   }
   .purpose-section .button-container {
     padding-top: 10%;
   }
   .purpose-section .button-container button {
     margin: 0px;
-    padding: 1rem 13%;
+    font-size: 0.7vw;
+    padding: 0.5rem 10%;
   }
   /* End of Purpose Section */
 
@@ -933,36 +953,41 @@ button.black {
     margin-top: 8rem;
   }
   .image-container.help-section {
-    margin: 7% 20% 10%;
+    margin: 7% 33% 5%;
   }
   .image-container.help-section .circle-selection h5 {
-    margin-top: 1rem;
-    font-size: 2vw;
+    margin-top: 0.2rem;
+    font-size: 1vw;
+    font-weight: 500;
   }
 
   /* End of Help Section */
 
   /* Email PDF Section */
   .stackable-content.email-pdf {
-    padding: 2rem 20% 6rem;
-    margin: 12rem 10%;
+    padding: 2rem 20% 4rem;
+    margin: 12rem 15%;
   }
   .email-pdf .text-container h2 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     margin: -1rem 0rem 3%;
   }
   .email-pdf .text-container p {
-    font-size: min(2vw, 15px);
+    font-size: min(1vw, 15px);
     padding: 0% 15%;
   }
   .email-pdf h4 {
-    font-size: 1vw;
+    font-size: 0.8vw;
   }
   .email-pdf .image-container img {
-    width: 35%;
+    width: 22%;
   }
   .email-pdf .email-submission {
     padding: 0% 10%;
+  }
+  .email-pdf .email-submission input {
+    font-size: 0.8vw;
+    padding: 20px;
   }
   /* End Email PDF Section */
 }
@@ -1030,7 +1055,17 @@ button.black {
     background-position-x: center;
   }
   .conquer-cores h2 {
-    font-size: max(8vw, 30px);
+    font-size: 7.5vw;
+  }
+  .conquer-cores h4 {
+    font-size: 13px;
+  }
+  .conquer-cores p {
+    font-size: min(3vw, 11px);
+  }
+  .conquer-cores button {
+    padding: 1.2em 2.55rem;
+    font-size: 11px;
   }
 
   .conquer-cores .text-container {
@@ -1049,7 +1084,9 @@ button.black {
   /* End of Habit Options Section */
 
   /* Best Sellers Section */
-
+  .best-sellers button {
+    padding: 0.9rem 5rem;
+  }
   /* End of Best Sellers Section */
 
   /* Reviews Section */
@@ -1103,6 +1140,9 @@ button.black {
     border-radius: 10px;
     width: 85%;
     height: 40vw;
+  }
+  .purpose-section .tab-selection {
+    font-size: 1vw;
   }
   .purpose-section button {
     margin: 0% 5%;
