@@ -544,7 +544,7 @@ button.black {
 }
 .progress-value.two {
   animation: load 1.5s normal forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 6px;
   background: #d9d9d9;
@@ -553,7 +553,7 @@ button.black {
 }
 .progress-value.three {
   animation: load 1.5s normal forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 6px;
   background: #d9d9d9;
@@ -581,21 +581,21 @@ button.black {
   stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
   -webkit-animation: dash 300ms ease forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 .animated-loader .path.two {
   stroke-linecap: round;
   stroke-dasharray: 30;
   stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 .animated-loader .path.three {
   stroke-linecap: round;
   stroke-dasharray: 30;
   stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
 }
 
 .animated-loader circle {
