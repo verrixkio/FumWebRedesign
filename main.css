@@ -582,22 +582,23 @@ button.black {
 
 .animated-loader .path {
   stroke-linecap: round;
-  stroke-dasharray: 27;
-  stroke-dashoffset: -23;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
+  -webkit-animation: dash 300ms ease forwards;
   animation-delay: 1.5s;
 }
 .animated-loader .path.two {
   stroke-linecap: round;
-  stroke-dasharray: 27;
-  stroke-dashoffset: -23;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
   animation-delay: 3s;
 }
 .animated-loader .path.three {
   stroke-linecap: round;
-  stroke-dasharray: 27;
-  stroke-dashoffset: -23;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
   animation: dash 300ms ease forwards;
   animation-delay: 4.5s;
 }
@@ -608,7 +609,8 @@ button.black {
 
 @keyframes dash {
   to {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 60;
+    -webkit-stroke-dashoffset: 60;
   }
 }
 
