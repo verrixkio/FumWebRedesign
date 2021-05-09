@@ -938,7 +938,8 @@ button.black {
     padding: 4px 8px;
   }
   .conquer-cores p {
-    padding-right: 40%;
+    margin-bottom: 50px;
+    padding-right: 50%;
     font-size: min(3vw, 16px);
   }
   .conquer-cores h4 {
@@ -967,8 +968,24 @@ button.black {
   /* End of Best Sellers Section */
 
   /* Reviews Section */
+  .stackable-content.reviews {
+    margin-top: 5rem;
+    background-color: #e6e6e6;
+}
+  .reviews .text-content p {
+    margin: 0;
+  }
+
+  .reviews .text-content .testimonial-arrow-block p {
+    padding-right: 10%;
+    line-height: 45px;
+  }
+  .reviews .text-content .testimonial-person .person {
+    font-size: 1.15vw;
+    margin-top: 9%;
+  }
   .image-container.reviews img {
-    width: 40%;
+    width: 64%;
   }
   .reviews .text-container.testimonial {
     text-align: inherit;
@@ -978,10 +995,29 @@ button.black {
     display: flex;
     flex-flow: row-reverse;
     align-items: center;
-    margin: 5rem 0% 3rem 10%;
+    width: 61%;
+    margin-top: 7%;
+    
+  }
+  .reviews .text-container .text-content {
+    margin-top: 6%;
   }
   .reviews .image-container {
-    width: 95%;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+  }
+  .reviews .reviews-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .reviews button {
+      font-weight: 500;
+      padding: 1rem 2rem;
+      font-size: 12px;
+      margin: 8% 0;
   }
   .testimonial-arrow-block p {
     font-size: min(3vw, 25px);
@@ -1000,6 +1036,7 @@ button.black {
   }
   .image-section.purpose-section img {
     width: 100%;
+    border-radius: 5px;
   }
   .purpose-section .paragraph-section {
     width: 50%;
@@ -1010,6 +1047,7 @@ button.black {
   }
   .purpose-section .paragraph-section .tab-paragraph {
     font-size: min(2vw, 9px);
+    margin-top: 1em;
   }
   .desktop-purpose-section {
     display: flex;
@@ -1018,12 +1056,15 @@ button.black {
   }
   .purpose-section .tab-selection .first-tab {
     padding: 3% 5%;
+    font-size: 10px;
   }
   .purpose-section .tab-selection .second-tab {
     padding: 3% 5%;
+    font-size: 10px;
   }
   .purpose-section .tab-selection .third-tab {
     padding: 3% 5%;
+    font-size: 10px;
   }
   .purpose-section .button-container {
     padding-top: 10%;
@@ -1036,6 +1077,10 @@ button.black {
   .purpose-section .tab-selection {
     font-size: 1vw;
   }
+    .purpose-section p {
+      margin-bottom: 0;
+  }
+  
   /* End of Purpose Section */
 
   /* Help Section */
@@ -1106,15 +1151,15 @@ button.black {
   /* Email PDF Section */
   .stackable-content.email-pdf {
     padding: 2rem 20% 4rem;
-    margin: 12rem 15%;
+    margin: 12rem 16%;
   }
   .email-pdf .text-container h2 {
     font-size: 2.5vw;
     margin: -1rem 0rem 3%;
   }
   .email-pdf .text-container p {
-    font-size: min(1vw, 15px);
-    padding: 0% 15%;
+    font-size: min(1vw, 13px);
+    padding: 0% 20%;
   }
   .email-pdf h4 {
     font-size: 0.8vw;
@@ -1123,11 +1168,18 @@ button.black {
     width: 22%;
   }
   .email-pdf .email-submission {
-    padding: 0% 10%;
+    padding: 0% 13%;
   }
   .email-pdf .email-submission input {
     font-size: 0.8vw;
     padding: 20px;
+    margin-bottom: 18%;
+    margin-top: 15%;
+  }
+  .email-pdf button {
+    font-size: 13px;
+    padding: 0.7rem 3.1rem;
+    margin-bottom: 5%;
   }
   /* End Email PDF Section */
 }

@@ -11,6 +11,14 @@ $(document).ready(function () {
     wrapAround: false,
   });
 
+  // Testimonials Flickity
+
+  var elemTwo = document.querySelector(".reviews-carousel");
+  var flkty = new Flickity(elemTwo, {
+    // options
+    freeScroll: true,
+  });
+
   $('#scrollToQuiz').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
