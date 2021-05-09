@@ -740,7 +740,7 @@ button.black {
     margin-bottom: 5rem;
   }
   h2 {
-    font-size: min(3vw, 70px);
+    font-size: min(2.80vw, 70px);
     margin: 0;
     margin-bottom: 10px;
   }
@@ -760,19 +760,28 @@ button.black {
   }
   .hero-image h2 {
     font-size: min(4vw, 70px);
+    letter-spacing: 0.05vw;
     margin: 0;
     margin-bottom: 10px;
   }
   .hero-image .text-content p {
-    font-size: 1.1vw;
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+    margin-bottom: 3rem;
+    margin-top: 1.25rem;
   }
   a {
     padding: 0px 0px 0px 10%;
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
   .hero-image button {
-    padding: 0.85rem 2.2rem;
+    padding: 1rem 2.2rem;
     font-size: 1vw;
+  }
+  .HollowWood-image button {
+    font-weight: 500;
+    padding: 1rem 2.75rem;
+    font-size: 0.85vw;
   }
   .button-link .button-float {
     float: left;
@@ -819,8 +828,10 @@ button.black {
   }
   .HollowWood-image p {
     font-size: min(1vw, 13px);
-    margin-bottom: 2rem;
+    line-height: 1.25vw;
+    margin-bottom: 2.5rem;
     max-width: 18rem;
+    margin-top: 1.25rem;
   }
   .image-container.HollowWood-image {
     width: 50%;
@@ -830,6 +841,9 @@ button.black {
   }
   .HollowWood-image .text-container {
     width: 35%;
+  }
+  .HollowWood-image .text-container h2{
+    line-height: 3.75vw;
   }
   .HollowWood-image .button-link button {
     font-size: min(2vw, 10px);
@@ -841,6 +855,67 @@ button.black {
   .stackable-content.habit-options {
     margin-top: 12rem;
   }
+  .habit-options .text-content p {
+    margin-top: 0;
+  }
+  .habit-options .text-content {
+    margin-bottom: 60px;
+  }
+  .habit-options .how-we-can-help {
+    display: flex;
+    justify-content: center;
+  }
+  .habit-options .habit-container {
+    display: flex;
+  }
+
+  .habit-options .habit-container h3 {
+    margin-bottom: 0px;
+    margin-top: -10px;
+    font-size: 20.5px;
+    font-weight: 600;
+    font-family: "ivyjournal";
+  }
+  .habit-options .habit-text-container h4 {
+    font-size: 11.5px;
+    margin-top: 0px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .habit-options .habit-container .image-container {
+    max-width: 30rem;
+    width: 16.25rem;
+    margin: 0px 0.8rem 1.5rem 1rem;
+  }
+  .habit-options .habit-container .image-container .plant-image.black-pepper {
+    margin: -12px 0px 0px -77px;
+    width: 16.5%;
+  }
+  .habit-options .habit-container .image-container .plant-image.mint {
+    margin: 0px 0px 0px 20px;
+    width: 11%;
+  }
+  .habit-options .habit-container .image-container .plant-image.bergamot {
+    margin: 0px 0px 0px -51px;
+    width: 16.5%;
+  }
+  .habit-options .habit-container .image-container .plant-image.eucalyptus {
+    margin: 0px 0px 0px -44px;
+    width: 17%;
+  } 
+  .habit-options .habit-container .image-container .plant-image.thyme {
+    margin: 0px 0px 0px -66px;
+    width: 19%;
+  } 
+  .habit-options .image-container .plant-image.lavender {
+    margin: 0px 0px 0px -55px;
+    width: 17%;
+  }
+  .habit-options .popular-token {
+    margin-left: 25%;
+    margin-right: 23%;
+    padding: 5px;
+  }
   /* End Habit Options Section */
 
   /* Conquer Cores Section */
@@ -851,22 +926,34 @@ button.black {
     background-size: cover;
     background-position-x: center;
   }
+  .conquer-cores .style-block {
+    background-color: #B0BDC6;
+    max-width: 103px;
+    min-width: 87px;
+    border-radius: 3px;
+    font-family: "ivyjournal";
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    padding: 4px 8px;
+  }
   .conquer-cores p {
     padding-right: 40%;
-    font-size: min(3vw, 13px);
+    font-size: min(3vw, 16px);
   }
   .conquer-cores h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .conquer-cores h2 {
-    font-size: 3.5vw;
+    font-size: 3.65vw;
   }
   .conquer-cores .text-container {
     padding: 375px 0px 5% 10%;
   }
   .conquer-cores button {
-    padding: 0.85rem 2.95rem;
-    font-size: 13px;
+    padding: 1rem 3.3rem;
+    font-size: 16px;
+    margin-bottom: 25px;
   }
   /* End of Conquer Cores Section */
 
@@ -956,12 +1043,62 @@ button.black {
     margin-top: 8rem;
   }
   .image-container.help-section {
-    margin: 7% 33% 5%;
+    margin: 4% 33% 3.5%;
+  }
+  #svg_wrap {
+    margin: 40px 0 10px 0;
+    padding: 0 85px;
+  }
+  .help-section .multi-button {
+    width: 52% !important;
+  }
+  .help-section .text-container p {
+    margin-bottom: 0px
   }
   .image-container.help-section .circle-selection h5 {
     margin-top: 0.2rem;
     font-size: 1vw;
     font-weight: 500;
+  }
+  .multi-step-buttons .button{
+    padding: 1.15rem 3.3rem;
+    font-size: 16px;
+    margin-bottom: 25px;
+  } 
+  .pageTwoCenter {
+    display: flex;
+    justify-content: center;
+  }
+  .pageTwo {
+    width: 50%;
+  }
+  .dynamic-title-block .option-block p {
+    padding: 0% 8%;
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+    margin: 7% 0;
+    font-family: IvyJournal;
+  }
+  .loader-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .loading-section {
+    margin: 5% 0;
+  } 
+  .progress {
+    height: 2vw;
+  }
+  .progress-value {
+    padding: 0;
+  }
+  .animated-loader .progress {
+    width: 27%;
+    margin: 8px 0;
+  }
+  .loader-container{
+    margin-top: 40px;
   }
 
   /* End of Help Section */

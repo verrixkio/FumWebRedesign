@@ -31,7 +31,7 @@
           <div class="text-content">
             <h2>Natural<br />Solutions</h2>
             <p>
-              Find out which <b>super-plants</b> <br /> will be most beneficial
+              Find out which <b>super-plants</b> <br class="mobile" /> will <br class="desktop" />be most beneficial
               to you!
             </p>
             <div class="button-link">
@@ -97,7 +97,7 @@
             </p>
           </div>
         </div>
-        <div class="main-carousel">
+        <div class="main-carousel mobile">
           <!-- Addiction -->
           <div class="image-container addiction carousel-cell">
             <div class="popular-token">POPULAR</div>
@@ -169,6 +169,87 @@
                 <h4>Breathe & airway support.</h4>
               </div>
               <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+            </div>
+          </div>
+        </div>
+        <div class="how-we-can-help desktop">
+          <div class="habit-container">
+            <!-- Addiction -->
+            <div class="image-container addiction">
+              <div class="popular-token">POPULAR</div>
+              <img src="images/broken-cig.png" alt="fum-packets-main-image" />
+              <img class="plant-image black-pepper" src="images/black-pepper.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Addiction</h3>
+                  <h4>Breaking negative habits.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
+            </div>
+            <!-- Focus -->
+            <div class="image-container focus">
+              <img src="images/brain.png" alt="fum-packets-main-image" />
+              <img class="plant-image mint" src="images/mint.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Focus</h3>
+                  <h4>Aiding in mental clarity.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
+            </div>
+            <!-- Relaxation -->
+            <div class="image-container relaxation">
+              <img src="images/pot.png" alt="fum-packets-main-image" />
+              <img class="plant-image bergamot" src="images/bergamot.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Relaxation</h3>
+                  <h4>Sleep & peace support.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="how-we-can-help desktop">
+          <div class="habit-container">
+            <!-- Respiratory -->
+            <div class="image-container respiratory">
+              <img src="images/wind.png" alt="fum-packets-main-image" />
+              <img class="plant-image eucalyptus" src="images/eucalyptus.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Respiratory</h3>
+                  <h4>Breathe & airway support.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
+            </div>
+            <!-- Physical -->
+            <div class="image-container physical">
+              <img src="images/arm.png" alt="fum-packets-main-image" />
+              <img class="plant-image thyme" src="images/thyme.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Physical</h3>
+                  <h4>Body & strength support.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
+            </div>
+            <!-- Emotional -->
+            <div class="image-container emotional">
+              <img src="images/happyguy.png" alt="fum-packets-main-image" />
+              <img class="plant-image lavender" src="images/lavender.png" alt="fum-packets-main-image" />
+              <div class="habit-text-container">
+                <div>
+                  <h3>Emotional</h3>
+                  <h4>Stress & anxiety calming.</h4>
+                </div>
+                <img class="habit-arrow" src="images/Arrow.png" alt="fum-packets-main-image"></img>
+              </div>
             </div>
           </div>
         </div>
@@ -416,14 +497,18 @@
               <p>Select which option you could use the most support with.</p>
             </div>
             <input type="name" class="disabled selection 1" placeholder="Selection"></input>
-            <div class="dynamic-title-block">
-              <div class="style-block option-block">
-                <p class="dynamic-title-p">Addiction</p>
-                <img class="dynamic-img-render" src="images/broken-cig.png" alt="fum-packets-main-image" />
+            <div class="pageTwoCenter">
+              <div class="pageTwo">
+                <div class="dynamic-title-block">
+                  <div class="style-block option-block">
+                    <p class="dynamic-title-p">Addiction</p>
+                    <img class="dynamic-img-render" src="images/broken-cig.png" alt="fum-packets-main-image" />
+                  </div>
+                </div>
+              <!-- Holder for dynamic menu options do not delete. -->
+                <div class="menuOption-holder">
+                </div>
               </div>
-            </div>
-            <!-- Holder for dynamic menu options do not delete. -->
-            <div class="menuOption-holder">
             </div>
           </section>
 
@@ -442,34 +527,38 @@
                 </div>
               </div>
           </section> -->
-
-          <section class="loading-section">
-            <div class="animated-loader">
-              <div class="progress">
-                <div class="progress-value"></div>
+            <section class="loading-section">
+              <div class="loader-flex">
+                <div class="loader-container">
+                  <div class="animated-loader">
+                    <div class="progress">
+                      <div class="progress-value"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
+                    <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
+                    <polyline class="path" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                  </div>
+                  <div class="animated-loader">
+                    <div class="progress">
+                      <div class="progress-value two"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
+                    <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
+                    <polyline class="path two" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/></svg>
+                  </div>
+                  <div class="animated-loader">
+                    <div class="progress">
+                      <div class="progress-value three"></div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
+                    <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
+                    <polyline class="path three" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
-              <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
-              <polyline class="path" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/></svg>
-          </div>
-          <div class="animated-loader">
-            <div class="progress">
-              <div class="progress-value two"></div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
-            <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
-            <polyline class="path two" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/></svg>
-           </div>
-          <div class="animated-loader">
-            <div class="progress">
-              <div class="progress-value three"></div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve">
-            <circle class="circle-load" cx="11" cy="11" r="9.5" fill="#D9D9D9"/>
-            <polyline class="path three" fill="none" points="13.5,9 10.5,14 8.5,12" stroke="#707070" stroke-miterlimit="10" stroke-width="1.5"/>
-            </svg>
-          </div>
-          </section>
+            </section>
+          </div> 
           <div class="multi-step-buttons">
             <button type="button" class="button blacktwo next-black" id="next">Continue &rarr;</div>
           </div>
