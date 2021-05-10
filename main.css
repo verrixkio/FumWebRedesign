@@ -889,27 +889,27 @@ button.black {
   }
   .habit-options .habit-container .image-container .plant-image.black-pepper {
     margin: -12px 0px 0px -77px;
-    width: 16.5%;
+    width: 250px;
   }
   .habit-options .habit-container .image-container .plant-image.mint {
     margin: 0px 0px 0px 20px;
-    width: 11%;
+    width: 155px;
   }
   .habit-options .habit-container .image-container .plant-image.bergamot {
     margin: 0px 0px 0px -51px;
-    width: 16.5%;
+    width: 260px;
   }
   .habit-options .habit-container .image-container .plant-image.eucalyptus {
     margin: 0px 0px 0px -44px;
-    width: 17%;
+    width: 240px;
   } 
   .habit-options .habit-container .image-container .plant-image.thyme {
     margin: 0px 0px 0px -66px;
-    width: 19%;
+    width: 260px;
   } 
   .habit-options .image-container .plant-image.lavender {
     margin: 0px 0px 0px -55px;
-    width: 17%;
+    width: 240px;
   }
   .habit-options .popular-token {
     margin-left: 25%;
