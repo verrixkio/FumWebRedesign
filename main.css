@@ -941,9 +941,11 @@ button.black {
     margin-bottom: 50px;
     padding-right: 50%;
     font-size: min(3vw, 16px);
+    margin-top: 1.33rem;
   }
   .conquer-cores h4 {
     font-size: 20px;
+    margin-bottom: 1.4rem;
   }
   .conquer-cores h2 {
     font-size: 3.65vw;
@@ -1347,3 +1349,4 @@ button.black {
   }
   /* End of Help Section */
 }
+
