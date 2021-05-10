@@ -980,7 +980,7 @@ button.black {
 
   .reviews .text-content .testimonial-arrow-block p {
     padding-right: 10%;
-    line-height: 45px;
+    line-height: min(3vw, 45px)
   }
   .reviews .text-content .testimonial-person .person {
     font-size: 1.15vw;
@@ -1022,7 +1022,7 @@ button.black {
       margin: 8% 0;
   }
   .testimonial-arrow-block p {
-    font-size: min(3vw, 25px);
+    font-size: min(2vw, 25px);
   }
   /* End of Reviews Section */
 
@@ -1350,3 +1350,41 @@ button.black {
   /* End of Help Section */
 }
 
+/* Bit of Tablet Help */
+@media only screen and (max-width: 900px) {
+
+  /* How can we Help Section */
+  .habit-options .habit-container .image-container {
+    max-width: 30rem;
+    width: 175px;
+    margin: 0px 0.8rem 1.5rem 1rem;
+  } 
+
+  .habit-options .habit-container .image-container .plant-image.black-pepper {
+    margin: -12px 0px 0px -77px;
+    width: 175px;
+  }
+  .habit-options .habit-container .image-container .plant-image.mint {
+    margin: 0px 0px 0px -1px;
+    width: 100px;
+  }
+  .habit-options .habit-container .image-container .plant-image.bergamot {
+    margin: 0px 0px 0px -63px;
+    width: 175px;
+  }
+  .habit-options .habit-container .image-container .plant-image.eucalyptus {
+    margin: 0px 0px 0px -44px;
+    width: 165px;
+  } 
+  .habit-options .habit-container .image-container .plant-image.thyme {
+    margin: 0px 0px 0px -66px;
+    width: 185px;
+  } 
+  .habit-options .image-container .plant-image.lavender {
+    margin: 0px 0px 0px -55px;
+    width: 165px;
+  }
+
+
+
+}
