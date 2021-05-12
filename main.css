@@ -740,7 +740,7 @@ button.black {
     margin-bottom: 5rem;
   }
   h2 {
-    font-size: min(2.80vw, 70px);
+    font-size: min(2.8vw, 70px);
     margin: 0;
     margin-bottom: 10px;
   }
@@ -778,11 +778,7 @@ button.black {
     padding: 1rem 2.2rem;
     font-size: 1vw;
   }
-  .HollowWood-image button {
-    font-weight: 500;
-    padding: 1rem 2.6rem;
-    font-size: 0.85vw;
-  }
+
   .button-link .button-float {
     float: left;
     padding-right: 7%;
@@ -826,6 +822,11 @@ button.black {
     padding-bottom: 0.5rem;
     width: 65%;
   }
+  .HollowWood-image button {
+    font-weight: 500;
+    padding: 1rem 2.6rem;
+    font-size: 0.85vw;
+  }
   .HollowWood-image p {
     font-size: min(1vw, 13px);
     line-height: 1.25vw;
@@ -842,7 +843,7 @@ button.black {
   .HollowWood-image .text-container {
     width: 35%;
   }
-  .HollowWood-image .text-container h2{
+  .HollowWood-image .text-container h2 {
     line-height: 3.75vw;
   }
   .HollowWood-image .button-link button {
@@ -902,11 +903,11 @@ button.black {
   .habit-options .habit-container .image-container .plant-image.eucalyptus {
     margin: 0px 0px 0px -44px;
     width: 240px;
-  } 
+  }
   .habit-options .habit-container .image-container .plant-image.thyme {
     margin: 0px 0px 0px -66px;
     width: 260px;
-  } 
+  }
   .habit-options .image-container .plant-image.lavender {
     margin: 0px 0px 0px -55px;
     width: 240px;
@@ -927,7 +928,7 @@ button.black {
     background-position-x: center;
   }
   .conquer-cores .style-block {
-    background-color: #B0BDC6;
+    background-color: #b0bdc6;
     max-width: 103px;
     min-width: 87px;
     border-radius: 3px;
@@ -973,14 +974,14 @@ button.black {
   .stackable-content.reviews {
     margin-top: 5rem;
     background-color: #e6e6e6;
-}
+  }
   .reviews .text-content p {
     margin: 0;
   }
 
   .reviews .text-content .testimonial-arrow-block p {
     padding-right: 10%;
-    line-height: min(3vw, 45px)
+    line-height: min(3vw, 45px);
   }
   .reviews .text-content .testimonial-person .person {
     font-size: 1.15vw;
@@ -999,7 +1000,6 @@ button.black {
     align-items: center;
     width: 61%;
     margin-top: 7%;
-    
   }
   .reviews .text-container .text-content {
     margin-top: 6%;
@@ -1013,13 +1013,12 @@ button.black {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
   .reviews button {
-      font-weight: 500;
-      padding: 1rem 2rem;
-      font-size: 12px;
-      margin: 8% 0;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    font-size: 12px;
+    margin: 8% 0;
   }
   .testimonial-arrow-block p {
     font-size: min(2vw, 25px);
@@ -1079,10 +1078,10 @@ button.black {
   .purpose-section .tab-selection {
     font-size: 1vw;
   }
-    .purpose-section p {
-      margin-bottom: 0;
+  .purpose-section p {
+    margin-bottom: 0;
   }
-  
+
   /* End of Purpose Section */
 
   /* Help Section */
@@ -1100,17 +1099,17 @@ button.black {
     width: 52% !important;
   }
   .help-section .text-container p {
-    margin-bottom: 0px
+    margin-bottom: 0px;
   }
   .image-container.help-section .circle-selection h5 {
     margin-top: 0.2rem;
     font-size: 1vw;
     font-weight: 500;
   }
-  .multi-step-buttons .button{
+  .multi-step-buttons .button {
     padding: 1.15rem 3.3rem;
     font-size: 16px;
-  } 
+  }
   .pageTwoCenter {
     display: flex;
     justify-content: center;
@@ -1132,7 +1131,7 @@ button.black {
   }
   .loading-section {
     margin: 5% 0;
-  } 
+  }
   .progress {
     height: 2vw;
   }
@@ -1143,7 +1142,7 @@ button.black {
     width: 27%;
     margin: 8px 0;
   }
-  .loader-container{
+  .loader-container {
     margin-top: 40px;
   }
 
@@ -1352,13 +1351,12 @@ button.black {
 
 /* Bit of Tablet Help */
 @media only screen and (max-width: 900px) {
-
   /* How can we Help Section */
   .habit-options .habit-container .image-container {
     max-width: 30rem;
     width: 175px;
     margin: 0px 0.8rem 1.5rem 1rem;
-  } 
+  }
 
   .habit-options .habit-container .image-container .plant-image.black-pepper {
     margin: -12px 0px 0px -77px;
@@ -1375,16 +1373,13 @@ button.black {
   .habit-options .habit-container .image-container .plant-image.eucalyptus {
     margin: 0px 0px 0px -44px;
     width: 165px;
-  } 
+  }
   .habit-options .habit-container .image-container .plant-image.thyme {
     margin: 0px 0px 0px -66px;
     width: 185px;
-  } 
+  }
   .habit-options .image-container .plant-image.lavender {
     margin: 0px 0px 0px -55px;
     width: 165px;
   }
-
-
-
 }
