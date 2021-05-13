@@ -1,11 +1,11 @@
-a {
+.redesign-HP-2021 a {
   display: block;
 }
-input {
+.redesign-HP-2021 input {
   display: block;
 }
 
-body {
+.redesign-HP-2021 body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -14,53 +14,54 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.pathed {
+.redesign-HP-2021 .pathed {
   fill: white;
 }
-.stroked {
+.redesign-HP-2021 .stroked {
   stroke: white;
 }
-.filled {
+.redesign-HP-2021 .filled {
   fill: rgb(164, 181, 181);
 }
-.special-filled {
+.redesign-HP-2021 .special-filled {
   filter: invert(1);
 }
-.contain {
+.redesign-HP-2021 .contain {
   max-width: 100%;
   overflow-x: hidden;
 }
-a#Quiz {
+.redesign-HP-2021 a#Quiz {
   padding: 0px;
 }
-div {
+.redesign-HP-2021 div {
   display: block;
 }
-.hidden {
+.redesign-HP-2021 .hidden {
   display: none;
 }
 /* These are the initial view ports. If you start resizing we may have to consider the design up to 800 px as well. Shouldnt be an issue though! */
 /* Fonts */
-h2 {
+.redesign-HP-2021 h2 {
   font-family: IvyJournal;
   line-height: 110%;
+  font-weight: bold;
 }
-p {
+.redesign-HP-2021 p {
   margin-top: 1.7em;
   font-family: "Montserrat", sans-serif;
 }
-.bold-text {
+.redesign-HP-2021 .bold-text {
   -webkit-text-stroke: thin;
   font-weight: bold;
 }
-a {
+.redesign-HP-2021 a {
   font-family: "Montserrat";
   font-size: 0.75rem;
   padding: 10px;
   color: #585858;
 }
 /* Buttons */
-button {
+.redesign-HP-2021 button {
   font-family: "Montserrat";
   padding: 1rem 2rem;
   border-radius: 30px;
@@ -70,71 +71,71 @@ button {
   cursor: pointer;
   outline: none;
 }
-.hero-image button {
+.redesign-HP-2021 .hero-image button {
   font-weight: 500;
 }
-.HollowWood-image button {
+.redesign-HP-2021 .HollowWood-image button {
   font-weight: 300;
   font-size: 11px;
   padding: 0.7rem 2rem;
 }
-button.blacktwo {
+.redesign-HP-2021 button.blacktwo {
   background-color: #262626;
   border: solid #262626;
   cursor: pointer;
   font-weight: 200;
 }
-button.black {
+.redesign-HP-2021 button.black {
   background-color: #141414;
   border: solid #141414;
   cursor: pointer;
   font-weight: 200;
 }
-.conquer-cores button {
+.redesign-HP-2021 .conquer-cores button {
   font-weight: 400;
 }
-.best-sellers button {
+.redesign-HP-2021 .best-sellers button {
   font-size: 11px;
   cursor: pointer;
   font-weight: 300;
 }
-.email-pdf button {
+.redesign-HP-2021 .email-pdf button {
   font-size: 12px;
   padding: 0.5rem 2.15rem;
 }
-.reviews button {
+.redesign-HP-2021 .reviews button {
   font-weight: 500;
   padding: 0.6rem 1.8rem;
   font-size: 11px;
 }
 
-.disabled {
+.redesign-HP-2021 .disabled {
   display: none;
 }
 
 /* Scroll arrows */
-.scroll-arrows {
+.redesign-HP-2021 .scroll-arrows {
   margin: 35px 0px 70px 0px;
 }
 
-.scroll-arrows h4 {
+.redesign-HP-2021 .scroll-arrows h4 {
   font-family: "Montserrat";
   color: lightgrey;
   font-size: min(3vw, 11px);
   margin: 1.33em;
   font-weight: 200;
 }
-.left-arrow {
+.redesign-HP-2021 .left-arrow {
   transform: rotate(180deg);
 }
-.best-sellers .scroll-arrows {
+.redesign-HP-2021 .best-sellers .scroll-arrows {
   margin-top: 5px;
 }
 /* End of Scroll arrows */
 
 /* Hero-Image Section */
 
-.button-link {
+.redesign-HP-2021 .button-link {
   margin-top: 1.5rem;
 }
 /* End Hero-Image Section */
