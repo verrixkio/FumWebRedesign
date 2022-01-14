@@ -354,6 +354,13 @@
 /* End of Reviews Section */
 
 /* Help Section */
+.header-statement {
+  font-family: "Montserrat", sans-serif;
+  margin: 5.7rem 0 0rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
 .image-container.help-section .circle-selection h5 {
   font-weight: 400;
 }
@@ -1089,6 +1096,19 @@
   /* End of Purpose Section */
 
   /* Help Section */
+  .plant-background-one {
+    background-image: url(images/background-plant-left.png);
+    background-size: 29%;
+    background-repeat: no-repeat;
+    background-position-x: -9%;
+  }
+
+  .plant-background-two {
+    background-image: url(images/background-plant-right.png);
+    background-size: 23%;
+    background-repeat: no-repeat;
+    background-position-x: 108%;
+  }
   .stackable-content.help-section {
     margin-top: 8rem;
   }
@@ -1349,6 +1369,24 @@
   /* Help Section */
   .image-container.help-section .circle-selection h5 {
     margin-top: 0.5rem;
+  }
+  .text-container .text-content h2 {
+    margin: 0;
+  }
+  .plant-background-one {
+    background-image: url(images/background-plant-left.png);
+    background-size: 62%;
+    background-repeat: no-repeat;
+    background-position-x: -53%;
+    background-position-y: 27%;
+  }
+
+  .plant-background-two {
+    background-image: url(images/background-plant-right.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 137%;
+    background-position-y: -500%;
   }
   /* End of Help Section */
 }
