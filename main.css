@@ -1089,6 +1089,19 @@
   /* End of Purpose Section */
 
   /* Help Section */
+  .plant-background-one {
+    background-image: url(images/background-plant-left.png);
+    background-size: 29%;
+    background-repeat: no-repeat;
+    background-position-x: -9%;
+  }
+
+  .plant-background-two {
+    background-image: url(images/background-plant-right.png);
+    background-size: 23%;
+    background-repeat: no-repeat;
+    background-position-x: 108%;
+  }
   .stackable-content.help-section {
     margin-top: 8rem;
   }
