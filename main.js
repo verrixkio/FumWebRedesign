@@ -13,11 +13,23 @@ $(document).ready(function () {
 
   // Testimonials Flickity
 
-  var elemTwo = document.querySelector(".reviews-carousel");
+  var elemTwo = document.querySelector(".reviews.carousel");
   var flkty = new Flickity(elemTwo, {
     // options
-    freeScroll: true,
+    cellAlign: "left",
+    freeScroll: false,
+    prevNextButtons: true,
+    pageDots: false,
+    wrapAround: false,
   });
+
+  // $('.reviews.prev-arrow').click(function() {
+  //   $carousel.flickity('previous');
+  // });
+
+  // $('.reviews.next-arrow').click(function() {
+  //   $carousel.flickity('next');
+  // });
 
   $('#scrollToQuiz').click(function(){
     $('html, body').animate({
