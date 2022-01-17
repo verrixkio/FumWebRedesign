@@ -105,6 +105,9 @@
   font-weight: 500;
   padding: 0.6rem 1.8rem;
   font-size: 11px;
+  background: transparent;
+  border: 0px;
+  color: #a5adae;
 }
 
 .redesign-HP-2021 .disabled {
@@ -139,7 +142,94 @@
 /* End Hero-Image Section */
 
 /* Block 3 Section */
+.reviews.content-container {
+  background: white;
+}
 
+.reviews.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.results-dont-lie{
+  width: 50%;
+  margin-top: -25px;
+  margin-bottom: -10px;
+}
+
+.reviews.carousel{
+  background-color: transparent;
+  padding: 10%;
+  margin: -5% 1% 0%;
+}
+
+.reviews.review-cell {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 250px;
+  padding: 5%;
+}
+
+.reviews.review-cell-body {
+  margin-top: -20px;
+}
+
+.reviews.review-cell-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .reviews.prev-arrow {
+  transform: scaleX(-1);
+  position: absolute;
+  left: 1%;
+  margin-top: -49%;
+}
+
+.reviews.next-arrow {
+  position: absolute;
+  right: 1%;
+  margin-top: -49%;
+} */
+
+@media only screen and (min-width: 600px) {
+  .results-dont-lie{
+    width: 18%;
+    margin-top: -35px;
+    margin-bottom: -20px;
+    min-height: 110px;
+    min-width: 250px;
+  }
+
+  .reviews.carousel{
+    margin: -15% 1% 0%;
+  }
+
+  .reviews.review-cell {
+    max-width: 230px;
+  }
+
+  .flickity-button.flickity-prev-next-button.previous{
+    margin-top: 0px;
+  }
+
+  .flickity-button.flickity-prev-next-button.next{
+    margin-top: 0px;
+  }
+
+  .reviews.prev-arrow {
+    margin-top: -26%;
+  }
+
+  .reviews.next-arrow {
+    margin-top: -26%;
+  }
+
+}
 
 /* Block 3 End */
 
