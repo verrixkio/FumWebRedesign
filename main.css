@@ -228,14 +228,11 @@
   .reviews.next-arrow {
     margin-top: -26%;
   }
-
 }
-
 /* Block 3 End */
 
 
 /* Block 4 Starts */
-
 .about.content-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -299,8 +296,8 @@
   margin-top: -70px;
   transform: skewY(2deg);
 }
-/* 
-.about-video img {
+
+/* .about-video img {
   width: 100%;
   margin-top: -170px;
   transform: skewY(2deg);
@@ -397,6 +394,7 @@
     justify-self: stretch;
     margin: 5% 15% 5% -15%;
     transform: skewY(0deg);
+    background-color: pink;
   }
 
   /* .about-video img {
