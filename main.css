@@ -75,6 +75,7 @@
   align-items: center;
   padding: 0.3rem 0.5rem;
   font-size: 12px;
+  margin: 20px 0px;
 }
 .redesign-HP-2021 .HollowWood-image button {
   font-weight: 300;
@@ -100,8 +101,8 @@
   font-size: 11px;
   cursor: pointer;
   font-weight: 300;
-  background-color: #F7C7A1;
-  border: solid #F7C7A1;
+  background-color: #f7c7a1;
+  border: solid #f7c7a1;
   color: black;
 }
 .redesign-HP-2021 .email-pdf button {
@@ -144,96 +145,80 @@
 /* Block 1 Section */
 /* Hero-Image Section */
 
-.redesign-HP-2021 .button-link {
-  margin-top: 1.5rem;
-}
 .stackable-content.hero-image {
-  background-image: url('images/holdingFumHero.png');
+  background-image: url("images/holdingFumHero.png");
   background-size: 100%;
   background-repeat: no-repeat;
-
+  color: white;
 }
 .hero-image h4 {
   font-family: "Montserrat";
   font-weight: 100;
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 .hero-play-image {
   width: 30px;
   height: 30px;
   margin-left: 15px;
-
 }
 /* Desktop Only Rules */
 @media only screen and (min-width: 600px) {
-
+  .stackable-content.hero-image {
+    background-position: center;
+    padding: 24% 0% 7%;
+  }
   .hero-image .text-container {
-    margin: 13% 0% 0% 16%;
-    width: 35%;
+    margin-left: 7%;
+    width: 50%;
   }
   .hero-image h2 {
-    font-size: min(4vw, 70px);
+    font-size: min(4vw, 50px);
     letter-spacing: 0.05vw;
     margin: 0;
     margin-bottom: 10px;
   }
   .hero-image .text-content p {
-    font-size: 0.9vw;
-    line-height: 1.2vw;
+    font-size: min(2vw, 15px);
+    line-height: 1.6vw;
     margin-bottom: 3rem;
     margin-top: 1.25rem;
-  }
-  a {
-    padding: 0px 0px 0px 10%;
-    font-size: 0.9vw;
-  }
-
-  .button-link .button-float {
-    float: left;
-    padding-right: 7%;
-    padding-bottom: 5%;
-  }
-  .button-link .link-float {
-    padding-top: 5%;
-  }
-  .image-container.image-container.offset-big {
-    width: 50%;
-    position: relative;
-    left: -10%;
-  }
-  .image-container.offset-big img {
-    width: 112%;
   }
 }
 /* Mobile Only Rules */
 @media only screen and (max-width: 600px) {
-.hero-image .text-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.image-container img {
-  width: 100%;
-}
-.image-container.offset-big img {
-  position: relative;
-  left: -13%;
-  width: 136%;
-}
-.link-float {
-  font-weight: 400;
-  margin-top: 0.3em;
-}
+  .stackable-content.hero-image {
+    background-position: bottom;
+    padding: 75% 0% 20%;
+  }
+  .hero-image .text-container {
+    margin-left: 7%;
+    width: 90%;
+  }
+  .hero-image h2 {
+    font-size: 8vw;
+    letter-spacing: 0.05vw;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .hero-image h4 {
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+  .hero-image p {
+    font-size: 3vw;
+  }
 }
 /* End Hero-Image Section */
 /* End of Block 1 Section */
 
 /* Block 2 Section */
 .best-sellers {
-  background-image: url('images/black-slant.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 8rem;
+  background-image: url("images/black-slant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8rem 0rem;
+  margin-top: -5rem;
 }
 /* Best Sellers Section */
 .best-sellers .text-container {
@@ -254,9 +239,9 @@
 }
 /* Mobile Only Rules */
 @media only screen and (max-width: 600px) {
-.best-sellers button {
-  padding: 0.9rem 5rem;
-}
+  .best-sellers button {
+    padding: 0.9rem 4rem;
+  }
 }
 /* End of Best Sellers Section */
 /* End of Block 2 Section */
@@ -522,8 +507,6 @@
   font-family: "ivyjournal";
 }
 /* End of Habit Options Section */
-
-
 
 /* Reviews Section */
 
@@ -939,11 +922,7 @@
   .mobile {
     display: none !important;
   }
-  
-  }
-  .header {
-    margin-bottom: 5rem;
-  }
+
   h2 {
     font-size: min(2.8vw, 70px);
     margin: 0;
@@ -952,8 +931,6 @@
   p {
     font-size: min(1vw, 13px);
   }
-
-  
 
   /* HollowWood Section */
   .stackable-content.HollowWood-image {
@@ -1118,8 +1095,6 @@
     margin-bottom: 25px;
   }
   /* End of Conquer Cores Section */
-
-  
 
   /* Reviews Section */
   .stackable-content.reviews {
@@ -1367,7 +1342,6 @@
   .main {
     background-color: white;
   }
-  
 
   /* HollowWood Section */
   .HollowWood-image .button-container {
