@@ -237,6 +237,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: white;
+  margin-bottom: 20%;
 }
 
 .about-grey-block {
@@ -248,7 +249,11 @@
 }
 
 .about-grey-block img {
-  min-width: 430px; /* looks like mock-up @ 500px, 500-600px looks bad, esp cause vid is 100% */
+  /* width: 430px; looks like mock-up @ 500px, 500-600px looks bad, esp cause vid is 100% */
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 740px;
   position: relative;
   z-index: 0;
 }
@@ -280,12 +285,28 @@
   text-align: center;
 }
 
+.about-grey-block-text-align p:nth-child(1) {
+  font-size: 15px; 
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
 .about-grey-block-text-align h2 {
   margin: 0.5em 0 0.5em;
 }
 
-.about-grey-block-text-align p{
-  margin: 0.75em;
+.about-grey-block-text-align p:nth-child(3){
+  margin: 20px;
+  width: 77%;
+  line-height: 1.5;
+  font-weight: 500; /* maybe get rid of this? can't tell on mock-up */
+}
+
+.about-grey-block-product-img { /* change this when you use actual img of FUM product */
+  margin-top: 12%; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .about-video {
@@ -293,15 +314,18 @@
   justify-items: center;
   grid-column: 1/3;
   grid-row: 3/5;
-  margin-top: -70px;
+  margin-top: -27%;
   transform: skewY(2deg);
+  height: 380px;
 }
 
-/* .about-video img {
+.about-video img {
   width: 100%;
-  margin-top: -170px;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: 50% 50%;
   transform: skewY(2deg);
-} */
+}
 
 .about-video-overlay{
   display: grid;
@@ -312,6 +336,11 @@
   grid-row: 3/5;
   color: white;
   transform: skewY(0deg);
+  margin-top: -10%;
+}
+
+.about-video-overlay p{ 
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -321,14 +350,14 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .about-grey-block img {
-    display: none;
-  } 
-
   .about.content-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
+  .about-grey-block img {
+    display: none;
+  } 
 
   .about-grey-block-overlay {
     background: #ddd;
@@ -336,8 +365,9 @@
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
-    min-width: 85%; /* this is fishy */
-    margin: 0 0 0 7%;
+    min-width: 93%;
+    height: 90%;
+    margin: 0 0 0 3%;
     position: relative;
   }
 
@@ -356,33 +386,43 @@
   }
 
   .about-grey-block-content-align {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 14% 0 14% 10%;
   }
 
   .about-grey-block-text-align {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    width: 50%;
+    width: 41%;
   }
 
-  .about-grey-block-text-align p{
-    margin: 0.75em 0 0.75em;
+  .about-grey-block-text-align p:nth-child(1) {
+    margin: 0;
+  }
+
+  .about-grey-block-text-align p:nth-child(3){
+    margin: 0;
+    width: 110%;
+    font-size: 14px;
   }
   
   .buy-now-button {
-    width: 100%;
-    margin: 10% 0;
+    width: 65%;
+    margin: 20% 0;
   }
 
-  .about-grey-block-content-align img {
-    margin-left: 15%;
+  .black.buy-now {
+    width: 100%;
+  }
+
+  .about-grey-block-product-img {
+    margin: 5% 5% 8% 13%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 250px; /* delete/change this when you get real img of product */
   }
 
   .about-video {
@@ -392,27 +432,24 @@
     justify-items: flex-start;
     align-items: center;
     justify-self: stretch;
-    margin: 5% 15% 5% -15%;
+    margin: 12% 12% 5% -7%;
     transform: skewY(0deg);
-    background-color: pink;
+    height: 82%;
   }
 
-  /* .about-video img {
-    width: 100%;
-    max-height: 75%;
-    margin: 5% 15% 5% -40%;
+  .about-video img {
+    max-height: 88%;
+    margin-top: -13%;
     transform: skewY(0deg);
-  } */
+  }
 
   .about-video-overlay{
-    display: grid;
-    justify-self: center;
-    align-self: center;
     grid-column: 2;
     grid-row: 1;
     color: white;
+    margin-top: 0;
+    margin-left: -17%;
   }
-  
 }
 
 /* Block 4 Ends */
