@@ -71,6 +71,11 @@
 }
 .redesign-HP-2021 .hero-image button {
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  font-size: 12px;
+  margin: 20px 0px;
 }
 .redesign-HP-2021 .HollowWood-image button {
   font-weight: 300;
@@ -96,6 +101,9 @@
   font-size: 11px;
   cursor: pointer;
   font-weight: 300;
+  background-color: #f7c7a1;
+  border: solid #f7c7a1;
+  color: black;
 }
 .redesign-HP-2021 .email-pdf button {
   font-size: 12px;
@@ -134,13 +142,109 @@
 }
 /* End of Scroll arrows */
 
+/* Block 1 Section */
 /* Hero-Image Section */
 
-.redesign-HP-2021 .button-link {
-  margin-top: 1.5rem;
+.stackable-content.hero-image {
+  background-image: url("images/holdingFumHero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.hero-image h4 {
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.hero-play-image {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+/* Desktop Only Rules */
+@media only screen and (min-width: 600px) {
+  .stackable-content.hero-image {
+    background-position: center;
+    padding: 24% 0% 7%;
+  }
+  .hero-image .text-container {
+    margin-left: 7%;
+    width: 50%;
+  }
+  .hero-image h2 {
+    font-size: min(4vw, 50px);
+    letter-spacing: 0.05vw;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .hero-image .text-content p {
+    font-size: min(2vw, 15px);
+    line-height: 1.6vw;
+    margin-bottom: 3rem;
+    margin-top: 1.25rem;
+  }
+}
+/* Mobile Only Rules */
+@media only screen and (max-width: 600px) {
+  .stackable-content.hero-image {
+    background-position: bottom;
+    padding: 75% 0% 20%;
+  }
+  .hero-image .text-container {
+    margin-left: 7%;
+    width: 90%;
+  }
+  .hero-image h2 {
+    font-size: 8vw;
+    letter-spacing: 0.05vw;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .hero-image h4 {
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+  .hero-image p {
+    font-size: 3vw;
+  }
 }
 /* End Hero-Image Section */
+/* End of Block 1 Section */
 
+/* Block 2 Section */
+.best-sellers {
+  background-image: url("images/black-slant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8rem 0rem;
+  margin-top: -5rem;
+}
+/* Best Sellers Section */
+.best-sellers .text-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.best-sellers .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Desktop Only Rules */
+@media only screen and (min-width: 600px) {
+  .best-sellers button {
+    padding: 0.65rem 3.7rem;
+  }
+}
+/* Mobile Only Rules */
+@media only screen and (max-width: 600px) {
+  .best-sellers button {
+    padding: 0.9rem 4rem;
+  }
+}
+/* End of Best Sellers Section */
+/* End of Block 2 Section */
 
 /* Block 3 Section */
 .reviews.content-container {
@@ -155,7 +259,7 @@
   background: transparent;
 }
 
-.results-dont-lie{
+.results-dont-lie {
   width: 50%;
   margin-top: -25px;
 }
@@ -164,7 +268,7 @@
   margin: 0;
 }
 
-.reviews.carousel{
+.reviews.carousel {
   background-color: transparent;
   margin: 3% -4% 0%;
 }
@@ -211,12 +315,11 @@
 } */
 
 @media only screen and (min-width: 600px) {
-  
   .reviews.content-container {
     padding: 12% 10% 0 10%;
   }
 
-  .results-dont-lie{
+  .results-dont-lie {
     width: 18%;
     margin-top: -35px;
     margin-bottom: 10px;
@@ -224,7 +327,7 @@
     min-width: 250px;
   }
 
-  .reviews.carousel{
+  .reviews.carousel {
     margin: -10% -10% 0%; /* change this bottom margin to close the gap between next block */
     padding: 10%;
   }
@@ -235,11 +338,11 @@
     padding: 0% 5% 0% 4.5%;
   }
 
-  .flickity-button.flickity-prev-next-button.previous{
+  .flickity-button.flickity-prev-next-button.previous {
     margin-top: 0;
   }
 
-  .flickity-button.flickity-prev-next-button.next{
+  .flickity-button.flickity-prev-next-button.next {
     margin-top: 0;
   }
 
@@ -258,7 +361,7 @@
   margin: 10% 0;
 }
 
-.cores.cores-header{
+.cores.cores-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,25 +386,25 @@
   font-weight: 500;
 }
 
-.cores.content-body{
+.cores.content-body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 12%;
 }
 
-.each-cores-value{
+.each-cores-value {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.black.shop-cores{
+.black.shop-cores {
   min-width: 65%;
 }
 
-.shop-cores-button{
+.shop-cores-button {
   display: flex;
   justify-content: center;
   margin: 12% 10%;
@@ -312,16 +415,20 @@
   margin: 18% 0 30%;
 }
 
-.cores.white-cran, .cores.conquer, .cores.cocoa-mint {
+.cores.white-cran,
+.cores.conquer,
+.cores.cocoa-mint {
   position: relative;
 }
 
-.cores.white-cran a, .cores.conquer a, .cores.cocoa-mint a{
+.cores.white-cran a,
+.cores.conquer a,
+.cores.cocoa-mint a {
   padding: 0px;
   margin: 0px;
 }
 
-.each-core-photo-button{
+.each-core-photo-button {
   width: 100%;
   max-width: 200px;
   height: 500px;
@@ -383,37 +490,46 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 750px) {
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     top: 62%;
   }
 }
 
 @media screen and (min-width: 750px) and (max-width: 875px) {
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     top: 59%;
   }
 }
 
 @media screen and (min-width: 875px) and (max-width: 1000px) {
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     top: 56%;
   }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1150px) {
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     top: 53%;
   }
 }
 
-@media only screen and (min-width: 1150px){
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+@media only screen and (min-width: 1150px) {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     top: 50%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-
   .cores.content-container {
     display: flex;
     margin: 10% 0 10% 10%;
@@ -421,13 +537,13 @@
   }
 
   .cores.content-container-desktop {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     width: 60%;
   }
 
-  .cores.cores-header{
+  .cores.cores-header {
     text-align: left;
     width: 100%;
     margin: 0 0 10%;
@@ -438,33 +554,36 @@
     width: 110%;
   }
 
-  .cores.content-body{
+  .cores.content-body {
     justify-content: space-between;
     margin: -2% 0 9% 0;
     width: 60%;
   }
 
-  .shop-cores-button{
+  .shop-cores-button {
     justify-content: flex-start;
     margin: 10% 0;
   }
 
-  .cores.photo-buttons-container{
+  .cores.photo-buttons-container {
     margin: 0 8% 0 15%;
     display: flex;
     justify-content: space-around;
     width: 100%;
   }
 
-  .each-core-photo-button{
+  .each-core-photo-button {
     max-width: 160px;
   }
 
-  .each-core-photo-button.second, .each-core-photo-button.third {
+  .each-core-photo-button.second,
+  .each-core-photo-button.third {
     transform: none;
   }
 
-  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+  .cores.flavour-text,
+  .cores.flavour-text.second,
+  .cores.flavour-text.third {
     left: 0%;
   }
 
@@ -472,13 +591,11 @@
     font-size: 24px;
   }
 
-  .cores.flavour-text p{
+  .cores.flavour-text p {
     font-size: 15px;
   }
 }
 /* Block 5 End */
-
-
 
 /* Block 4 Starts */
 .about.content-container {
@@ -509,7 +626,7 @@
 .about-grey-block-overlay {
   display: grid;
   grid-column: 1/3;
-  grid-row: 1/3;  
+  grid-row: 1/3;
   justify-self: center;
   align-self: start;
   max-width: 375px;
@@ -534,7 +651,7 @@
 }
 
 .about-grey-block-text-align p:nth-child(1) {
-  font-size: 15px; 
+  font-size: 15px;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -543,15 +660,16 @@
   margin: 0.5em 0 0.5em;
 }
 
-.about-grey-block-text-align p:nth-child(3){
+.about-grey-block-text-align p:nth-child(3) {
   margin: 20px;
   width: 77%;
   line-height: 1.5;
   font-weight: 500; /* maybe get rid of this? can't tell on mock-up */
 }
 
-.about-grey-block-product-img { /* change this when you use actual img of FUM product */
-  margin-top: 12%; 
+.about-grey-block-product-img {
+  /* change this when you use actual img of FUM product */
+  margin-top: 12%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -575,7 +693,7 @@
   transform: skewY(2deg);
 }
 
-.about-video-overlay{
+.about-video-overlay {
   display: grid;
   justify-items: center;
   justify-self: center;
@@ -587,7 +705,7 @@
   margin-top: -10%;
 }
 
-.about-video-overlay p{ 
+.about-video-overlay p {
   font-size: 15px;
 }
 
@@ -605,7 +723,7 @@
 
   .about-grey-block img {
     display: none;
-  } 
+  }
 
   .about-grey-block-overlay {
     background: #ddd;
@@ -651,12 +769,12 @@
     margin: 0;
   }
 
-  .about-grey-block-text-align p:nth-child(3){
+  .about-grey-block-text-align p:nth-child(3) {
     margin: 0;
     width: 110%;
     font-size: 14px;
   }
-  
+
   .buy-now-button {
     width: 65%;
     margin: 20% 0;
@@ -691,7 +809,7 @@
     transform: skewY(0deg);
   }
 
-  .about-video-overlay{
+  .about-video-overlay {
     grid-column: 2;
     grid-row: 1;
     color: white;
@@ -702,9 +820,9 @@
 /* Block 4 Ends */
 
 /* Block 6 Starts */
-.redesign-testimonial.content-container{
+.redesign-testimonial.content-container {
   width: 100%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -714,7 +832,7 @@
 
 .redesign-testimonial.content-container.header {
   transform: skewY(-2deg);
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -728,7 +846,6 @@
 .redesign-testimonial.content-container.header p {
   font-size: 14px;
 }
-
 
 .redesign-testimonial.content-container.pages {
   transform: skewY(-2deg);
@@ -755,7 +872,6 @@
   /* margin-bottom: 10%; */
 }
 
-
 .single-testimonial-block img {
   width: 100%;
   height: 185px;
@@ -763,13 +879,13 @@
   /* object-position: 50% 50%; */
 }
 
-.single-testimonial-block-text { 
+.single-testimonial-block-text {
   display: flex;
   flex-direction: column;
   margin: 0 8% 3% 8%;
 }
 
-.single-testimonial-block-text p{
+.single-testimonial-block-text p {
   margin: 5px 0 0 0;
 }
 
@@ -781,7 +897,7 @@
   font-weight: 500;
 }
 
-.single-testimonial-block-text img{
+.single-testimonial-block-text img {
   width: 60%;
   height: auto;
   margin: 10px 0 5px 0;
@@ -797,11 +913,11 @@
   cursor: pointer;
   margin-top: 10%;
   font-size: 14px;
-  font-weight: 200; 
+  font-weight: 200;
 }
 
 @media only screen and (min-width: 600px) {
-  .redesign-testimonial.content-container{
+  .redesign-testimonial.content-container {
     background-color: #b8c1c1;
   }
 
@@ -837,7 +953,6 @@
   .testimonials.show-more {
     margin: 0;
   }
-
 }
 
 /* Block 6 Ends */
@@ -1012,18 +1127,6 @@
   font-family: "ivyjournal";
 }
 /* End of Habit Options Section */
-
-/* Best Sellers Section */
-.best-sellers .text-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.best-sellers .button-container {
-  display: flex;
-  justify-content: center;
-}
-/* End of Best Sellers Section */
 
 /* Reviews Section */
 
@@ -1439,16 +1542,7 @@
   .mobile {
     display: none !important;
   }
-  .main {
-    background-image: url(./images/wave.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-x: 6rem;
-    background-position-y: -1rem;
-  }
-  .header {
-    margin-bottom: 5rem;
-  }
+
   h2 {
     font-size: min(2.8vw, 70px);
     margin: 0;
@@ -1457,55 +1551,6 @@
   p {
     font-size: min(1vw, 13px);
   }
-
-  /* Hero Image Section */
-
-  .stackable-content.hero-image {
-    display: flex;
-    margin: 3rem 5%;
-  }
-  .hero-image .text-container {
-    margin: 13% 0% 0% 16%;
-    width: 35%;
-  }
-  .hero-image h2 {
-    font-size: min(4vw, 70px);
-    letter-spacing: 0.05vw;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .hero-image .text-content p {
-    font-size: 0.9vw;
-    line-height: 1.2vw;
-    margin-bottom: 3rem;
-    margin-top: 1.25rem;
-  }
-  a {
-    padding: 0px 0px 0px 10%;
-    font-size: 0.9vw;
-  }
-  .hero-image button {
-    padding: 1rem 2.2rem;
-    font-size: 1vw;
-  }
-
-  .button-link .button-float {
-    float: left;
-    padding-right: 7%;
-    padding-bottom: 5%;
-  }
-  .button-link .link-float {
-    padding-top: 5%;
-  }
-  .image-container.image-container.offset-big {
-    width: 50%;
-    position: relative;
-    left: -10%;
-  }
-  .image-container.offset-big img {
-    width: 112%;
-  }
-  /*End  Hero Image Section */
 
   /* HollowWood Section */
   .stackable-content.HollowWood-image {
@@ -1670,15 +1715,6 @@
     margin-bottom: 25px;
   }
   /* End of Conquer Cores Section */
-
-  /* Best Sellers Section */
-  .stackable-content.best-sellers {
-    margin-top: 8rem;
-  }
-  .best-sellers button {
-    padding: 0.65rem 3.7rem;
-  }
-  /* End of Best Sellers Section */
 
   /* Reviews Section */
   .stackable-content.reviews {
@@ -1907,7 +1943,7 @@
   /* End Email PDF Section */
 }
 
-/* Moble Only Rules */
+/* Mobile Only Rules */
 @media only screen and (max-width: 600px) {
   h2 {
     font-family: IvyJournal;
@@ -1926,25 +1962,6 @@
   .main {
     background-color: white;
   }
-  /* Hero Image Section */
-  .hero-image .text-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-  .image-container img {
-    width: 100%;
-  }
-  .image-container.offset-big img {
-    position: relative;
-    left: -13%;
-    width: 136%;
-  }
-  .link-float {
-    font-weight: 400;
-    margin-top: 0.3em;
-  }
-  /* End Hero Image Section */
 
   /* HollowWood Section */
   .HollowWood-image .button-container {
@@ -1997,12 +2014,6 @@
     justify-content: center;
   }
   /* End of Habit Options Section */
-
-  /* Best Sellers Section */
-  .best-sellers button {
-    padding: 0.9rem 5rem;
-  }
-  /* End of Best Sellers Section */
 
   /* Reviews Section */
   .stackable-content.reviews {
