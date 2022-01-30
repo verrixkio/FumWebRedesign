@@ -254,25 +254,40 @@
 /* Block 3 End */
 
 /* Block 5 Start */
+.cores.content-container {
+  margin: 10% 0;
+}
 
 .cores.cores-header{
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 50%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.cores.cores-header p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .cores.cores-header h2 {
   margin-top: -1%;
+  line-height: 1.3;
+}
+
+.cores.cores-header p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .cores.content-body{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10%;
+  margin: 12%;
 }
 
 .each-cores-value{
@@ -283,18 +298,18 @@
 }
 
 .black.shop-cores{
-  min-width: 60%;
+  min-width: 65%;
 }
 
 .shop-cores-button{
   display: flex;
   justify-content: center;
-  margin: 10%;
+  margin: 12% 10%;
 }
 
 .cores.photo-buttons-container {
   display: flex;
-  margin: 20% 0 25%;
+  margin: 18% 0 30%;
 }
 
 .cores.white-cran, .cores.conquer, .cores.cocoa-mint {
@@ -329,10 +344,10 @@
   align-content: center;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 0;
   bottom: 0;
-  left: -5%;
+  left: 2%;
   z-index: 1;
   margin: auto;
   width: 100%;
@@ -343,17 +358,18 @@
 }
 
 .cores.flavour-text.second {
-  top: 60%;
+  top: 70%;
 }
 
 .cores.flavour-text.third {
-  top: 70%;
+  top: 80%;
 }
 
 .cores.flavour-text h3 {
   font-family: IvyJournal;
   font-weight: bold;
   font-size: 24px;
+  margin-top: 0;
   margin-bottom: 10%;
   width: 500px;
 }
@@ -362,30 +378,37 @@
   font-size: 15px;
   margin: 5px;
   width: 500px;
+  font-weight: 200;
+  margin: 0;
 }
 
 @media screen and (min-width: 600px) and (max-width: 750px) {
   .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
-    top: 60%;
-    left: 0;
+    top: 62%;
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 900px) {
+@media screen and (min-width: 750px) and (max-width: 875px) {
   .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
-    top: 55%;
+    top: 59%;
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1150px) {
+@media screen and (min-width: 875px) and (max-width: 1000px) {
   .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
-    top: 50%;
+    top: 56%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+  .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
+    top: 53%;
   }
 }
 
 @media only screen and (min-width: 1150px){
   .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
-    top: 40%;
+    top: 50%;
   }
 }
 
@@ -393,7 +416,7 @@
 
   .cores.content-container {
     display: flex;
-    margin: 0 0 0 15%;
+    margin: 10% 0 10% 10%;
     background: white;
   }
 
@@ -412,11 +435,12 @@
 
   .cores.cores-header p {
     margin-top: 5px;
+    width: 110%;
   }
 
   .cores.content-body{
     justify-content: space-between;
-    margin: 0;
+    margin: -2% 0 9% 0;
     width: 60%;
   }
 
@@ -426,15 +450,14 @@
   }
 
   .cores.photo-buttons-container{
-    margin: 0 10% 0;
+    margin: 0 8% 0 15%;
     display: flex;
     justify-content: space-around;
     width: 100%;
   }
 
   .each-core-photo-button{
-    margin: 15px;
-    max-width: 170px;
+    max-width: 160px;
   }
 
   .each-core-photo-button.second, .each-core-photo-button.third {
@@ -442,7 +465,7 @@
   }
 
   .cores.flavour-text, .cores.flavour-text.second, .cores.flavour-text.third {
-    left: 0;
+    left: 0%;
   }
 
   .cores.flavour-text h3 {
