@@ -12,7 +12,6 @@ $(document).ready(function () {
   });
 
   // Testimonials Flickity
-
   var elemTwo = document.querySelector(".reviews.carousel");
   var flkty = new Flickity(elemTwo, {
     // options
@@ -31,12 +30,40 @@ $(document).ready(function () {
   //   $carousel.flickity('next');
   // });
 
+
+  //Block 6: Show More
+  // $(function showMoreTestimonials(){
+  //   if ($(window).width() < 600) {
+  //     $(".single-testimonial-block").slice(0, 4).show();
+  //   } else {
+  //     $(".single-testimonial-block").slice(0, 8).show();
+  //   }
+
+  //   $(".testimonials.show-more").click(function(e){
+  //     e.preventDefault();
+  //     $(".single-testimonial-block:hidden").slice(0, 4).show();
+      
+  //     if($(".single-testimonial-block:hidden").length == 0){
+  //       $('.testimonials.show-more').hide();
+  //     }
+  //   });
+  // });
+
+  
+  //Masonry layout for Block 6
+  $('.redesign-testimonial.content-container.pages').masonry({
+    itemSelector: '.single-testimonial-block',
+    horizontalOrder: true,
+    percentPosition: true,
+  });
+
+
   $('#scrollToQuiz').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
     return false;
-});
+  });
 
   // Need a function that maps numbers to words to support multi-step form.
   numToWords = (num) => {
