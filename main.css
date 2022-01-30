@@ -157,25 +157,38 @@
 .results-dont-lie{
   width: 50%;
   margin-top: -25px;
-  margin-bottom: -10px;
+}
+
+.reviews.header p {
+  margin: 0;
 }
 
 .reviews.carousel{
   background-color: transparent;
-  padding: 10%;
-  margin: -5% 1% 0%;
+  margin: 3% -4% 0%;
 }
 
 .reviews.review-cell {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  min-width: 250px;
-  padding: 5%;
+  align-content: center;
+  width: 260px;
+  height: 370px;
+  padding: 10% 10% 0 17.5%;
+}
+
+.reviews.review-cell-header p {
+  font-size: 16px;
+  margin-bottom: 7px;
 }
 
 .reviews.review-cell-body {
   margin-top: -20px;
+}
+
+.reviews.review-cell-body p {
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .reviews.review-cell-footer {
@@ -197,37 +210,45 @@
 } */
 
 @media only screen and (min-width: 600px) {
+  
+  .reviews.content-container {
+    padding: 12% 10% 0 10%;
+  }
+
   .results-dont-lie{
     width: 18%;
     margin-top: -35px;
-    margin-bottom: -20px;
+    margin-bottom: 10px;
     min-height: 110px;
     min-width: 250px;
   }
 
   .reviews.carousel{
-    margin: -15% 1% 0%;
+    margin: -10% -10% 0%;
+    padding: 10%;
   }
 
   .reviews.review-cell {
-    max-width: 230px;
+    width: 270px;
+    height: 380px;
+    padding: 0% 5% 0% 4.5%;
   }
 
   .flickity-button.flickity-prev-next-button.previous{
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .flickity-button.flickity-prev-next-button.next{
-    margin-top: 0px;
+    margin-top: 0;
   }
 
-  .reviews.prev-arrow {
+  /* .reviews.prev-arrow {
     margin-top: -26%;
   }
 
   .reviews.next-arrow {
     margin-top: -26%;
-  }
+  } */
 
 }
 
