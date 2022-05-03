@@ -58,6 +58,132 @@ $(document).ready(function () {
   });
 
 
+  // Functions for Savings Calculator - Block 7
+
+  // On load - set to cigarettes tab: 
+  $('#vaping-input').hide();
+  $('#vaping-cost').hide();
+  $('#calculate-vape-btn').hide();
+  $('#vape-savings').hide();
+  $('#patches-input').hide();
+  $('#patches-cost').hide();
+  $('#calculate-patch-btn').hide();
+
+  // Click cigarettes tab:
+  $("#cigarettes-tab").click(function(){
+    $('.calculator-body-inputs').css('background-color', '#d3d9d9');
+    $('#cigarettes-input').show();
+    $('#cigarettes-cost').show();
+    $('#calculate-cigs-btn').show();
+    $('#cigs-savings').show();
+
+    $('#vaping-input').hide();
+    $('#vaping-cost').hide();
+    $('#calculate-vape-btn').hide();
+    $('#vape-savings').hide();
+    // $('#patches-input').hide();
+    // $('#patches-cost').hide();
+    // $('#calculate-patch-btn').hide();
+  });
+
+  $('#calculate-cigs-btn').click(function(){
+    const a = Number($('#cig-integer-input').val());
+    const b = Number($("#cig-currency-input").val());
+    const total1 = Math.round(((b/20) * a) * 30);
+    document.getElementById("cig-cost-value").innerHTML = total1;
+
+    const fum = 50;
+    const savings1 = total1 - fum; 
+    document.getElementById('cigs-savings').innerHTML = savings1;
+  });
+
+  // Click vaping tab: 
+  $('#vaping-tab').click(function(){
+    $('.calculator-body-inputs').css('background-color', '#e5e5e5');
+    $('#vaping-input').show();
+    $('#vaping-cost').show();
+    $('#calculate-vape-btn').show();
+    $('#vape-savings').show();
+    
+    $('#cigarettes-input').hide();
+    $('#cigarettes-cost').hide();
+    $('#calculate-cigs-btn').hide();
+    $('#cigs-savings').hide();
+    // $('#patches-input').hide();
+    // $('#patches-cost').hide();
+    // $('#calculate-patch-btn').hide();
+  });
+  $('#calculate-vape-btn').click(function(){
+    const c = Number($('#vape-integer-input').val());
+    const d = Number($("#vape-currency-input").val());
+    const total2 = Math.round((c * d) * 30);
+    document.getElementById("vape-cost-value").innerHTML = total2;
+
+    const fum = 50;
+    const savings2 = total2 - fum; 
+    document.getElementById('vape-savings').innerHTML = savings2;
+  });
+  
+  // // Click patches tab: 
+  // $('#patches-tab').click(function(){
+  //   $('.calculator-body-inputs').css('background-color', '#efefef');
+  //   $('#patches-input').show();
+  //   $('#patches-cost').show();
+  //   $('#calculate-patch-btn').show();
+    
+  //   $('#cigarettes-input').hide();
+  //   $('#cigarettes-cost').hide();
+  //   $('#calculate-cigs-btn').hide();
+  //   $('#vaping-input').hide();
+  //   $('#vaping-cost').hide();
+  //   $('#calculate-vape-btn').hide();
+  // });
+  // $('#calculate-patch-btn').click(function(){
+  //   const e = Number($('#patch-integer-input').val());
+  //   const f = Number($("#patch-currency-input").val());
+  //   const total3 = Math.round(((f/14) * e) * 30);
+  //   return document.getElementById("patch-cost-value").innerHTML = total3;
+  // });
+
+  // // Input filters for calculator
+  // function setInputFilter(textbox, inputFilter) {
+  //   ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "focusout"].forEach(function(event) {
+  //     textbox.addEventListener(event, function(e) {
+  //       if (inputFilter(this.value)) {
+  //         // Accepted value
+  //         if (["keydown","mousedown","focusout"].indexOf(e.type) >= 0){
+  //           this.setCustomValidity("");
+  //         }
+  //         this.oldValue = this.value;
+  //         this.oldSelectionStart = this.selectionStart;
+  //         this.oldSelectionEnd = this.selectionEnd;
+  //       } else {
+  //         // Rejected value - nothing to restore
+  //         this.value = "";
+  //       }
+  //     });
+  //   });
+  // }
+  // setInputFilter(document.getElementById("cig-integer-input"), function(value) {
+  //   return /^-?\d*$/.test(value); 
+  // });
+  // setInputFilter(document.getElementById("cig-currency-input"), function(value) {
+  //   return /^-?\d*[.,]?\d{0,2}$/.test(value); 
+  // });
+  // setInputFilter(document.getElementById("vape-integer-input"), function(value) {
+  //   return /^-?\d*$/.test(value); 
+  // });
+  // setInputFilter(document.getElementById("vape-currency-input"), function(value) {
+  //   return /^-?\d*[.,]?\d{0,2}$/.test(value); 
+  // });
+  // setInputFilter(document.getElementById("patch-integer-input"), function(value) {
+  //   return /^-?\d*$/.test(value); 
+  // });
+  // setInputFilter(document.getElementById("patch-currency-input"), function(value) {
+  //   return /^-?\d*[.,]?\d{0,2}$/.test(value); 
+  // });
+
+
   $('#scrollToQuiz').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
