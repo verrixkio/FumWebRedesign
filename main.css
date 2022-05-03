@@ -954,8 +954,235 @@
     margin: 0;
   }
 }
-
 /* Block 6 Ends */
+
+/* Block 7 Savings Calculator */
+.calculator-container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculator-header {
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+}
+
+.calculator-header p:nth-child(1) {
+  letter-spacing: 2px;
+}
+
+.calculator-header p:nth-child(3) {
+  margin: 5% 25%;
+}
+
+.calculator-header h2 {
+  margin: 3% 0;
+  line-height: 1.3;
+}
+
+.calculator-header-check {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* column-gap: 2rem; */
+  text-align: left;
+}
+
+.calculator-header-check-one {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.calculator-header-check-one img{
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.calculator-header-check.one p {
+  text-align: left;
+}
+
+#calc-shop-btn{
+  display: none;
+}
+
+.calculator-body {
+  margin: 7rem 0;
+}
+
+.calculator-body-tabs {
+  display: grid; 
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr;
+  transform: skewY(-3deg);
+}
+
+.calculator-body-tabs div:nth-child(1) {
+  background-color: #d3d9d9;
+}
+.calculator-body-tabs div:nth-child(2) {
+  background-color: #e5e5e5;
+}
+/* .calculator-body-tabs div:nth-child(3) {
+  background-color: #efefef;
+} */
+
+.calculator-body-tabs-each {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+#cigarettes-tab, #vaping-tab, #patches-tab {
+  cursor: pointer;
+} 
+
+.calculator-body-tabs-each img {
+  margin-top: -15%;
+}
+
+.calculator-body-inputs {
+  background-color: #d3d9d9;
+  padding: 18% 10% 60% 15%; 
+  transform: skewY(-3deg);
+  display: flex;
+  flex-direction: column;
+  margin-top: -1%;
+  /* align-items: center; */
+}
+
+.calculator-body-inputs-content {
+  transform: skewY(3deg);
+}
+
+.calculator-body-inputs-content p {
+  font-size: 13px;
+  margin: 12px 0 3rem 1.5rem;
+}
+
+.calculator-body-inputs-content input {
+  border: none;
+  border-radius: 3px;
+  background: white;
+  outline: none;
+  font-weight: 300;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 1.5rem;
+  margin-left: 0;
+}
+
+::placeholder {
+  color: #b9b9b9;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.calculate-btn {
+  transform: skewY(3deg);
+  background-color: black !important;
+  border-radius: 0 !important;
+  border: none !important;
+  color: white !important;
+  width: 40%;
+  padding: 0.6rem 2rem !important;
+}
+
+.calculator-body-savings {
+  background-color: #1d1d1d;
+  color: white;
+  transform: skewY(-3deg);
+  margin: -40% 3% 0 3%;
+}
+
+.calculator-body-savings-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-body-savings-header.one{
+  background-color: #313131;
+  margin-bottom: 0.7%;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center !important;
+  column-gap: 2rem;
+}
+
+.calculator-body-savings-header.one p {
+  font-weight: 100;
+}
+
+.calculator-body-savings-header.one p:nth-child(1){
+  text-align: right;
+}
+
+.calculator-body-savings-header.one p:nth-child(2){
+  text-align: left;
+}
+
+.calculator-body-savings-header.one strong{
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+}
+
+.calculator-body-savings-content {
+  transform: skewY(3deg);
+  padding: 10% 10% 20% 10%;
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.savings-inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.calculator-body-savings-content p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.calculator-body-savings-content h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.calculator-body-savings-content h3 {
+  line-height: 90%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 5vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #calc-shop-btn {
+    display: block;
+    width: 50%;
+  }
+}
+/* Block 7 ends */
+
+
+
 
 /* Conquer Cores Section */
 
