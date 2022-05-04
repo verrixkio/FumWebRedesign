@@ -116,7 +116,7 @@ $(document).ready(function () {
   $('#calculate-vape-btn').click(function(){
     const c = Number($('#vape-integer-input').val());
     const d = Number($("#vape-currency-input").val());
-    const total2 = Math.round((c * d) * 30);
+    const total2 = Math.round((c * d) * 4);
     document.getElementById("vape-cost-value").innerHTML = total2;
 
     const fum = 50;

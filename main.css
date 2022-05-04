@@ -1151,7 +1151,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .calculator-body-savings-content p:nth-child(1) {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
 }
 
@@ -1164,24 +1164,81 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 90%;
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 5vw;
+  /* font-size: 5vw; */
 }
 
 @media only screen and (min-width: 600px) {
   .calculator-container {
+    margin: 10% 7%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 
+  .calculator-header {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .calculator-header p:nth-child(3) {
+    margin: 5% 0;
+  }
+
+  .calculator-header h2 {
+    margin: 0;
+  }
+
+  .calculator-header-check {
+    width: 80%;
+  }
+
+  .calculator-header-check-one {
+    justify-content: flex-start;
+  }
+
   #calc-shop-btn {
+    margin-top: 5%;
     display: block;
-    width: 50%;
+    max-width: 40%;
+    min-width: 30% !important;
+  }
+
+  .calculator-body-inputs {
+    padding: 10% 20% 30% 20%;
+  }
+
+  .calculator-body-savings {
+    margin: -20% 3% 0 3%;
+  }
+
+  .calculator-body-savings-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .calculator-body-savings-header.one {
+    margin: 0.3%;
+    padding: 1rem;
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+  }
+
+  .calculator-body-savings-header.one p {
+    margin: 1em 0 !important;
+  }
+
+  .calculator-body-savings-content {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .calculator-body-savings-content h3 {
+    font-size: auto;
   }
 }
 /* Block 7 ends */
-
-
 
 
 /* Conquer Cores Section */
