@@ -380,90 +380,92 @@
       <!-- Block 6 End -->
 
       <!--- Block 7: Savings Calculator-->
-      <div class="calculator-container">
-        <div class="calculator-header">
-          <p>SAVINGS CALCULATOR</p>
-          <h2>Switch to<br/>Füm & Save</h2>
-          <p>See how our pice compares to others.</p>
-          <div class="calculator-header-check">
-            <div class="calculator-header-check-one">
-              <img src="./images/tick-mark.png" />
-              <p>Affordable<br/>Solution</p>
+
+      <div class="savingsCalc-container">
+        <img id="left-plant" src="./images/left-plant-bckgrnd.png"/>
+        <div class="calculator-container">
+          <div class="calculator-header">
+            <p>SAVINGS CALCULATOR</p>
+            <h2>Switch to<br/>Füm & Save</h2>
+            <p>See how our pice compares to others.</p>
+            <div class="calculator-header-check">
+              <div class="calculator-header-check-one">
+                <img src="./images/checkmark.png" />
+                <p>Affordable<br/>Solution</p>
+              </div>
+              <div class="calculator-header-check-one">
+                <img src="./images/checkmark.png" />
+                <p>Quality<br/>Product</p>
+              </div>
             </div>
-            <div class="calculator-header-check-one">
-              <img src="./images/tick-mark.png" />
-              <p>Quality<br/>Product</p>
+            <button id="calc-shop-btn" class="black shop-cores">Shop Now</button>
+          </div>
+
+          <div class="calculator-body">
+            <div class="calculator-body-tabs">
+              <div class="calculator-body-tabs-each">
+                <img src="./images/cigarette.png"/>
+                <p id="cigarettes-tab">Cigarettes</p>
+              </div>
+              <div class="calculator-body-tabs-each">
+                <img src="./images/vape.png"/>
+                <p id="vaping-tab">Vaping</p>
+              </div>
+              <!-- <div class="calculator-body-tabs-each">
+                <img src="./images/patch.png"/>
+                <p id="patches-tab">Patches</p>
+              </div> -->
+            </div> 
+
+            <div class="calculator-body-inputs">
+              <div id="cigarettes-input" class="calculator-body-inputs-content">
+                  <input id="cig-integer-input" placeholder="Enter amount" type="number"/>
+                  <p>Number of ciagrettes smoked per day</p>
+                  <input id="cig-currency-input" placeholder="Enter cost" type="number"/>
+                  <p>Cost per pack</p>
+              </div>
+              <div id="vaping-input" class="calculator-body-inputs-content">
+                <input id="vape-integer-input" placeholder="Enter amount" type="number"/>
+                <p>Number of cartridges used per week</p>
+                <input id="vape-currency-input" placeholder="Enter cost" type="number"/>
+                <p>Cost per cartridge</p>
+              </div>
+              <!-- <div id="patches-input" class="calculator-body-inputs-content">
+                <p>Patches per Day</p>
+                <input id="patch-integer-input" placeholder="0"/>
+                <p>Cost per Pack</p>
+                <input id="patch-currency-input" placeholder="$0"/>
+              </div> -->
+              <button id="calculate-cigs-btn" class="calculate-btn" type="submit">Calculate</button>
+              <button id="calculate-vape-btn" class="calculate-btn" type="submit">Calculate</button>
+              <!-- <button id="calculate-patch-btn" class="calculate-btn" type="submit">Calculate</button> -->
+            </div>
+
+            <div class="calculator-body-savings">
+              <div class="calculator-body-savings-header">
+                <div class="calculator-body-savings-header one">
+                  <p>Smoking Costs:</p> <p id="cigarettes-cost"><strong>$</strong><strong id="cig-cost-value">0</strong>/monthly</p>
+                  <p id="vaping-cost"><strong>$</strong><strong id="vape-cost-value">0</strong>/monthly</p>
+                  <!-- <p id="patches-cost">Patches Cost: <strong>$</strong><strong id="patch-cost-value">0</strong></p> -->
+                </div>
+                <div class="calculator-body-savings-header one">
+                  <p>Füm™ Costs:</p> <p><strong>$</strong><strong id="fum-cost">50</strong>/monthly</p>
+                </div>
+              </div>
+              <div class="calculator-body-savings-content">
+                <p>Savings:</p>
+                <div class="savings-inline">
+                  <h2>$</h2>
+                    <h2 id="cigs-savings">0</h2>
+                    <h2 id="vape-savings">0</h2>
+                  <h3>/Monthly</h3>
+                </div>
+              </div>
             </div>
           </div>
-          <button id="calc-shop-btn" class="black shop-cores">Shop Now</button>
         </div>
-
-        <div class="calculator-body">
-          <div class="calculator-body-tabs">
-            <div class="calculator-body-tabs-each">
-              <img src="./images/cigarette.png"/>
-              <p id="cigarettes-tab">Cigarettes</p>
-            </div>
-            <div class="calculator-body-tabs-each">
-              <img src="./images/vape.png"/>
-              <p id="vaping-tab">Vaping</p>
-            </div>
-            <!-- <div class="calculator-body-tabs-each">
-              <img src="./images/patch.png"/>
-              <p id="patches-tab">Patches</p>
-            </div> -->
-          </div> 
-
-          <div class="calculator-body-inputs">
-            <div id="cigarettes-input" class="calculator-body-inputs-content">
-                <input id="cig-integer-input" placeholder="Enter amount" type="number"/>
-                <p>Number of ciagrettes smoked per day</p>
-                <input id="cig-currency-input" placeholder="Enter cost" type="number"/>
-                <p>Cost per pack</p>
-            </div>
-            <div id="vaping-input" class="calculator-body-inputs-content">
-              <input id="vape-integer-input" placeholder="Enter amount" type="number"/>
-              <p>Number of cartridges used per week</p>
-              <input id="vape-currency-input" placeholder="Enter cost" type="number"/>
-              <p>Cost per cartridge</p>
-            </div>
-            <!-- <div id="patches-input" class="calculator-body-inputs-content">
-              <p>Patches per Day</p>
-              <input id="patch-integer-input" placeholder="0"/>
-              <p>Cost per Pack</p>
-              <input id="patch-currency-input" placeholder="$0"/>
-            </div> -->
-            <button id="calculate-cigs-btn" class="calculate-btn" type="submit">Calculate</button>
-            <button id="calculate-vape-btn" class="calculate-btn" type="submit">Calculate</button>
-            <!-- <button id="calculate-patch-btn" class="calculate-btn" type="submit">Calculate</button> -->
-          </div>
-
-          <div class="calculator-body-savings">
-            <div class="calculator-body-savings-header">
-              <div class="calculator-body-savings-header one">
-                <p>Smoking Costs:</p> <p id="cigarettes-cost"><strong>$</strong><strong id="cig-cost-value">0</strong>/monthly</p>
-                <p id="vaping-cost"><strong>$</strong><strong id="vape-cost-value">0</strong>/monthly</p>
-                <!-- <p id="patches-cost">Patches Cost: <strong>$</strong><strong id="patch-cost-value">0</strong></p> -->
-              </div>
-              <div class="calculator-body-savings-header one">
-                <p>Füm™ Costs:</p> <p><strong>$</strong><strong id="fum-cost">50</strong>/monthly</p>
-              </div>
-            </div>
-            <div class="calculator-body-savings-content">
-              <p>Savings:</p>
-              <div class="savings-inline">
-                <h2>$</h2>
-                  <h2 id="cigs-savings">0</h2>
-                  <h2 id="vape-savings">0</h2>
-                <h3>/Monthly</h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        <img id="right-plant" src="./images/right-plant-bckgrnd.png"/>
       </div>
-
-
       <!--- Block 7 End-->
 
 

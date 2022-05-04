@@ -957,8 +957,25 @@
 /* Block 6 Ends */
 
 /* Block 7 Savings Calculator */
+
+#left-plant {
+  overflow: hidden;
+  margin-left: -25%;
+  width: 70%;
+  z-index: -1;
+}
+
+#right-plant {
+  overflow: hidden;
+  z-index: -1;
+  width: 55%;
+  margin-left: 70%;
+  margin-top: -80%;
+}
+
 .calculator-container {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  margin-top: -55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -998,7 +1015,7 @@
 .calculator-header-check-one img{
   width: 30px;
   height: 30px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   align-self: center;
 }
 
@@ -1011,7 +1028,7 @@
 }
 
 .calculator-body {
-  margin: 7rem 0;
+  margin: 6rem 0;
 }
 
 .calculator-body-tabs {
@@ -1034,20 +1051,26 @@
 .calculator-body-tabs-each {
   text-align: center;
   justify-content: center;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
 }
 
 #cigarettes-tab, #vaping-tab, #patches-tab {
   cursor: pointer;
+  font-size: 16px;
 } 
 
+.calculator-body-tabs-each p{
+  margin-top: 1em;
+}
+
 .calculator-body-tabs-each img {
-  margin-top: -15%;
+  margin-top: -30%;
+  width: 50%;
 }
 
 .calculator-body-inputs {
   background-color: #d3d9d9;
-  padding: 18% 10% 60% 15%; 
+  padding: 18% 2% 60% 10%; 
   transform: skewY(-3deg);
   display: flex;
   flex-direction: column;
@@ -1060,8 +1083,8 @@
 }
 
 .calculator-body-inputs-content p {
-  font-size: 13px;
-  margin: 12px 0 3rem 1.5rem;
+  font-size: 11px;
+  margin: 12px 0 2rem 1rem;
 }
 
 .calculator-body-inputs-content input {
@@ -1070,9 +1093,9 @@
   background: white;
   outline: none;
   font-weight: 300;
-  width: 80%;
+  width: 83%;
   font-family: "Montserrat", sans-serif;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   margin-left: 0;
 }
 
@@ -1121,6 +1144,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .calculator-body-savings-header.one p {
   font-weight: 100;
+  margin-top: 1em;
 }
 
 .calculator-body-savings-header.one p:nth-child(1){
@@ -1138,7 +1162,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .calculator-body-savings-content {
   transform: skewY(3deg);
-  padding: 10% 10% 20% 10%;
+  padding: 3% 10% 15% 10%;
   text-align: center;
   display: flex; 
   flex-direction: column;
@@ -1147,11 +1171,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .savings-inline {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .calculator-body-savings-content p:nth-child(1) {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
 }
 
@@ -1161,15 +1185,26 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .calculator-body-savings-content h3 {
-  line-height: 90%;
   font-weight: 500;
   letter-spacing: 1px;
-  /* font-size: 5vw; */
+  margin: 0;
+  align-self: flex-end;
 }
 
 @media only screen and (min-width: 600px) {
+  #left-plant {
+    margin-left: -23%;
+    width: 60%;
+  }
+  
+  #right-plant {
+    width: 40%;
+    margin-left: 80%;
+    margin-top: -100%;
+  }
+
   .calculator-container {
-    margin: 10% 7%;
+    margin: -55% 10% 10% 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -1189,7 +1224,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .calculator-header-check {
-    width: 80%;
+    width: 70%;
   }
 
   .calculator-header-check-one {
@@ -1199,14 +1234,42 @@ input[type=number]::-webkit-outer-spin-button {
   #calc-shop-btn {
     margin-top: 5%;
     display: block;
-    max-width: 40%;
+    max-width: 65%;
     min-width: 30% !important;
   }
 
-  .calculator-body-inputs {
-    padding: 10% 20% 30% 20%;
+  #cigarettes-tab, #vaping-tab, #patches-tab {
+    font-size: 14px;
+  } 
+
+  .calculator-body-tabs-each{
+    padding-bottom: 5%;
   }
 
+  .calculator-body-tabs-each img {
+    margin-top: -25%;
+    width: 40%;
+  }
+
+  .calculator-body-inputs {
+    padding: 15% 15% 30% 15%;
+  }
+
+  .calculator-body-inputs-content p {
+    font-size: 10px;
+    margin: 12px 0 1.5rem 1rem;
+  }
+
+  .calculator-body-inputs-content input {
+    padding: 0.5rem 1rem;
+    width: 85%;
+  }
+
+  .calculate-btn {
+    width: 60%;
+    padding: 0.5rem 1rem !important;
+  }
+  
   .calculator-body-savings {
     margin: -20% 3% 0 3%;
   }
@@ -1236,6 +1299,72 @@ input[type=number]::-webkit-outer-spin-button {
 
   .calculator-body-savings-content h3 {
     font-size: auto;
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 768px) {
+  .calculator-body-savings-header div:nth-child(2) {
+    padding: 1.3rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #left-plant {
+    margin-left: -15%;
+    width: 50%;
+  }
+  
+  #right-plant {
+    width: 30%;
+    margin-left: 80%;
+    margin-top: -100%;
+  }
+
+  .calculator-container {
+    margin: -45% 10% 10% 10%;
+  }
+}
+
+@media only screen and (min-width: 903px) {
+
+  #calc-shop-btn {
+    max-width: 40%;
+  }
+
+  #cigarettes-tab, #vaping-tab, #patches-tab {
+    font-size: 16px;
+  } 
+
+  .calculator-body-inputs {
+    padding: 10% 20% 30% 20%;
+  }
+
+  .calculator-body-inputs-content p {
+    font-size: 13px;
+    margin: 12px 0 3rem 1.5rem;
+  }
+
+  .calculator-body-inputs-content input {
+    padding: 1rem 1.5rem;
+  }
+
+  .calculate-btn {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #left-plant {
+    margin-left: -12%;
+    width: 40%;
+  }
+  
+  #right-plant {
+    width: 30%;
+  }
+
+  .calculator-container {
+    margin: -35% 10% 10% 10%;
   }
 }
 /* Block 7 ends */
